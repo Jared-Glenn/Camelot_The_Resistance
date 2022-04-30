@@ -189,6 +189,20 @@ def get_relationships(my_player, players):
 
     return opposition + '\n' + collaboration
 
+def get_excalibur():
+    excalibur_hiding_places = ['Excalibur is in the Stone', 'Excalibur is Seeking the Grail', 'Excalibur is in the Lake']
+
+    # Randomly select one location for Excalibur to be
+    excalibur_location = random.choice(excalibur_hiding_places)
+    excalibur_hiding_places.remove(excalibur_location)
+
+    # Produce the two decoy locations.
+    excalibur_decoy1 = random.choice(excalibur_hiding_places)
+    excalibur_hiding_places.remove(excalibur_decoy1)
+    excalibur_decoy2 = excalibur_hiding_places.pop(0)
+
+    return excalibur_location, excalibur_decoy1, excalibur_decoy2
+
 # Oberoning Merlin (save for later)
 #if player_of_role.get('Merlin'):
 #    merlin_player = '{}'.format(player.name) for player in players if player.role == 'Merlin'
@@ -236,6 +250,12 @@ def get_player_info(player_names):
     if len(player_names) != num_players:
         print('ERROR: Duplicate player names.')
         exit(1)
+
+    # Place Excalibur.
+    excalibur_info = get_excalibur()
+    excalibur_location = excalibur_info[0]
+    excalibur_decoy1 = excalibur_info[1]
+    excalibur_decoy2 = excalibur_info[2]
 
     # create player objects
     players = []
