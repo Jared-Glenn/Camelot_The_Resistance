@@ -36,19 +36,20 @@ def get_role_description(role):
 # - Arthur: no information
 # - Guinevere: too complicated to generate here
 # - Colgrevance: name, role (evil has an update later to inform them about the presence of Colgrevance)
-def get_role_information(my_player,players):
+def get_role_information(my_player,players,excalibur_location,excalibur_decoy1,excalibur_decoy2):
     return {
         'Tristan' : ['{} is Iseult.'.format(player.name) for player in players if player.role == 'Iseult'],
         'Iseult' : ['{} is Tristan.'.format(player.name) for player in players if player.role == 'Tristan'],
         'Merlin' : ['{} is Evil'.format(player.name) for player in players if (player.team == 'Evil' and player.role != 'Mordred') or player.role == 'Lancelot'],
         'Percival' : ['{} is Merlin or Morgana.'.format(player.name) for player in players if player.role == 'Merlin' or player.role == 'Morgana'],
         'Lancelot' : [],
-        'Arthur' : ['{}'.format(player.role) for player in players if player.team == 'Good' and player.role != 'Arthur'],
+        'Arthur' : [],
         'Titania' : [],
         'Nimue' : ['{}'.format(player.role) for player in players if player.role != 'Nimue'],
         'Galahad' : [],
         'Guinevere' : [str(get_rumors(my_player, players))],
         'Gawain' : [str(get_relationships(my_player, players))],
+        'Ector' : [f'{player.role}' for player in players if player.team == 'Good' and player.role != 'Ector']
 
         'Mordred' : ['{} is Evil.'.format(player.name) for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania'],
         'Morgana' : ['{} is Evil.'.format(player.name) for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania'],
@@ -218,7 +219,7 @@ class Player():
     # Players have the following traits
     # name: the name of the player as fed into system arguments
     # role: the role the player possesses
-    # team: whether the player is on good or evil's team
+    # team: whether the player is on good, evil, or neutral's team
     # type: information or ability
     # seen: a list of what they will see
     # modifier: the random modifier this player has [NOT CURRENTLY UTILIZED]
@@ -245,17 +246,63 @@ class Player():
     def generate_info(self, players):
         pass
 
+class Relic():
+    # Relics have the following traits
+    # name: the name of the relic as fed into system arguments
+    # type: the type the relic possesses
+    # location: where the relic may be claimed
+    # decoy1: first location where the relic is not found
+    # decoy2: second location where the relic is not found
+    # location_seeker: list of roles that seek the same location as the relic
+    # decoy1_seeker: list of roles that seek the same location as decoy1
+    # decoy2_seeker:list of roles that seek the same location as decoy2
+    def __init__(self, name):
+        self.name = name
+        self.type = type
+        self.location = location
+        self.decoy1 = decoy1
+        self.decoy2 = decoy2
+        self.location_seeker = []
+        self.decoy1_seeker = []
+        self.decoy2_seeker = []
+
+    def set_type(self, type):
+        self.type = type
+
+    def set_location(self, location):
+        self.location = location
+
+    def set_decoy1(self, decoy1):
+        self.decoy1 = decoy1
+
+    def set_decoy2(self, decoy2):
+        self.decoy2 = decoy2
+
+    def set_location_seeker(self, location_seeker):
+        self.location_seeker.append(location_seeker)
+
+    def set_decoy1_seeker(self, decoy1_seeker):
+        self.decoy1_seeker = decoy1_seeker
+
+    def set_decoy2_seeker(self, decoy2_seeker):
+        self.decoy2_seeker = decoy2_seeker
+
 def get_player_info(player_names):
     num_players = len(player_names)
     if len(player_names) != num_players:
         print('ERROR: Duplicate player names.')
         exit(1)
 
-    # Place Excalibur.
+    # Place Excalibur and decoy locations.
+    relics = []
     excalibur_info = get_excalibur()
-    excalibur_location = excalibur_info[0]
-    excalibur_decoy1 = excalibur_info[1]
-    excalibur_decoy2 = excalibur_info[2]
+    relic = Relic(Excalibur)
+    relics.append(relic)
+    Excalibur.set_type("Sword")
+    Excalibur.set_location(excalibur_info[0])
+    Excalibur.set_decoy1(excalibur_info[1])
+    Excalibur.set_decoy2(excalibur_info[2])
+
 
     # create player objects
     players = []
@@ -377,7 +424,7 @@ def get_player_info(player_names):
         player_of_role[new_role] = np
 
     for p in players:
-        p.add_info(get_role_information(p,players))
+        p.add_info(get_role_information(p,players,excalibur_location,excalibur_decoy1,excalibur_decoy2))
         random.shuffle(p.info)
         # print(p.name,p.role,p.team,p.info)
 
