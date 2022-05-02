@@ -13,12 +13,13 @@ def get_role_description(role):
         'Merlin' : 'You know which people have Evil roles, but not who has any specific role.\nYou are a valid Assassination target.',
         'Percival' : 'You know which people have the Merlin and Morgana roles, but not who has each.',
         'Lancelot' : 'You may play Reversal cards while on missions.\nYou appear Evil to Merlin.',
-        'Arthur' : 'You know which Good roles are in the game, but not who has any given role.\nIf two missions have Failed, and less than two missions have Succeeded, you may declare as Arthur.\nAfter declaring, your vote on team proposals is counted twice, but you are unable to be on mission teams until the 5th mission.\nAfter declaring, you are immune to any effect that can forcibly change your vote.',
+        'Arthur' : 'You must obtain Excalibur to ensure victory for your forces. To do this, you must search for Excalibur in one or more or three locations: The Stone, The Lake, or At Camelot.\nYou may declare as a Sword Seeker, Arthur, or Accolon (your choice) to begin your search. After you declare, each time you are given the Scabbard, you may search the current location for Excalibur instead of changing the location. If it is in that location, you gain Excalibur.\nOnce you have Excalibur, when you go on a quest, you may expend its power to force a quest to succeed even when it would otherwise fail. You must expend Excalibur before the cards are read, but after they have been given to the Leader.\nOnce you expend Excalibur's power, you can no longer use this ability.'
         'Titania' : 'You appear as Evil to all players with Evil roles (except Colgrevance).',
         'Nimue' : 'You know which Good and Evil roles are in the game, but not who has any given role.\nYou are a valid Assassination target.',
         'Galahad' : 'After two quests have failed, you can declare as Galahad.\nAfter declaring, all other players must close their eyes and hold their fists in front of them.\nYou can name two Good roles (such as Merlin, Arthur, or Lancelot), one at a time.\nIf one of the players is that role, they must raise their thumb to indicate who they are.\nAfter this phase, play resumes normally.',
         'Guinevere' : 'You know two \"rumors\" about other players, but (with the exception of Arthur) nothing about their roles.\n\nThese rumors give you a glimpse at somebody else\'s character information, telling you who they know something about, but not what roles they are.\n\nFor instance, you if you heard a rumor about Player A seeing Player B, it might mean Player A is Merlin seeing an Evil player, or it might mean they are both Evil and can see each other.',
         'Gawain' : 'You can see two pairs of players.\nOne pair of players are against each other (Good and Evil or Pelinor and the Questing Beast), and the other pair are on the same side (Evil and Evil or Good and Good).',
+        'Ector' : 'You know which Good roles are in the game, but not who has any given role.',
 
         'Mordred' : 'You are hidden from all Good roles that could reveal that information.\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
         'Morgana' : 'You appear like Merlin to Percival.\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
@@ -36,14 +37,14 @@ def get_role_description(role):
 # - Arthur: no information
 # - Guinevere: too complicated to generate here
 # - Colgrevance: name, role (evil has an update later to inform them about the presence of Colgrevance)
-def get_role_information(my_player,players,excalibur_location,excalibur_decoy1,excalibur_decoy2):
+def get_role_information(my_player,players,relics):
     return {
-        'Tristan' : ['{} is Iseult.'.format(player.name) for player in players if player.role == 'Iseult'],
-        'Iseult' : ['{} is Tristan.'.format(player.name) for player in players if player.role == 'Tristan'],
+        'Tristan' : ['{} is Iseult.'.format(player.name) for player in players if player.role == 'Iseult', f'{excalibur.decoy2}'],
+        'Iseult' : ['{} is Tristan.'.format(player.name) for player in players if player.role == 'Tristan', f'{excalibur.decoy1}'],
         'Merlin' : ['{} is Evil'.format(player.name) for player in players if (player.team == 'Evil' and player.role != 'Mordred') or player.role == 'Lancelot'],
         'Percival' : ['{} is Merlin or Morgana.'.format(player.name) for player in players if player.role == 'Merlin' or player.role == 'Morgana'],
         'Lancelot' : [],
-        'Arthur' : [],
+        'Arthur' : [f'{player.name] is seeking Excalibur in the correct location.' for role in excalibur.location_seeker for player in players if player.role == role],
         'Titania' : [],
         'Nimue' : ['{}'.format(player.role) for player in players if player.role != 'Nimue'],
         'Galahad' : [],
@@ -61,7 +62,7 @@ def get_role_information(my_player,players,excalibur_location,excalibur_decoy1,e
         'The Questing Beast' : ['{} is Pelinor.'.format(player.name) for player in players if player.role == 'Pelinor'],
     }.get(my_player.role,[])
 
-def get_rumors(my_player, players):
+def get_rumors(my_player, players, relics):
     rumors = []
 
     # Generate rumors about Merlin
@@ -112,15 +113,15 @@ def get_rumors(my_player, players):
                 if (player_two.team == 'Evil' and player_two.role != 'Mordred' and player_two.role != 'Colgrevance' and player_two != player) or (player_two.role == 'Titania' and player_two != player):
                     rumors.append('{} sees {}'.format(player.name, player_two.name))
 
-    # Generate rumor about Arthur
-    is_Arthur = 0
+    # Generate rumor about Ector
+    is_Ector = 0
     for player in players:
-        if player.role == 'Arthur':
-            is_Arthur = 1
-    if is_Arthur == 1:
+        if player.role == 'Ector':
+            is_Ector = 1
+    if is_Ector == 1:
         for player in players:
-            if player.team == 'Good' and player.role != 'Arthur' and player.role != 'Guinevere':
-                rumors.append('King Arthur sees {}'.format(player.role))
+            if player.team == 'Good' and player.role != 'Ector' and player.role != 'Guinevere':
+                rumors.append(f'Sir Ector sees {player.role}')
 
     # Generate rumor about The Questing Beast
     questing_player = None
@@ -133,7 +134,20 @@ def get_rumors(my_player, players):
         for player in players:
             if player.role == 'Pelinor':
                 rumors.append(f'{questing_player} sees {player}.')
+                    
+    # Generate rumors about Arthur
+    arthur_player = None
+    is_Arthur = 0
+    for player in players:
+        if player.role == 'Arthur':
+            is_Arthur = 1
+            arthur_player = player
+    for role in excalibur.location_seeker:
+        for player in players:
+            if player.role == role]:
+                rumors.append(f'{arthur_player.name} sees {player.name}')
 
+    # Pick two rumors and return them as a string.
     rumor_one = random.choice(rumors)
     rumor_two = random.choice(rumors)
     while rumor_one == rumor_two:
@@ -189,9 +203,9 @@ def get_relationships(my_player, players):
     collaboration = player_one + ' is collaborating with ' + player_two
 
     return opposition + '\n' + collaboration
-
+# Randomly choose a location for Excalibur and keep track of decoy locations.
 def get_excalibur():
-    excalibur_hiding_places = ['Excalibur is in the Stone', 'Excalibur is Seeking the Grail', 'Excalibur is in the Lake']
+    excalibur_hiding_places = [' in the Stone', ' at Camelot', ' in the Lake']
 
     # Randomly select one location for Excalibur to be
     excalibur_location = random.choice(excalibur_hiding_places)
@@ -269,23 +283,31 @@ class Relic():
     def set_type(self, type):
         self.type = type
 
+    def set_seeker(self, location):
+        if location == ' in the Stone':
+            return 'Uther', 'Vortigurn', 'Morgana', 'Palamedes', 'Sebile'
+        elif location == ' at Camelot':
+            return 'Percival', 'Galahad', 'Lancelot'
+        elif location == ' in the Lake':
+            return 'Merlin', 'Bedivere', 'Agravaine'
+
     def set_location(self, location):
-        self.location = location
+        self.location = 'Excalibur is' + location
+        seekers = self.set_seeker(self.location)
+        for seeker in seekers:
+            self.location_seeker.append(seeker)
 
     def set_decoy1(self, decoy1):
-        self.decoy1 = decoy1
+        self.decoy1 = 'Excalibur is not' + decoy1
+        seekers = self.set_seeker(self.decoy1)
+        for seeker in seekers:
+            self.decoy1_seeker.append(seeker)
 
     def set_decoy2(self, decoy2):
-        self.decoy2 = decoy2
-
-    def set_location_seeker(self, location_seeker):
-        self.location_seeker.append(location_seeker)
-
-    def set_decoy1_seeker(self, decoy1_seeker):
-        self.decoy1_seeker.append(decoy1_seeker)
-
-    def set_decoy2_seeker(self, decoy2_seeker):
-        self.decoy2_seeker.append(decoy2_seeker)
+        self.decoy2 = 'Excalibur is not' + decoy2
+        seekers = self.set_seeker(self.decoy2)
+        for seeker in seekers:
+            self.decoy2_seeker.append(seeker)
 
 def get_player_info(player_names):
     num_players = len(player_names)
@@ -370,7 +392,6 @@ def get_player_info(player_names):
 
         if random.choice([True, False]):
             # replacing the lone lover
-            ##### ISSUE FOUND!!!! ############### Problem occurs when Lover is removed and replaced!
             available_roles = good_roles
             not_available = good_roles_in_game + ['Tristan'] + ['Iseult']
             for role in not_available:
@@ -424,7 +445,7 @@ def get_player_info(player_names):
         player_of_role[new_role] = np
 
     for p in players:
-        p.add_info(get_role_information(p,players,excalibur_location,excalibur_decoy1,excalibur_decoy2))
+        p.add_info(get_role_information(p,players,relics))
         random.shuffle(p.info)
         # print(p.name,p.role,p.team,p.info)
 
