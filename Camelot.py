@@ -258,10 +258,10 @@ class Relic():
     # decoy2_seeker:list of roles that seek the same location as decoy2
     def __init__(self, name):
         self.name = name
-        self.type = type
-        self.location = location
-        self.decoy1 = decoy1
-        self.decoy2 = decoy2
+        self.role = None
+        self.location = None
+        self.decoy1 = None
+        self.decoy2 = None
         self.location_seeker = []
         self.decoy1_seeker = []
         self.decoy2_seeker = []
@@ -282,10 +282,10 @@ class Relic():
         self.location_seeker.append(location_seeker)
 
     def set_decoy1_seeker(self, decoy1_seeker):
-        self.decoy1_seeker = decoy1_seeker
+        self.decoy1_seeker.append(decoy1_seeker)
 
     def set_decoy2_seeker(self, decoy2_seeker):
-        self.decoy2_seeker = decoy2_seeker
+        self.decoy2_seeker.append(decoy2_seeker)
 
 def get_player_info(player_names):
     num_players = len(player_names)
@@ -296,12 +296,12 @@ def get_player_info(player_names):
     # Place Excalibur and decoy locations.
     relics = []
     excalibur_info = get_excalibur()
-    relic = Relic(Excalibur)
-    relics.append(relic)
-    Excalibur.set_type("Sword")
-    Excalibur.set_location(excalibur_info[0])
-    Excalibur.set_decoy1(excalibur_info[1])
-    Excalibur.set_decoy2(excalibur_info[2])
+    excalibur = Relic("Excalibur")
+    relics.append(excalibur)
+    excalibur.set_type('Sword')
+    excalibur.set_location(excalibur_info[0])
+    excalibur.set_decoy1(excalibur_info[1])
+    excalibur.set_decoy2(excalibur_info[2])
 
 
     # create player objects
