@@ -13,22 +13,22 @@ def get_role_description(role):
         'Merlin' : 'You know which people have Evil roles, but not who has any specific role.\nYou are a valid Assassination target.',
         'Percival' : 'You know which people have the Merlin and Morgana roles, but not who has each.',
         'Lancelot' : 'You may play Reversal cards while on missions.\nYou appear Evil to Merlin.',
-        'Arthur' : 'You must obtain Excalibur to ensure victory for your forces. To do this, you must search for Excalibur in one or more or three locations: The Stone, The Lake, or At Camelot.\nYou may declare as a Sword Seeker, Arthur, or Accolon (your choice) to begin your search. After you declare, each time you are given the Scabbard, you may search the current location for Excalibur instead of changing the location. If it is in that location, you gain Excalibur.\nOnce you have Excalibur, when you go on a quest, you may expend its power to force a quest to succeed even when it would otherwise fail. You must expend Excalibur before the cards are read, but after they have been given to the Leader.\nOnce you expend Excalibur's power, you can no longer use this ability.'
+        'Arthur' : 'You must obtain Excalibur to ensure victory for your forces. To do this, you must search for Excalibur in one or more or three locations: The Stone, The Lake, or At Camelot.\nYou may declare as a Sword Seeker, Arthur, or Accolon (your choice) to begin your search. After you declare, each time you are given the Scabbard, you may search the current location for Excalibur instead of changing the location. If it is in that location, you gain Excalibur.\nOnce you have Excalibur, when you go on a quest, you may expend its power to force a quest to succeed even when it would otherwise fail. You must expend Excalibur before the cards are read, but after they have been given to the Leader.\nOnce you expend Excalibur\'s power, you can no longer use this ability.',
         'Titania' : 'You appear as Evil to all players with Evil roles (except Colgrevance).',
         'Nimue' : 'You know which Good and Evil roles are in the game, but not who has any given role.\nYou are a valid Assassination target.',
         'Galahad' : 'After two quests have failed, you can declare as Galahad.\nAfter declaring, all other players must close their eyes and hold their fists in front of them.\nYou can name two Good roles (such as Merlin, Arthur, or Lancelot), one at a time.\nIf one of the players is that role, they must raise their thumb to indicate who they are.\nAfter this phase, play resumes normally.',
         'Guinevere' : 'You know two \"rumors\" about other players, but (with the exception of Arthur) nothing about their roles.\n\nThese rumors give you a glimpse at somebody else\'s character information, telling you who they know something about, but not what roles they are.\n\nFor instance, you if you heard a rumor about Player A seeing Player B, it might mean Player A is Merlin seeing an Evil player, or it might mean they are both Evil and can see each other.',
         'Gawain' : 'You can see two pairs of players.\nOne pair of players are against each other (Good and Evil or Pelinor and the Questing Beast), and the other pair are on the same side (Evil and Evil or Good and Good).',
         'Ector' : 'You know which Good roles are in the game, but not who has any given role.',
-        'Dagonet' : "You cannot speak, but can communicate through gibberish sounds and body language.\n\nYou appear Evil to Merlin and to all Evil players.\n\nOnly Arthur may know if Dagonet is in this game.
+        'Dagonet' : 'You cannot speak, but can communicate through gibberish sounds and body language.\n\nYou appear Evil to Merlin and to all Evil players.\n\nOnly Arthur may know if Dagonet is in this game.',
 
         'Mordred' : 'You are hidden from all Good roles that could reveal that information.\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
         'Morgana' : 'You appear like Merlin to Percival.\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
         'Maelagant' : 'You must play a Fail card on each mission you attend.\n\nEach time you are given the Scabbard, you may declare as Maleagant to force the next quest to have one additional knight attend it. This ability cannot be used on the final quest. This ability cannot be used if you use the Leader role to take the Scabbard.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
         'Agravaine' : 'You must play Fail cards while on missions.\nIf you are on a mission that Succeeds, you may declare as Agravaine to cause it to Fail instead.\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
         'Colgrevance' : 'You know not only who else is Evil, but what role each other Evil player possesses.\nEvil players know that there is a Colgrevance, but do not know that it is you or even that you are Evil.',
-        'Accolon' : "You know Arthur and must beat him to Excalibur. Arthur does not know Excalibur's location, but does know which players gain power by having Excalibur there.\n\nTo claim Excalibur, you must gain possession of the Scabbard twice by any means. Once you do, you may search the current location for Excalibur rather than moving it. If it is in that location, you gain Excalibur immediately. On any future quests you attend, you may expend Excalibur's power to cause that Quest to fail, even when it would succeed.\n\nIf you wish, you may choose to declare as a Sword Seeker, Arthur, or Accolon (your choice), though you are not required to do so.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).'],
-        
+        'Accolon' : 'You know Arthur and must beat him to Excalibur. Arthur does not know Excalibur\'s location, but does know which players gain power by having Excalibur there.\n\nTo claim Excalibur, you must gain possession of the Scabbard twice by any means. Once you do, you may search the current location for Excalibur rather than moving it. If it is in that location, you gain Excalibur immediately. On any future quests you attend, you may expend Excalibur\'s power to cause that Quest to fail, even when it would succeed.\n\nIf you wish, you may choose to declare as a Sword Seeker, Arthur, or Accolon (your choice), though you are not required to do so.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
+
         'Pelinor' : 'You are Neutral in this battle and have no allies in this game.\n\nYour nemesis is The Questing Beast, who is also Neutral.\n\nCARDS YOU CAN PLAY:\n> \"Success\"\n> \"Reversal\"\n\nTO WIN:\n> The Fifth Quest must occur and you must be on it.\n> Do one of the following:\n>>> Go on the Fifth Quest if The Questing Beast is NOT present.\n>>> Defeat The Questing Beast by declaring as Pelinor on the Fifth Quest while the Questing Beast IS present.\n>>> You MUST declare BEFORE the cards are read.\n>>> Beware, though! If The Questing Beast is not on the Fifth Quest when you declare as Pelinor, you lose and The Questing Beast wins instead.\n\nABOUT THE QUESTING BEAST:\n> The Questing Beast can see who you are.\n> The Questing Beast must play a \"The Questing Beast Was Here\" card at least once to win, but may play a \"Reversal\" card once per game.\n> If The Questing Beast does not play a \"The Questing Beast Was Here\" card at least once before the Fifth Quest, you automatically win by attending the Fifth Quest, even if The Questing Beast is present.',
         'The Questing Beast' : 'You are Neutral in this battle and have no allies in this game.\n\nYour nemesis is Pelinor, who is also Neutral.\n\nCARDS YOU CAN PLAY:\n> \"The Questing Beast Was Here.\"\n> \"Reversal\" (Only Once Per Game)\n\n\nTO WIN:\n> The Fifth Quest Must Occur.\n> You must play at least one \"The Questing Beast Was Here\" card.\n> Complete one of the following two options:\n>>> Go on the Fifth Quest undetected.\n>>> Trick Pelinor into declaring while you are NOT on the Fifth Quest.\n\nABOUT PELINOR:\n> Pelinor cannot see you, though you can see him.\n>Pelinor also wants to reach the Fifth Quest and must go on it to win.\n> Beware! If Pelinor suspects you are on the Fifth Quest, he may declare as Pelinor, causing you to lose. (If Pelinor declares incorrectly, you automatically win and Pelinor loses.)\n> If niether you nor Pelinor are on the Fifth Quest, you both lose.',
 }.get(role,'ERROR: No description available.')
@@ -39,27 +39,27 @@ def get_role_description(role):
 # - Arthur: no information
 # - Guinevere: too complicated to generate here
 # - Colgrevance: name, role (evil has an update later to inform them about the presence of Colgrevance)
-def get_role_information(my_player,players,relics):
+def get_role_information(my_player,players,excalibur):
     return {
-        'Tristan' : ['{} is Iseult.'.format(player.name) for player in players if player.role == 'Iseult', f'{excalibur.decoy2}'],
-        'Iseult' : ['{} is Tristan.'.format(player.name) for player in players if player.role == 'Tristan', f'{excalibur.decoy1}'],
+        'Tristan' : [('{} is Iseult.'.format(player.name) for player in players if player.role == 'Iseult'), f'{excalibur.decoy2}'],
+        'Iseult' : [('{} is Tristan.'.format(player.name) for player in players if player.role == 'Tristan'), f'{excalibur.decoy1}'],
         'Merlin' : ['{} is Evil'.format(player.name) for player in players if (player.team == 'Evil' and player.role != 'Mordred') or player.role == 'Dagonet'],
         'Percival' : ['{} is Merlin or Morgana.'.format(player.name) for player in players if player.role == 'Merlin' or player.role == 'Morgana'],
         'Lancelot' : [],
-        'Arthur' : [f'{player.name] is seeking Excalibur in the correct location.' for role in excalibur.location_seeker for player in players if player.role == role],
+        'Arthur' : [f'{player.name} is seeking Excalibur in the correct location.' for role in excalibur.location_seeker for player in players if player.role == role],
         'Titania' : [],
         'Nimue' : ['{}'.format(player.role) for player in players if player.role != 'Nimue'],
         'Galahad' : [],
         'Guinevere' : [str(get_rumors(my_player, players))],
         'Gawain' : [str(get_relationships(my_player, players))],
-        'Ector' : [f'{player.role}' for player in players if player.team == 'Good' and player.role != 'Ector']
+        'Ector' : [f'{player.role}' for player in players if player.team == 'Good' and player.role != 'Ector'],
 
         'Mordred' : ['{} is Evil.'.format(player.name) for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet'],
         'Morgana' : ['{} is Evil.'.format(player.name) for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet'],
         'Maelagant' : ['{} is Evil.'.format(player.name) for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet'],
         'Agravaine' : ['{} is Evil.'.format(player.name) for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet'],
         'Colgrevance' : ['{} is {}.'.format(player.name, player.role) for player in players if player.team == 'Evil' and player != my_player],
-        'Accolon' : [f'{player.name} is Arthur.' for player in players if player.role == 'Arthur', f'{player.name} is Evil.' for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet'],
+        'Accolon' : [(f'{player.name} is Arthur.' for player in players if player.role == 'Arthur'), ('{player.name} is Evil.' for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet')],
 
         'Pelinor' : [],
         'The Questing Beast' : ['{} is Pelinor.'.format(player.name) for player in players if player.role == 'Pelinor'],
@@ -137,7 +137,7 @@ def get_rumors(my_player, players, relics):
         for player in players:
             if player.role == 'Pelinor':
                 rumors.append(f'{questing_player} sees {player}.')
-                    
+
     # Generate rumors about Arthur
     arthur_player = None
     is_Arthur = 0
@@ -147,7 +147,7 @@ def get_rumors(my_player, players, relics):
             arthur_player = player
     for role in excalibur.location_seeker:
         for player in players:
-            if player.role == role]:
+            if player.role == role:
                 rumors.append(f'{arthur_player.name} sees {player.name}')
 
     # Pick two rumors and return them as a string.
@@ -205,7 +205,7 @@ def get_relationships(my_player, players):
 
     collaboration = player_one + ' is collaborating with ' + player_two
     return opposition + '\n' + collaboration
-        
+
 # Randomly choose a location for Excalibur and keep track of decoy locations.
 def get_excalibur():
     excalibur_hiding_places = [' in the Stone', ' at Camelot', ' in the Lake']
@@ -217,7 +217,7 @@ def get_excalibur():
     # Produce the two decoy locations.
     excalibur_decoy1 = random.choice(excalibur_hiding_places)
     excalibur_hiding_places.remove(excalibur_decoy1)
-    excalibur_decoy2 = excalibur_hiding_places.pop(0)
+    excalibur_decoy2 = random.choice(excalibur_hiding_places)
 
     return excalibur_location, excalibur_decoy1, excalibur_decoy2
 
@@ -295,20 +295,20 @@ class Relic():
             return 'Merlin', 'Bedivere', 'Agravaine'
 
     def set_location(self, location):
+        seekers = self.set_seeker(location)
         self.location = 'Excalibur is' + location
-        seekers = self.set_seeker(self.location)
         for seeker in seekers:
             self.location_seeker.append(seeker)
 
     def set_decoy1(self, decoy1):
+        seekers = self.set_seeker(decoy1)
         self.decoy1 = 'Excalibur is not' + decoy1
-        seekers = self.set_seeker(self.decoy1)
         for seeker in seekers:
             self.decoy1_seeker.append(seeker)
 
     def set_decoy2(self, decoy2):
+        seekers = self.set_seeker(decoy2)
         self.decoy2 = 'Excalibur is not' + decoy2
-        seekers = self.set_seeker(self.decoy2)
         for seeker in seekers:
             self.decoy2_seeker.append(seeker)
 
