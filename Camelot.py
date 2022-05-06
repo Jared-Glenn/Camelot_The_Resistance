@@ -39,18 +39,18 @@ def get_role_description(role):
 # - Arthur: no information
 # - Guinevere: too complicated to generate here
 # - Colgrevance: name, role (evil has an update later to inform them about the presence of Colgrevance)
-def get_role_information(my_player,players,excalibur):
+def get_role_information(my_player,players,relics):
     return {
-        'Tristan' : [('{} is Iseult.'.format(player.name) for player in players if player.role == 'Iseult'), f'{excalibur.decoy2}'],
-        'Iseult' : [('{} is Tristan.'.format(player.name) for player in players if player.role == 'Tristan'), f'{excalibur.decoy1}'],
+        'Tristan' : [['{} is Iseult.'.format(player.name) for player in players if player.role == 'Iseult'], [f'{relic.decoy2}' for relic in relics if relic.name == 'Excalibur']],
+        'Iseult' : [['{} is Tristan.'.format(player.name) for player in players if player.role == 'Tristan'], [f'{relic.decoy1}' for relic in relics if relic.name == 'Excalibur']],
         'Merlin' : ['{} is Evil'.format(player.name) for player in players if (player.team == 'Evil' and player.role != 'Mordred') or player.role == 'Dagonet'],
         'Percival' : ['{} is Merlin or Morgana.'.format(player.name) for player in players if player.role == 'Merlin' or player.role == 'Morgana'],
         'Lancelot' : [],
-        'Arthur' : [f'{player.name} is seeking Excalibur in the correct location.' for role in excalibur.location_seeker for player in players if player.role == role],
+        'Arthur' : [f'{player.name} is seeking Excalibur in the correct location.' for relic in relics if relic.name == 'Excalibur' for role in relic.location_seeker for player in players if player.role == role],
         'Titania' : [],
         'Nimue' : ['{}'.format(player.role) for player in players if player.role != 'Nimue'],
         'Galahad' : [],
-        'Guinevere' : [str(get_rumors(my_player, players))],
+        'Guinevere' : [str(get_rumors(my_player, players,relics))],
         'Gawain' : [str(get_relationships(my_player, players))],
         'Ector' : [f'{player.role}' for player in players if player.team == 'Good' and player.role != 'Ector'],
 
@@ -59,7 +59,7 @@ def get_role_information(my_player,players,excalibur):
         'Maelagant' : ['{} is Evil.'.format(player.name) for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet'],
         'Agravaine' : ['{} is Evil.'.format(player.name) for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet'],
         'Colgrevance' : ['{} is {}.'.format(player.name, player.role) for player in players if player.team == 'Evil' and player != my_player],
-        'Accolon' : [(f'{player.name} is Arthur.' for player in players if player.role == 'Arthur'), ('{player.name} is Evil.' for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet')],
+        'Accolon' : [[f'{player.name} is Arthur.' for player in players if player.role == 'Arthur'], [f'{player.name} is Evil.' for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet']],
 
         'Pelinor' : [],
         'The Questing Beast' : ['{} is Pelinor.'.format(player.name) for player in players if player.role == 'Pelinor'],
@@ -145,10 +145,12 @@ def get_rumors(my_player, players, relics):
         if player.role == 'Arthur':
             is_Arthur = 1
             arthur_player = player
-    for role in excalibur.location_seeker:
-        for player in players:
-            if player.role == role:
-                rumors.append(f'{arthur_player.name} sees {player.name}')
+    for relic in relics:
+        if relic == 'Excalibur':
+            for role in relic.location_seeker:
+                for player in players:
+                    if player.role == role:
+                        rumors.append(f'{arthur_player.name} sees {player.name}')
 
     # Pick two rumors and return them as a string.
     rumor_one = random.choice(rumors)
@@ -328,7 +330,6 @@ def get_player_info(player_names):
     excalibur.set_decoy1(excalibur_info[1])
     excalibur.set_decoy2(excalibur_info[2])
 
-
     # create player objects
     players = []
     for i in range(0, len(player_names)):
@@ -449,8 +450,12 @@ def get_player_info(player_names):
 
     for p in players:
         p.add_info(get_role_information(p,players,relics))
+        try:
+            p.info = p.info[0] + p.info[1]
+        except Exception:
+            pass
         random.shuffle(p.info)
-        # print(p.name,p.role,p.team,p.info)
+        print(p.name,p.role,p.team,p.info)
 
     # Informing Evil about Colgrevance
     for ep in evil_players:
