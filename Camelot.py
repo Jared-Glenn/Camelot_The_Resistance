@@ -32,7 +32,7 @@ def get_role_description(role):
         'Lancelot' : 'You win if either three missions fail OR two missions fail and the assassination attempt at the end of the game fails. If only one quest fails or no quests fail, you are a valid assassination target. You cannot win if an assassination attempt succeeds.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).\n\nYou have the Reveal power.\n\nREVEAL:\nWhile Excalibur is at Camelot, you may declare as a Knight of Camelot, Galahad, or Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role. If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.',
         'Vortigurn' : 'You have the Exile power.\n\nEXILE:\nWhile Excalibur is in the Stone, you may declare as a King of the Realm, Uther, or Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
         'Annowre' : 'You know Arthur and where Excalibur may be retrieved. You lose the game if anyone expends Excalibur\'s power.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
-        'Palamedes' : '
+        'Palamedes' : 'You know Iseult and you have the Exile power.\nIf you Exile Tristan, you can no longer lose the game unless he or Iseult are assassinated. Tristan will then be required to play only Failures on any quests he attends, and you will only be allowed to play Success cards on quests. Tristan and Iseult remain assassination targets and if either of them are assassinated, you lose the game.\n\nEXILE:\nWhile Excalibur is in the Stone, you may declare as a King of the Realm, Uther, or Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).\n\nEXILED PLAYER:\nIf you are Tristan, Palamedes is challenging you for the hand of your lady love. You are still Good but can only play Failure cards on quests. Palamedes is still Evil but can only play Success cards on quests. You and Iseult are still valid asssassination targets, so you must keep your role secret if you hope to win.',
 
         'Pelinor' : 'You are Neutral in this battle and have no allies in this game.\n\nYour nemesis is The Questing Beast, who is also Neutral.\n\nCARDS YOU CAN PLAY:\n> \"Success\"\n> \"Reversal\"\n\nTO WIN:\n> The Fifth Quest must occur and you must be on it.\n> Do one of the following:\n>>> Go on the Fifth Quest if The Questing Beast is NOT present.\n>>> Defeat The Questing Beast by declaring as Pelinor on the Fifth Quest while the Questing Beast IS present.\n>>> You MUST declare BEFORE the cards are read.\n>>> Beware, though! If The Questing Beast is not on the Fifth Quest when you declare as Pelinor, you lose and The Questing Beast wins instead.\n\nABOUT THE QUESTING BEAST:\n> The Questing Beast can see who you are.\n> The Questing Beast must play a \"The Questing Beast Was Here\" card at least once to win, but may play a \"Reversal\" card once per game.\n> If The Questing Beast does not play a \"The Questing Beast Was Here\" card at least once before the Fifth Quest, you automatically win by attending the Fifth Quest, even if The Questing Beast is present.',
         'The Questing Beast' : 'You are Neutral in this battle and have no allies in this game.\n\nYour nemesis is Pelinor, who is also Neutral.\n\nCARDS YOU CAN PLAY:\n> \"The Questing Beast Was Here.\"\n> \"Reversal\" (Only Once Per Game)\n\n\nTO WIN:\n> The Fifth Quest Must Occur.\n> You must play at least one \"The Questing Beast Was Here\" card.\n> Complete one of the following two options:\n>>> Go on the Fifth Quest undetected.\n>>> Trick Pelinor into declaring while you are NOT on the Fifth Quest.\n\nABOUT PELINOR:\n> Pelinor cannot see you, though you can see him.\n>Pelinor also wants to reach the Fifth Quest and must go on it to win.\n> Beware! If Pelinor suspects you are on the Fifth Quest, he may declare as Pelinor, causing you to lose. (If Pelinor declares incorrectly, you automatically win and Pelinor loses.)\n> If niether you nor Pelinor are on the Fifth Quest, you both lose.',
@@ -356,12 +356,12 @@ def get_player_info(player_names):
                 num_neutral = 2
             else:
                 kay_team = random.choice(['Good','Evil'])
-                    if kay_team == 'Good':
-                        num_evil = 4
-                        num_neutral = 1
-                    elif kay_team == 'Evil':
-                        num_evil = 3
-                        num_neutral = 1
+                if kay_team == 'Good':
+                    num_evil = 4
+                    num_neutral = 1
+                elif kay_team == 'Evil':
+                    num_evil = 3
+                    num_neutral = 1
         else:
             num_evil = 4
     num_good = num_players - num_evil - num_neutral
@@ -460,10 +460,12 @@ def get_player_info(player_names):
 
     # if there is at least one evil, first evil player becomes assassin
     if len(evil_players) > 1:
-        if evil_players[0].role != 'Lancelot':
+        if evil_players[0].role != 'Lancelot' and evil_players[0].role != 'Palamedes':
             evil_players[0].is_assassin = True
-        else:
+        elif evil_players[1].role != 'Lancelot' and evil_players[1].role != 'Palamedes':
             evil_players[1].is_assassin = True
+        else:
+            evil_players[2].is_assassin = True
 
     for ep in evil_players:
         new_role = evil_roles_in_game.pop()
@@ -480,11 +482,15 @@ def get_player_info(player_names):
     for p in players:
         p.add_info(get_role_information(p,players,relics))
         try:
-            p.info = p.info[0] + p.info[1]
+            if isinstance(p.info[0], list):
+                try:
+                    p.info = p.info[0] + p.info[1]
+                except Exception:
+                    pass
         except Exception:
             pass
         random.shuffle(p.info)
-        print(p.name,p.role,p.team,p.info)
+        # print(p.name,p.role,p.team,p.info)
 
     # Informing Evil about Colgrevance
     for ep in evil_players:
