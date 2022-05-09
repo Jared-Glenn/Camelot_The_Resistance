@@ -14,14 +14,17 @@ def get_role_description(role):
         'Percival' : 'You know which people have the Merlin and Morgana roles, but not who has each.\n\nWhile Excalibur is at Camelot, you may play Reversal cards on quests.',
         'Arthur' : 'You must obtain Excalibur to ensure victory for your forces. To do this, you must search for Excalibur in one or more or three locations: The Stone, The Lake, or At Camelot.\nYou may declare as a Sword Seeker, Arthur, or Accolon (your choice) to begin your search. After you declare, each time you are given the Scabbard, you may search the current location for Excalibur instead of changing the location. If it is in that location, you gain Excalibur.\nOnce you have Excalibur, when you go on a quest, you may expend its power to force a quest to succeed even when it would otherwise fail. You must expend Excalibur before the cards are read, but after they have been given to the Leader.\nOnce you expend Excalibur\'s power, you can no longer use this ability.',
         'Titania' : 'You appear as Evil to all players with Evil roles (except Colgrevance).',
-        'Nimue' : 'You know which Good and Evil roles are in the game, but not who has any given role.\nYou are a valid Assassination target.',
+        'Nimue' : 'You are a member of the Fairy Court. You can only play Regrowth cards on quests. If you are given The Holy Grail, you must play Success cards unless Excalibur is in the Lake, in which case, you may still play Regrowth cards.\n\nIf The Holy Grail is every fully corrupted, you win the game unless the mortals can identify you and the other members of the Fairy Court. After The Holy Grail is corrupted, you may play any card you want on any quests you attend.',
         'Galahad' : 'You can gain the Reveal power only by going on the First or Fourth Quest.\n\nREVEAL:\nWhile Excalibur is at Camelot, you may declare as a Knight of Camelot, Galahad, or Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role. If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.',
         'Guinevere' : 'You know two \"rumors\" about other players, but (with the exception of Arthur) nothing about their roles.\n\nThese rumors give you a glimpse at somebody else\'s character information, telling you who they know something about, but not what roles they are.\n\nFor instance, you if you heard a rumor about Player A seeing Player B, it might mean Player A is Merlin seeing an Evil player, or it might mean they are both Evil and can see each other.',
-        'Gawain' : 'You can see two pairs of players.\nOne pair of players are against each other (Good and Evil or Pelinor and the Questing Beast), and the other pair are on the same side (Evil and Evil or Good and Good).',
+        'Lamorak' : 'You can see two pairs of players.\nOne pair of players are against each other (Good and Evil or Pelinor and the Questing Beast), and the other pair are on the same side (Evil and Evil or Good and Good).',
         'Ector' : 'You know which Good roles are in the game, but not who has any given role.',
         'Dagonet' : 'You cannot speak, but can communicate through gibberish sounds and body language.\n\nYou know Arthur.\n\nYou appear Evil to Merlin and to all Evil players.\n\nOnly Ector may know if Dagonet is in this game.',
         'Uther' : 'You can gain the Exile power by either voting against your own quest proposal while you are the leader, or by voting against a quest proposal you have been chosen to attend.\n\nEXILE:\nWhile Excalibur is in the Stone, you may declare as a King of the Realm, Uther, or Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.',
         'Bedivere' : 'You can gain the Suspend power by choosing not to move Excalibur when you have the Scabbard.\n\nSUSPEND:\nWhile Excalibur is in the Lake, after the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Bedivere, or Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. The next time you attend a quest, you MUST play that card.',
+        'Gawain' : 'You know all members of the Fairy Court, Good and Evil. Your presence has caused the Grail to start slightly corrupted.'
+        'Bors' : 'You may play Cleanse cards on quests. The Cleanse cards do not count as Successes or Failures, but remove any Regrowth or Rot cards from the quest cards. If Cleanse is the only remaining card, it counts as a Failure. If Cleanse does not remove any Regrowth or Rot cards, it counts as a Failure. Keep a secret tally of how many Regrowth or Rot cards you removed. When that number reaches three or higher, you may declare as Bors to claim the Holy Grail. If you do this, the Final Quest can only Fail if two or more Failure cards are played.',
+        'Bertilak' : 'You are a member of the Fairy Court. You can only play Regrowth cards on quests. If you are given The Holy Grail, you must play Rot cards.\n\nIf The Holy Grail is every fully corrupted, you win the game unless the mortals can identify you and the other members of the Fairy Court. After The Holy Grail is corrupted, you may play any card you want on any quests you attend.',
 
         'Mordred' : 'You are hidden from all Good roles that could reveal that information.\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
         'Morgana' : 'You appear like Merlin to Percival.\n\nWhile Excalibur is in the Stone, you may play Reversal cards on quests.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
@@ -36,6 +39,7 @@ def get_role_description(role):
 
         'Pelinor' : 'You are Neutral in this battle and have no allies in this game.\n\nYour nemesis is The Questing Beast, who is also Neutral.\n\nCARDS YOU CAN PLAY:\n> \"Success\"\n> \"Reversal\"\n\nTO WIN:\n> The Fifth Quest must occur and you must be on it.\n> Do one of the following:\n>>> Go on the Fifth Quest if The Questing Beast is NOT present.\n>>> Defeat The Questing Beast by declaring as Pelinor on the Fifth Quest while the Questing Beast IS present.\n>>> You MUST declare BEFORE the cards are read.\n>>> Beware, though! If The Questing Beast is not on the Fifth Quest when you declare as Pelinor, you lose and The Questing Beast wins instead.\n\nABOUT THE QUESTING BEAST:\n> The Questing Beast can see who you are.\n> The Questing Beast must play a \"The Questing Beast Was Here\" card at least once to win, but may play a \"Reversal\" card once per game.\n> If The Questing Beast does not play a \"The Questing Beast Was Here\" card at least once before the Fifth Quest, you automatically win by attending the Fifth Quest, even if The Questing Beast is present.',
         'The Questing Beast' : 'You are Neutral in this battle and have no allies in this game.\n\nYour nemesis is Pelinor, who is also Neutral.\n\nCARDS YOU CAN PLAY:\n> \"The Questing Beast Was Here.\"\n> \"Reversal\" (Only Once Per Game)\n\n\nTO WIN:\n> The Fifth Quest Must Occur.\n> You must play at least one \"The Questing Beast Was Here\" card.\n> Complete one of the following two options:\n>>> Go on the Fifth Quest undetected.\n>>> Trick Pelinor into declaring while you are NOT on the Fifth Quest.\n\nABOUT PELINOR:\n> Pelinor cannot see you, though you can see him.\n>Pelinor also wants to reach the Fifth Quest and must go on it to win.\n> Beware! If Pelinor suspects you are on the Fifth Quest, he may declare as Pelinor, causing you to lose. (If Pelinor declares incorrectly, you automatically win and Pelinor loses.)\n> If niether you nor Pelinor are on the Fifth Quest, you both lose.',
+        'Kay' : 'You are neutral and equally pulled to the Good and Evil sides, but you do have one ally who is either Good or Evil. You must determine if this ally is Good or Evil and assist as best you can. You may play Success or Failure cards on missions. You only win the game if your ally wins the game. Niether other Evil players nor Merlin can identify you as Good or Evil.'
 }.get(role,'ERROR: No description available.')
 
 # get_role_information: this is called to populate information files
@@ -50,14 +54,17 @@ def get_role_information(my_player,players,relics):
         'Iseult' : [['{} is Tristan.'.format(player.name) for player in players if player.role == 'Tristan'], [f'{relic.decoy1}' for relic in relics if relic.name == 'Excalibur']],
         'Merlin' : ['{} is Evil'.format(player.name) for player in players if (player.team == 'Evil' and player.role != 'Mordred') or player.role == 'Dagonet'],
         'Percival' : ['{} is Merlin or Morgana.'.format(player.name) for player in players if player.role == 'Merlin' or player.role == 'Morgana'],
-        'Lancelot' : [],
         'Arthur' : [f'{player.name} is seeking Excalibur in the correct location.' for relic in relics if relic.name == 'Excalibur' for role in relic.location_seeker for player in players if player.role == role],
         'Titania' : [],
         'Nimue' : ['{}'.format(player.role) for player in players if player.role != 'Nimue'],
         'Galahad' : [],
         'Guinevere' : [str(get_rumors(my_player, players,relics))],
-        'Gawain' : [str(get_relationships(my_player, players))],
+        'Lamorak' : [str(get_relationships(my_player, players))],
         'Ector' : [f'{player.role}' for player in players if player.team == 'Good' and player.role != 'Ector'],
+        'Dagonet' : ['{} is Arthur.'.format(player.name) for player in players if player.role == 'Arthur'],
+        'Uther' : [],
+        'Bedivere' : [],
+        'Gawain' : [f'{player.name} is a member of the Fairy Court.' for player in players if player.role == 'Nimue' or player.role == 'Bertilak' or player.role == 'Mab' or player.role == 'Oberon'],
 
         'Mordred' : ['{} is Evil.'.format(player.name) for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet'],
         'Morgana' : ['{} is Evil.'.format(player.name) for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet'],
@@ -65,6 +72,9 @@ def get_role_information(my_player,players,relics):
         'Agravaine' : ['{} is Evil.'.format(player.name) for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet'],
         'Colgrevance' : ['{} is {}.'.format(player.name, player.role) for player in players if player.team == 'Evil' and player != my_player],
         'Accolon' : [[f'{player.name} is Arthur.' for player in players if player.role == 'Arthur'], [f'{player.name} is Evil.' for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet']],
+        'Lancelot' : [f'{player.name} is Evil.' for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet'],
+        'Vortigurn' : [f'{player.name} is Evil.' for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet'],
+        'Annowre' : [],
 
         'Pelinor' : [],
         'The Questing Beast' : ['{} is Pelinor.'.format(player.name) for player in players if player.role == 'Pelinor'],
@@ -171,7 +181,7 @@ def get_relationships(my_player, players):
     evil_team = []
     neutral_team = []
     for player in players:
-        if player.team == 'Good' and player.role != 'Gawain':
+        if player.team == 'Good' and player.role != 'Lamorak':
             good_team.append(player)
         if player.team == 'Evil' and player.role != 'Mordred':
             evil_team.append(player)
