@@ -380,7 +380,7 @@ def get_player_info(player_names):
     # number of good and evil roles
     num_neutral = 0
     if num_players <= 6:
-        if random.choice([True, False, False, False])
+        if random.choice([True, False, False])
             kay_team = random.choice(['Good','Evil'])
             if kay_team == 'Good':
                 num_evil = 2
@@ -400,66 +400,78 @@ def get_player_info(player_names):
                 num_neutral = 1
         num_evil = 3
     elif num_players <= 10:
-        if random.choice([True, False, False]):
-            if random.choice([True, False]):
+        choice = random.choice(['kay', 'hunt', 'kayandhunt', 'niether', 'niether'])
+        if choice == 'hunt':
+            num_evil = 3
+            num_neutral = 2
+        elif choice == 'kay':
+            kay_team = random.choice(['Good','Evil'])
+            if kay_team == 'Good':
+                num_evil = 4
+                num_neutral = 1
+            elif kay_team == 'Evil':
                 num_evil = 3
-                num_neutral = 2
-            else:
-                kay_team = random.choice(['Good','Evil'])
-                if kay_team == 'Good':
-                    num_evil = 4
-                    num_neutral = 1
-                elif kay_team == 'Evil':
-                    num_evil = 3
-                    num_neutral = 1
-        else:
+                num_neutral = 1
+        elif choice == 'kayandhunt':
+            kay_team = random.choice(['Good','Evil'])
+            if kay_team == 'Good':
+                num_evil = 3
+                num_neutral = 3
+            elif kay_team == 'Evil':
+                num_evil = 2
+                num_neutral = 3
+        elif choice == 'niether':
             num_evil = 4
     elif num_players <= 12:
-        if random.choice([True, False, False]):
-            if random.choice([True, False]):
+        choice = random.choice(['kay', 'hunt', 'kayandhunt', 'niether', 'niether'])
+        if choice == 'hunt':
+            num_evil = 4
+            num_neutral = 2
+        elif choice == 'kay':
+            kay_team = random.choice(['Good','Evil'])
+            if kay_team == 'Good':
+                num_evil = 5
+                num_neutral = 1
+            elif kay_team == 'Evil':
                 num_evil = 4
-                num_neutral = 2
-            else:
-                kay_team = random.choice(['Good','Evil'])
-                if kay_team == 'Good':
-                    num_evil = 5
-                    num_neutral = 1
-                elif kay_team == 'Evil':
-                    num_evil = 4
-                    num_neutral = 1
-        else:
+                num_neutral = 1
+        elif choice == 'kayandhunt':
+            kay_team = random.choice(['Good','Evil'])
+            if kay_team == 'Good':
+                num_evil = 4
+                num_neutral = 3
+            elif kay_team == 'Evil':
+                num_evil = 3
+                num_neutral = 3
+        elif choice == 'niether':
             num_evil = 5
     num_good = num_players - num_evil - num_neutral
-    # Maybe include a way to have all three neutral roles?
 
     # establish available roles
-    good_roles = ['Merlin', 'Percival', 'Guinevere', 'Tristan', 'Iseult', 'Galahad',]
-    evil_roles = ['Mordred', 'Morgana', 'Maelagant', 'Lancelot']
-    neutral_roles = []
-
-    # additional roles for player-count
-    # 5 only
-    if num_players < 6:
-        good_roles.append('Nimue')
+    good_roles = ['Merlin', 'Percival', 'Arthur', 'Dagonet']
+    evil_roles = ['Mordred', 'Morgana', 'Accolon', 'Annowre']
+    neutral_roles = ['Kay']
+                    
+    # 6 plus
+    if num_players > 5:
+        good_roles.extend(['Tristan', 'Iseult', 'Guinevere'])
+        evil_roles.extend(['Palamedes', 'Maleagant'])
 
     # 7 plus
     if num_players > 6:
-        good_roles.append('Arthur')
-        good_roles.append('Gawain')
-        good_roles.append('Titania')
+        good_roles.extend(['Titania', 'Uther', 'Bedivere', 'Galahad'])
+        evil_roles.extend(['Vortigurn', 'Lancelot', 'Agravaine'])
 
     # 8 plus
     if num_players > 7:
-        good_roles.append('Bedivere')
-        evil_roles.append('Agravaine')
-        evil_roles.append('Palamedes')
+        good_roles.extend(['Nimue', 'Bertilak', 'Gawain', 'Bors', 'Ector'])
+        evil_roles.extend(['Mab', 'Oberon'])
 
-    # 10 only
-    if num_players == 10:
+    # 10 plus
+    if num_players > 9:
+        good_roles.append('Lamorak')
         evil_roles.append('Colgrevance')
-        neutral_roles.append('Pelinor')
-        neutral_roles.append('The Questing Beast')
-        neutral_roles.append('Kay')
+        neutral_roles.extend(['Pelinor', 'The Questing Beast')
 
     good_roles_in_game = random.sample(good_roles, num_good)
     evil_roles_in_game = random.sample(evil_roles, num_evil)
@@ -467,8 +479,9 @@ def get_player_info(player_names):
     if num_neutral == 1:
         neutral_roles_in_game.append('Kay')
     elif num_neutral == 2:
-        neutral_roles_in_game.append('Pelinor')
-        neutral_roles_in_game.append('The Questing Beast')
+        neutral_roles_in_game.extend(['Pelinor', 'The Questing Beast'])
+    elif num_neutral == 3:
+        neutral_roles_in_game.extend(['Kay', 'Pelinor', 'The Questing Beast'])
 
     # lone lovers are rerolled
     # 50% chance to reroll one lone lover
