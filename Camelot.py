@@ -22,7 +22,7 @@ def get_role_description(role):
         'Dagonet' : 'You cannot speak, but can communicate through gibberish sounds and body language.\n\nYou know Arthur.\n\nYou appear Evil to Merlin and to all Evil players.\n\nOnly Ector may know if Dagonet is in this game.',
         'Uther' : 'You can gain the Exile power by either voting against your own quest proposal while you are the leader, or by voting against a quest proposal you have been chosen to attend.\n\nEXILE:\nWhile Excalibur is in the Stone, you may declare as a King of the Realm, Uther, or Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.',
         'Bedivere' : 'You can gain the Suspend power by choosing not to move Excalibur when you have the Scabbard.\n\nSUSPEND:\nWhile Excalibur is in the Lake, after the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Bedivere, or Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. The next time you attend a quest, you MUST play that card.',
-        'Gawain' : 'You know all members of the Fairy Court, Good and Evil. Your presence has caused the Grail to start slightly corrupted.\n\nYou are a valid assassination target.'
+        'Gawain' : 'You know all members of the Fairy Court, Good and Evil. Your presence has caused the Grail to start slightly corrupted.\n\nYou are a valid assassination target.',
         'Bors' : 'You may play Cleanse cards on quests. The Cleanse cards do not count as Successes or Failures, but remove any Regrowth or Rot cards from the quest cards. If Cleanse is the only remaining card, it counts as a Failure. If Cleanse does not remove any Regrowth or Rot cards, it counts as a Failure. Keep a secret tally of how many Regrowth or Rot cards you removed. When that number reaches three or higher, you may declare as Bors to claim the Holy Grail. If you do this, the Final Quest can only Fail if two or more Failure cards are played.',
         'Bertilak' : 'You are a member of the Fairy Court. You can only play Regrowth cards on quests. If you are given The Holy Grail, you must play Rot cards instead.\n\nIf The Holy Grail is ever fully corrupted, you win the game unless the mortals can identify you and the other members of the Fairy Court. After The Holy Grail is corrupted, you may play any card you want on any quests you attend.',
 
@@ -41,7 +41,7 @@ def get_role_description(role):
 
         'Pelinor' : 'You are Neutral in this battle and have no allies in this game.\n\nYour nemesis is The Questing Beast, who is also Neutral.\n\nCARDS YOU CAN PLAY:\n> \"Success\"\n> \"Reversal\"\n\nTO WIN:\n> The Fifth Quest must occur and you must be on it.\n> Do one of the following:\n>>> Go on the Fifth Quest if The Questing Beast is NOT present.\n>>> Defeat The Questing Beast by declaring as Pelinor on the Fifth Quest while the Questing Beast IS present.\n>>> You MUST declare BEFORE the cards are read.\n>>> Beware, though! If The Questing Beast is not on the Fifth Quest when you declare as Pelinor, you lose and The Questing Beast wins instead.\n\nABOUT THE QUESTING BEAST:\n> The Questing Beast can see who you are.\n> The Questing Beast must play a \"The Questing Beast Was Here\" card at least once to win, but may play a \"Reversal\" card once per game.\n> If The Questing Beast does not play a \"The Questing Beast Was Here\" card at least once before the Fifth Quest, you automatically win by attending the Fifth Quest, even if The Questing Beast is present.',
         'The Questing Beast' : 'You are Neutral in this battle and have no allies in this game.\n\nYour nemesis is Pelinor, who is also Neutral.\n\nCARDS YOU CAN PLAY:\n> \"The Questing Beast Was Here.\"\n> \"Reversal\" (Only Once Per Game)\n\n\nTO WIN:\n> The Fifth Quest Must Occur.\n> You must play at least one \"The Questing Beast Was Here\" card.\n> Complete one of the following two options:\n>>> Go on the Fifth Quest undetected.\n>>> Trick Pelinor into declaring while you are NOT on the Fifth Quest.\n\nABOUT PELINOR:\n> Pelinor cannot see you, though you can see him.\n>Pelinor also wants to reach the Fifth Quest and must go on it to win.\n> Beware! If Pelinor suspects you are on the Fifth Quest, he may declare as Pelinor, causing you to lose. (If Pelinor declares incorrectly, you automatically win and Pelinor loses.)\n> If niether you nor Pelinor are on the Fifth Quest, you both lose.',
-        'Kay' : 'You are neutral and equally pulled to the Good and Evil sides, but you do have one ally who is either Good or Evil. You must determine if this ally is Good or Evil and assist as best you can. You may play Success or Failure cards on missions. You only win the game if your ally wins the game. Niether other Evil players nor Merlin can identify you as Good or Evil.'
+        'Kay' : 'You are neutral and equally pulled to the Good and Evil sides, but you do have one ally who is either Good or Evil. You must determine if this ally is Good or Evil and assist as best you can. You may play Success or Failure cards on missions. You only win the game if your ally wins the game. Niether other Evil players nor Merlin can identify you as Good or Evil.',
 }.get(role,'ERROR: No description available.')
 
 # get_role_information: this is called to populate information files
@@ -67,8 +67,8 @@ def get_role_information(my_player,players,relics):
         'Uther' : [],
         'Bedivere' : [],
         'Gawain' : [f'{player.name} is a member of the Fairy Court.' for player in players if player.role == 'Nimue' or player.role == 'Bertilak' or player.role == 'Mab' or player.role == 'Oberon'],
-        'Bors' : []
-        'Bertilak' : []
+        'Bors' : [],
+        'Bertilak' : [],
 
         'Mordred' : ['{} is Evil.'.format(player.name) for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet'],
         'Morgana' : ['{} is Evil.'.format(player.name) for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Colgrevance') or player.role == 'Titania' or player.role == 'Dagonet'],
@@ -81,7 +81,7 @@ def get_role_information(my_player,players,relics):
         'Annowre' : [f'{relic.location}' for relic in relics if relic.name == 'Excalibur'],
         'Palamedes' : [f'{player.name} is Iseult.' for player in players if player.role == 'Iseult'],
         'Mab' : [],
-        'Oberon' : [[f'{player.name} is Gawain.' for player in players if player.role == 'Gawain'], [f'{player.name} is Bertilak.' for player in players if player.role == 'Bertilak'],
+        'Oberon' : [[f'{player.name} is Gawain.' for player in players if player.role == 'Gawain'], [f'{player.name} is Bertilak.' for player in players if player.role == 'Bertilak']],
 
         'Pelinor' : [],
         'The Questing Beast' : ['{} is Pelinor.'.format(player.name) for player in players if player.role == 'Pelinor'],
@@ -380,7 +380,7 @@ def get_player_info(player_names):
     # number of good and evil roles
     num_neutral = 0
     if num_players <= 6:
-        if random.choice([True, False, False])
+        if random.choice([True, False, False]):
             kay_team = random.choice(['Good','Evil'])
             if kay_team == 'Good':
                 num_evil = 2
@@ -390,7 +390,7 @@ def get_player_info(player_names):
                 num_neutral = 1
         num_evil = 2
     elif num_players <= 8:
-        if random.choice([True, False, False, False])
+        if random.choice([True, False, False, False]):
             kay_team = random.choice(['Good','Evil'])
             if kay_team == 'Good':
                 num_evil = 3
@@ -471,7 +471,7 @@ def get_player_info(player_names):
     if num_players > 9:
         good_roles.append('Lamorak')
         evil_roles.append('Colgrevance')
-        neutral_roles.extend(['Pelinor', 'The Questing Beast')
+        neutral_roles.extend(['Pelinor', 'The Questing Beast'])
 
     good_roles_in_game = random.sample(good_roles, num_good)
     evil_roles_in_game = random.sample(evil_roles, num_evil)
@@ -614,7 +614,7 @@ def get_player_info(player_names):
                 file.write("{} -> {}\n".format(np.name,np.role))
 
 if __name__ == "__main__":
-    if not (6 <= len(sys.argv) <= 11):
+    if not (6 <= len(sys.argv) <= 13):
         print("Invalid number of players")
         exit(1)
 
