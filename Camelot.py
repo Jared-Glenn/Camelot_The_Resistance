@@ -58,7 +58,7 @@ def get_role_information(my_player,players,relics):
         'Percival' : ['{} is Merlin or Morgana.'.format(player.name) for player in players if player.role == 'Merlin' or player.role == 'Morgana'],
         'Arthur' : [f'{player.name} is seeking Excalibur in the correct location.' for relic in relics if relic.name == 'Excalibur' for role in relic.location_seeker for player in players if player.role == role],
         'Titania' : [],
-        'Nimue' : ['{}'.format(player.role) for player in players if player.role != 'Nimue'],
+        'Nimue' : [],
         'Galahad' : [],
         'Guinevere' : [str(get_rumors(my_player, players,relics))],
         'Lamorak' : [str(get_relationships(my_player, players))],
@@ -193,7 +193,7 @@ def get_relationships(my_player, players):
             good_team.append(player)
         if player.team == 'Evil' and player.role != 'Mordred':
             evil_team.append(player)
-        if player.team == 'Neutral':
+        if player.team == 'Neutral' and player.role != 'Kay':
             neutral_team.append(player)
     valid_players = good_team + evil_team + neutral_team
 
@@ -250,18 +250,19 @@ def get_ally(my_player, players):
                     
     # Get Kay's team and make a list of players on that team.
     allies = []
-    if my_player.secret == 'Good':
-        for player in players:
-            if player.team == 'Good':
-                allies.append(player)
-    if my_player.secret == 'Evil':
-        for player in players:
-            if player.team == 'Evil':
-                allies.append(player)
+    for player in players:
+       if player.secret == 'Good':
+           for player in players:
+               if player.team == 'Good':
+                   allies.append(player)
+       if player.secret == 'Evil':
+           for player in players:
+               if player.team == 'Evil':
+                   allies.append(player)
 
     # Return a random ally.
     kay_ally = random.choice(allies)
-    return f'{kay_ally} is your ally. If {kay_ally} wins the game, so do you.'
+    return f'{kay_ally.name} is your ally. If {kay_ally.name} wins the game, so do you.'
                     
 # Oberoning Merlin (save for later)
 #if player_of_role.get('Merlin'):
@@ -482,6 +483,7 @@ def get_player_info(player_names):
         neutral_roles_in_game.extend(['Pelinor', 'The Questing Beast'])
     elif num_neutral == 3:
         neutral_roles_in_game.extend(['Kay', 'Pelinor', 'The Questing Beast'])
+        
 
     # lone lovers are rerolled
     # 50% chance to reroll one lone lover
@@ -614,11 +616,12 @@ def get_player_info(player_names):
                 file.write("{} -> {}\n".format(np.name,np.role))
 
 if __name__ == "__main__":
-    if not (6 <= len(sys.argv) <= 13):
-        print("Invalid number of players")
-        exit(1)
+#    if not (6 <= len(sys.argv) <= 13):
+ #       print("Invalid number of players")
+  #      exit(1)
 
-    players = sys.argv[1:]
+    #players = sys.argv[1:]
+    players = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
     num_players = len(players)
     players = set(players) # use as a set to avoid duplicate players
     players = list(players) # convert to list
