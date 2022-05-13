@@ -274,18 +274,30 @@ def get_excalibur():
     excalibur_decoy2 = random.choice(excalibur_hiding_places)
 
     return excalibur_location, excalibur_decoy1, excalibur_decoy2
-
-                    
-# Oberoning Merlin (save for later)
-#if player_of_role.get('Merlin'):
-#    merlin_player = '{}'.format(player.name) for player in players if player.role == 'Merlin'
-#    nonevil_list = []
-#    for player in players:
-#        if player.team != 'Evil' and player.role != "Lancelot" and player.role != "Merlin:
-#            nonevil_list.append(player.name)
-#    random_nonevil = random.sample(nonevil_list,1)[0]
-#    rumors['merlin_rumor'] = [merlin_player + ' sees {}'.format(player.name) for player in players if (player.team == 'Evil' and player.role != 'Mordred') or player.role == 'Lancelot' or player.name == random_nonevil]
-
+######################################################################################################################################
+# Victory Point Calculations
+def get_victory_points(my_player, players):
+    
+    # VP for Team
+    for player in players:
+        player_vp = []
+        player_vp.append(['\033[1m' + 'VICTORY POINTS' + '\033[0m', '\n\n'])
+        
+        # Team related VPs.
+        if player.team == 'Good':
+            player_vp.append(['\033[1m' + 'Good:' + '\033[0m', 'If three quests succeed, you gain 3 Victory Points.\n']]
+        elif player.team == 'Evil':
+            player_vp.append(['\033[1m' + 'Evil:' + '\033[0m', 'If three quests fail, you gain 3 Victory Points.\n']]
+        elif player.role == 'Kay':
+            player_vp.append(['\033[1m' + 'Ally:' + '\033[0m', 'Your Victory Points are equal to those of your Ally.\n']
+        elif player.role == 'Pelinor':
+                             
+                             
+        # Origin related VPs.
+        if player.origin == 'Mortal and player.role != 'Kay':
+            
+        elif
+            
 
 class Player():
     # Players have the following traits
@@ -299,6 +311,7 @@ class Player():
         self.name = name
         self.role = None
         self.team = None
+        self.origin = None
         self.modifier = None
         self.info = []
         self.is_assassin = False
@@ -309,6 +322,9 @@ class Player():
 
     def set_team(self, team):
         self.team = team
+        
+    def set_origin(self, origin):
+        self.origin = origin
 
     def add_info(self, info):
         self.info += info
@@ -557,6 +573,10 @@ def get_player_info(player_names):
         gp.set_role(new_role)
         gp.set_team('Good')
         player_of_role[new_role] = gp
+        if gp.role == 'Bertilak' or gp.role == 'Nimue':
+            gp.set_origin('Fae')
+        else:
+            gp.set_origin('Mortal')
 
     # if there is at least one evil, first evil player becomes assassin
     if len(evil_players) > 1:
@@ -572,12 +592,17 @@ def get_player_info(player_names):
         ep.set_role(new_role)
         ep.set_team('Evil')
         player_of_role[new_role] = ep
+        if ep.role == 'Mab' or ep.role == 'Oberon':
+            ep.set_origin('Fae')
+        else:
+            ep.set_origin('Mortal')
 
     for np in neutral_players:
         new_role = neutral_roles_in_game.pop()
         np.set_role(new_role)
         np.set_team('Neutral')
         player_of_role[new_role] = np
+        np.set_origin('Mortal')
                     
     for player in players:
         if player.role == 'Kay':
