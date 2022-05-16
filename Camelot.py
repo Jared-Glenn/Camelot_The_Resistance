@@ -277,26 +277,38 @@ def get_excalibur():
 ######################################################################################################################################
 # Victory Point Calculations
 def get_victory_points(my_player, players):
-    
+    player_vp = []
+
     # VP for Team
     for player in players:
-        player_vp = []
-        player_vp.append(['\033[1m' + 'VICTORY POINTS' + '\033[0m', '\n\n'])
-        
+        str1 = '\033[1m' + 'VICTORY POINTS' + '\033[0m' + '\n\n'
+        player_vp.append(str1)
         # Team related VPs.
         if player.team == 'Good':
-            player_vp.append(['\033[1m' + 'Good:' + '\033[0m', 'If three quests succeed, you gain 3 Victory Points.\n']]
-        elif player.team == 'Evil':
-            player_vp.append(['\033[1m' + 'Evil:' + '\033[0m', 'If three quests fail, you gain 3 Victory Points.\n']]
-        elif player.role == 'Kay':
-            player_vp.append(['\033[1m' + 'Ally:' + '\033[0m', 'Your Victory Points are equal to those of your Ally.\n']
-        elif player.role == 'Pelinor':
-                             
-                             
+            str2 = '\033[1m' + 'Good:' + '\033[0m' + ' If three quests succeed, you gain 3 Victory Points.\n'
+            player_vp.append(str2)
+        if player.team == 'Evil':
+            str2 = '\033[1m' + 'Evil:' + '\033[0m' + ' If three quests fail, you gain 3 Victory Points.\n'
+            player_vp.append(str2)
+
         # Origin related VPs.
-        if player.origin == 'Mortal and player.role != 'Kay':
-            
-        elif
+        if player.origin == 'Mortal' and player.role != 'Kay':
+            str3 = '\033[1m' + 'Mortal:' + '\033[0m' + ' If the Holy Grail remains Uncorrupted, you gain 1 Victory Point.\n'
+            player_vp.append(str3)
+        if player.origin == 'Fae':
+            str3 = '\033[1m' + 'Fae:' + '\033[0m' + ' If the Holy Grail becomes Corrupted, you gain 2 Victory Points.\n     If you are Identified by the Mortals at the end of the game, you lose those 2 Victory Points.\n'
+            player_vp.append(str3)
+
+        # Role related VPs.
+        if player.role == 'Kay':
+            str4 = '\033[1m' + 'Ally:' + '\033[0m' + ' Your Victory Points are equal to those of your Ally.\n'
+            player_vp.append(str4)
+#        if player.role == 'Pelinor':
+
+
+    return player_vp
+                             
+
             
 
 class Player():
@@ -639,17 +651,27 @@ def get_player_info(player_names):
 
     bar= '----------------------------------------\n'
     for player in players:
-        player.string= bar+'You are '+player.role+' ['+player.team+']\n'+bar+get_role_description(player.role)+'\n'+bar+'\n'.join(player.info)+'\n'+bar
-        player_file = "game/{}".format(player.name)
+        player.string= bar+'You are '+player.role+' ['+player.team+']\n'+bar+get_role_description(player.role)+'\n'+bar+'\n'.join(player.info)+'\n'+bar+''.join(get_victory_points(player, players))+bar
+        player_file = "game/{}.docx".format(player.name)
         with open(player_file,"w") as file:
             file.write(player.string)
 
     first_player = random.sample(players,1)[0]
-    with open("game/start", "w") as file:
-        file.write("The player proposing the first mission is {}.".format(first_player.name))
+    fae_count = 0
+    with open("game/1. Read to Start.docx", "w") as file:
+        file.write("FIRST LEADER:\nThe player proposing the first mission is {}.\n\n".format(first_player.name))
+        file.write("THE HOLY GRAIL\n")
+        for player in players:
+            if player.origin == "Fae":
+                fae_count += 1
+            if player.role == "Gawain":
+                fae_count -= 1
+        if fae_count < 1:
+            fae_count = 1
+        file.write(f'The Holy Grail is {(fae_count*2) + 1} Fae Spells away from Corruption.')
         #file.write("\n" + second_mission_starter + " is the starting player of the 2nd round.\n")
 
-    with open("game/DoNotOpen", "w") as file:
+    with open("game/Do NOT Open.docx", "w") as file:
         file.write("Player -> Role\n\n GOOD TEAM:\n")
         for gp in good_players:
             file.write("{} -> {}\n".format(gp.name, gp.role))
@@ -660,6 +682,10 @@ def get_player_info(player_names):
             file.write("\nNEUTRAL TEAM:\n")
             for np in neutral_players:
                 file.write("{} -> {}\n".format(np.name,np.role))
+        file.write(f'\nEXCALIBUR:\n')
+        for relic in relics:
+            if relic == "Excalibur":
+                file.write(f'{relic.location}')
 
 if __name__ == "__main__":
 #    if not (6 <= len(sys.argv) <= 13):
