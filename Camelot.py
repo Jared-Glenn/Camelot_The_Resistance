@@ -5,6 +5,11 @@ import random
 import shutil
 import sys
 
+from docx import Document
+from docx.shared import Inches
+
+document = Document()
+
 # get_role_descriptions - this is called when information files are generated.
 def get_role_description(role):
     return {
@@ -280,6 +285,7 @@ def get_victory_points(my_player, players):
     player_vp = []
 
     # VP for Team
+    # NO NEED FOR PLAYER IN PLAYERS - THE INITAL CALL IS ALREADY DONE BY PLAYER
     for player in players:
         str1 = '\033[1m' + 'VICTORY POINTS' + '\033[0m' + '\n\n'
         player_vp.append(str1)
@@ -649,6 +655,12 @@ def get_player_info(player_names):
         shutil.rmtree("game")
     os.mkdir("game")
 
+    # for player in players:
+    #     run = document.add_paragraph().add_run('some text')
+    #     font = run.font
+    #     font.color.rgb = RGBColor(0x42, 0x24, 0xE9)
+    #     document.add_paragraph(player.name + ', you are' + player.role + '.')
+
     bar= '----------------------------------------\n'
     for player in players:
         player.string= bar+'You are '+player.role+' ['+player.team+']\n'+bar+get_role_description(player.role)+'\n'+bar+'\n'.join(player.info)+'\n'+bar+''.join(get_victory_points(player, players))+bar
@@ -703,3 +715,64 @@ if __name__ == "__main__":
         exit(1)
 
     get_player_info(players)
+    
+    
+    
+    
+    
+    
+    
+    
+#     from docx import Document
+# from docx.enum.style import WD_STYLE_TYPE
+# from docx.shared import Pt, RGBColor, Inches
+# from docx.oxml.ns import qn
+# from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
+# import docx
+
+# document = Document()
+# sections = document.sections
+# for section in sections:
+#     section.top_margin = Inches(0.5)
+#     section.bottom_margin = Inches(1)
+#     section.left_margin = Inches(1)
+#     section.right_margin = Inches(1)
+
+# section = document.sections[0]
+
+# sectPr = section._sectPr
+# cols = sectPr.xpath('./w:cols')[0]
+# cols.set(qn('w:num'), '2')
+
+# def writedocx(content, font_name = 'Times New Roman', font_size = 12, font_bold = False, font_italic = False, font_underline = False, color = RGBColor(0, 0, 0),
+#               before_spacing = 5, after_spacing = 5, line_spacing = 1.5, keep_together = True, keep_with_next = False, page_break_before = False,
+#               widow_control = False, align = 'left', style = ''):
+#     paragraph = document.add_paragraph(str(content))
+#     paragraph.style = document.styles.add_style(style, WD_STYLE_TYPE.PARAGRAPH)
+#     font = paragraph.style.font
+#     font.name = font_name
+#     font.size = Pt(font_size)
+#     font.bold = font_bold
+#     font.italic = font_italic
+#     font.underline = font_underline
+#     font.color.rgb = color
+#     paragraph_format = paragraph.paragraph_format
+#     paragraph_format.space_before = Pt(before_spacing)
+#     paragraph_format.space_after = Pt(after_spacing)
+#     paragraph.line_spacing = line_spacing
+#     paragraph_format.keep_together = keep_together
+#     paragraph_format.keep_with_next = keep_with_next
+#     paragraph_format.page_break_before = page_break_before
+#     paragraph_format.widow_control = widow_control
+#     if align.lower() == 'left':
+#         paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.LEFT
+#     elif align.lower() == 'center':
+#         paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+#     elif align.lower() == 'right':
+#         paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.RIGHT
+#     elif align.lower() == 'justify':
+#         paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.JUSTIFY
+#     else:
+#         paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.LEFT
+        
+# document.save('word.docx')
