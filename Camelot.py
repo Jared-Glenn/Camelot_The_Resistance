@@ -280,6 +280,7 @@ def get_victory_points(my_player, players):
     player_vp = []
 
     # VP for Team
+    # NO NEED FOR PLAYER IN PLAYERS - THE INITAL CALL IS ALREADY DONE BY PLAYER
     for player in players:
         str1 = '\033[1m' + 'VICTORY POINTS' + '\033[0m' + '\n\n'
         player_vp.append(str1)
