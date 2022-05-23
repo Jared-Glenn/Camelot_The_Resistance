@@ -2,6 +2,7 @@ from docx import Document
 from docx.shared import Pt, RGBColor, Length, Inches
 from docx.oxml.shared import OxmlElement
 from docx.oxml.ns import qn
+from docx.enum.text import WD_ALIGN_PARAGRAPH
 
 def insertHR(paragraph):
     p = paragraph._p  # p is the <w:p> XML element
@@ -33,31 +34,86 @@ section.left_margin = Inches(0.5)
 section.right_margin = Inches(0.5)
 
 paragraph = document.add_paragraph()
-
 paragraph_format = paragraph.paragraph_format
+paragraph_format.space_before = 0
+paragraph_format.space_after = 0
 
-paragraph_format.space_before = 1
-paragraph_format.space_after = 1
 
-
-run = paragraph.add_run("Player,")
+run = paragraph.add_run("     Player,")
 font = run.font
-font.name = 'Black Mild'
+font.name = 'Breathe Fire III'
 font.size = Pt(50)
 
 paragraph = document.add_paragraph()
+paragraph_format = paragraph.paragraph_format
+paragraph_format.space_before = 0
+paragraph_format.space_after = 0
 
-run = paragraph.add_run("          you are ")
+run = paragraph.add_run("                            you are ")
 font = run.font
-font.name = 'Black Mild'
+font.name = 'Breathe Fire III'
 font.size = Pt(30)
 
-run = paragraph.add_run("Mordred")
+run = paragraph.add_run("Mordred\n")
 font = run.font
-font.name = 'Black Mild'
+font.name = 'Breathe Fire III'
 font.size = Pt(30)
 font.color.rgb = RGBColor(255, 0, 0)
 
 insertHR(paragraph)
+
+# Allegiance
+paragraph = document.add_paragraph()
+paragraph_format = paragraph.paragraph_format
+paragraph_format.space_before = 0
+paragraph_format.space_after = 0
+
+run = paragraph.add_run("\n     Allegiance: ")
+font = run.font
+font.name = 'Caladea'
+font.size = Pt(14)
+font.bold = True
+
+run = paragraph.add_run("Evil")
+font = run.font
+font.name = 'Caladea'
+font.size = Pt(14)
+
+# Origins
+paragraph = document.add_paragraph()
+paragraph_format = paragraph.paragraph_format
+paragraph_format.space_before = 0
+paragraph_format.space_after = 0
+
+run = paragraph.add_run("     Origins: ")
+font = run.font
+font.name = 'Caladea'
+font.size = Pt(14)
+font.bold = True
+
+run = paragraph.add_run("Mortal")
+font = run.font
+font.name = 'Caladea'
+font.size = Pt(14)
+
+# Assassination
+paragraph = document.add_paragraph()
+paragraph_format = paragraph.paragraph_format
+paragraph_format.space_before = 0
+paragraph_format.space_after = 0
+
+run = paragraph.add_run("     Assassination Target? ")
+font = run.font
+font.name = 'Caladea'
+font.size = Pt(14)
+font.bold = True
+
+run = paragraph.add_run("No\n")
+font = run.font
+font.name = 'Caladea'
+font.size = Pt(14)
+
+insertHR(paragraph)
+
 
 document.save('word.docx')
