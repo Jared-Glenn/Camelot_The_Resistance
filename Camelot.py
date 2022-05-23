@@ -6,9 +6,30 @@ import shutil
 import sys
 
 from docx import Document
-from docx.shared import Inches
+from docx.shared import Pt, RGBColor, Length, Inches
+from docx.oxml.shared import OxmlElement
+from docx.oxml.ns import qn
+from docx.enum.text import WD_ALIGN_PARAGRAPH
 
-document = Document()
+def insertHR(paragraph):
+    p = paragraph._p  # p is the <w:p> XML element
+    pPr = p.get_or_add_pPr()
+    pBdr = OxmlElement('w:pBdr')
+    pPr.insert_element_before(pBdr,
+        'w:shd', 'w:tabs', 'w:suppressAutoHyphens', 'w:kinsoku', 'w:wordWrap',
+        'w:overflowPunct', 'w:topLinePunct', 'w:autoSpaceDE', 'w:autoSpaceDN',
+        'w:bidi', 'w:adjustRightInd', 'w:snapToGrid', 'w:spacing', 'w:ind',
+        'w:contextualSpacing', 'w:mirrorIndents', 'w:suppressOverlap', 'w:jc',
+        'w:textDirection', 'w:textAlignment', 'w:textboxTightWrap',
+        'w:outlineLvl', 'w:divId', 'w:cnfStyle', 'w:rPr', 'w:sectPr',
+        'w:pPrChange'
+    )
+    bottom = OxmlElement('w:bottom')
+    bottom.set(qn('w:val'), 'single')
+    bottom.set(qn('w:sz'), '6')
+    bottom.set(qn('w:space'), '1')
+    bottom.set(qn('w:color'), 'auto')
+    pBdr.append(bottom)
 
 # get_role_descriptions - this is called when information files are generated.
 def get_role_description(role):
@@ -435,7 +456,8 @@ def get_player_info(player_names):
             elif kay_team == 'Evil':
                 num_evil = 1
                 num_neutral = 1
-        num_evil = 2
+        else:
+            num_evil = 2
     elif num_players <= 8:
         if random.choice([True, False, False, False]):
             kay_team = random.choice(['Good','Evil'])
@@ -445,7 +467,8 @@ def get_player_info(player_names):
             elif kay_team == 'Evil':
                 num_evil = 2
                 num_neutral = 1
-        num_evil = 3
+        else:
+            num_evil = 3
     elif num_players <= 10:
         choice = random.choice(['kay', 'hunt', 'kayandhunt', 'niether', 'niether'])
         if choice == 'hunt':
@@ -667,7 +690,153 @@ def get_player_info(player_names):
         player_file = "game/{}.docx".format(player.name)
         with open(player_file,"w") as file:
             file.write(player.string)
+########################################################## DOCUMENT REWRITE
 
+    document = Document()
+    sections = document.sections
+    section = sections[0]
+
+    section.top_margin = Inches(0.5)
+    section.bottom_margin = Inches(0.5)
+    section.left_margin = Inches(0.5)
+    section.right_margin = Inches(0.5)
+
+    paragraph = document.add_paragraph()
+    paragraph_format = paragraph.paragraph_format
+    paragraph_format.space_before = 0
+    paragraph_format.space_after = 0
+
+    ####### FIX INTENTATION BELOW:
+
+run = paragraph.add_run("     "+player.name+",")
+font = run.font
+font.name = 'Breathe Fire III'
+font.size = Pt(50)
+
+paragraph = document.add_paragraph()
+paragraph_format = paragraph.paragraph_format
+paragraph_format.space_before = 0
+paragraph_format.space_after = 0
+
+run = paragraph.add_run("                            you are ")
+font = run.font
+font.name = 'Breathe Fire III'
+font.size = Pt(30)
+
+
+if player.team == 'Good':
+    run = paragraph.add_run(player.role+"\n")
+    font = run.font
+    font.name = 'Breathe Fire III'
+    font.size = Pt(30)
+    font.color.rgb = RGBColor(0, 255, 0) # Green
+elif player.team == 'Evil':
+    run = paragraph.add_run(player.role+"\n")
+    font = run.font
+    font.name = 'Breathe Fire III'
+    font.size = Pt(30)
+    font.color.rgb = RGBColor(255, 0, 0) # Red
+elif player.team == 'Neutral':
+    run = paragraph.add_run(player.role+"\n")
+    font = run.font
+    font.name = 'Breathe Fire III'
+    font.size = Pt(30)
+    font.color.rgb = RGBColor(255, 215, 0) # Gold
+
+insertHR(paragraph)
+
+
+# Allegiance
+paragraph = document.add_paragraph()
+paragraph_format = paragraph.paragraph_format
+paragraph_format.space_before = 0
+paragraph_format.space_after = 0
+
+run = paragraph.add_run("\n     Allegiance: ")
+font = run.font
+font.name = 'Caladea'
+font.size = Pt(14)
+font.bold = True
+
+if player.team == 'Good':
+    run = paragraph.add_run("Good")
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+if player.team == 'Evil':
+    run = paragraph.add_run("Evil")
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+if player.team == 'Neutral':
+    run = paragraph.add_run("Neutral")
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+
+
+# Origins
+paragraph = document.add_paragraph()
+paragraph_format = paragraph.paragraph_format
+paragraph_format.space_before = 0
+paragraph_format.space_after = 0
+
+run = paragraph.add_run("     Origins: ")
+font = run.font
+font.name = 'Caladea'
+font.size = Pt(14)
+font.bold = True
+
+if player.origin == "Mortal:
+    run = paragraph.add_run("Mortal")
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+if player.origin == "Fae:
+    run = paragraph.add_run("Fae")
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+
+# Assassination
+paragraph = document.add_paragraph()
+paragraph_format = paragraph.paragraph_format
+paragraph_format.space_before = 0
+paragraph_format.space_after = 0
+
+if player.team == 'Evil' and player.is_assassin = False:
+    run = paragraph.add_run("     You are NOT the Assassin.\n ")
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.bold = True
+elif player.team == 'Evil' and player.is_assassin = True:
+    run = paragraph.add_run("     You are NOT the Assassin.\n ")
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.bold = True
+elif player.role == "Lancelot":
+    run = paragraph.add_run("     You ARE an Assasination target IF only one quest fails or no quests fail.\n ")
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.bold = True
+    If only one quest fails or no quests fail, you are a valid assassination target.
+
+run = paragraph.add_run("     Assassination Target? ")
+font = run.font
+font.name = 'Caladea'
+font.size = Pt(14)
+font.bold = True
+
+
+insertHR(paragraph)
+
+
+document.save('word.docx')
+
+################################################################################### DOCUMENT REWRITE
     first_player = random.sample(players,1)[0]
     fae_count = 0
     with open("game/1. Read to Start.docx", "w") as file:
