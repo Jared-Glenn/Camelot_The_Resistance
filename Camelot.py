@@ -804,31 +804,36 @@ paragraph_format = paragraph.paragraph_format
 paragraph_format.space_before = 0
 paragraph_format.space_after = 0
 
-if player.team == 'Evil' and player.is_assassin = False:
+if player.role == 'Lancelot':
+    run = paragraph.add_run("     You are a CONDITIONAL ASSASSINATION TARGET. \(You may be assassinated if fewer than two quests fail.\)\n ")
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.italic = True
+elif player.team == 'Evil' and player.is_assassin = False:
     run = paragraph.add_run("     You are NOT the Assassin.\n ")
     font = run.font
     font.name = 'Caladea'
     font.size = Pt(14)
-    font.bold = True
-elif player.team == 'Evil' and player.is_assassin = True:
-    run = paragraph.add_run("     You are NOT the Assassin.\n ")
+    font.italic = True
+elif player.is_assassin = True:
+    run = paragraph.add_run("     You are the ASSASSIN.\n ")
     font = run.font
     font.name = 'Caladea'
     font.size = Pt(14)
-    font.bold = True
-elif player.role == "Lancelot":
-    run = paragraph.add_run("     You ARE an Assasination target IF only one quest fails or no quests fail.\n ")
+    font.italic = True
+elif player.role == 'Tristan' or player.role == 'Iseult' or player.role == Merlin or player.role == 'Guinevere' or player.role == 'Lamorak' or player.role == 'Gawain':
+    run = paragraph.add_run("     You are a TARGET for the Assassin.\n ")
     font = run.font
     font.name = 'Caladea'
     font.size = Pt(14)
-    font.bold = True
-    If only one quest fails or no quests fail, you are a valid assassination target.
-
-run = paragraph.add_run("     Assassination Target? ")
-font = run.font
-font.name = 'Caladea'
-font.size = Pt(14)
-font.bold = True
+    font.italic = True
+else:
+    run = paragraph.add_run("     You are NOT a target for the Assassin.\n ")
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.italic = True
 
 
 insertHR(paragraph)
