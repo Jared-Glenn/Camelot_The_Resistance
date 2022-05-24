@@ -114,6 +114,47 @@ def get_role_information(my_player,players,relics):
         'Kay' : [str(get_ally(my_player, players))],
     }.get(my_player.role,[])
 
+def get_role_victory_points(role):
+    return {
+        # Good Roles
+        'Arthur' : 'If you expended Excalibur\'s power, all other Good players gain 1 Victory Point and you gain 2.\n       If you do not obtain Excalibur, you lose 1 Victory Point.',
+        'Bedivere' : 'If you used your Suspend power, gain 1 Victory Point.\n',
+        # 'Bertilak' : 'NONE',
+        'Bors' : 'For each time you used Cleanse to negate a Rot or Regrowth, gain 1 Victory Point.\n      For each time you used Cleanse and did not negate a Rot or Regrowth, lose 1 Victory Point.',
+        # 'Dagonet' : 'NONE',
+        # 'Ector' : 'NONE',
+        'Galahad' : 'If you used your Reveal power, gain 1 Victory Point.\n',
+        'Gawain' : 'If you are assassinated, you lose 2 Victory Points, Evil players gain 1 Victory Point, and Fae players gain 3 Victory Points.\n',
+        'Guinevere' : 'You know two \"rumors\" about other players, but (with the exception of Arthur) nothing about their roles.\n\nThese rumors give you a glimpse at somebody else\'s character information, telling you who they know something about, but not what roles they are.\n\nFor instance, you if you heard a rumor about Player A seeing Player B, it might mean Player A is Merlin seeing an Evil player, or it might mean they are both Evil and can see each other.',
+        'Tristan' : 'The person you see is also Good and is aware that you are Good.\nYou and Iseult are each a valid Assassination target. You and Iseult each know one location that Excalibur is not.',
+        'Iseult' : 'The person you see is also Good and is aware that you are Good.\nYou and Tristan are each a valid Assassination target. You and Tristan each know one location that Excalibur is not.',
+        'Merlin' : 'You know which people have Evil roles, but not who has any specific role.\n\nYou are a valid Assassination target.\n\nWhile Excalibur is in the Lake, you may play Reversal cards on quests.',
+        'Percival' : 'You know which people have the Merlin and Morgana roles, but not who has each.\n\nWhile Excalibur is at Camelot, you may play Reversal cards on quests.',
+        'Titania' : 'You appear as Evil to all players with Evil roles (except Colgrevance).',
+        'Nimue' : 'You are a member of the Fairy Court. You can only play Regrowth cards on quests. If you are given The Holy Grail, you must play Success cards unless Excalibur is in the Lake, in which case, you may still play Regrowth cards.\n\nIf The Holy Grail is ever fully corrupted, you win the game unless the mortals can identify you and the other members of the Fairy Court. After The Holy Grail is corrupted, you may play any card you want on any quests you attend.',
+
+        'Lamorak' : 'You can see two pairs of players.\nOne pair of players are against each other (Good and Evil or Pelinor and the Questing Beast), and the other pair are on the same side (Evil and Evil or Good and Good).',
+        'Uther' : 'You can gain the Exile power by either voting against your own quest proposal while you are the leader, or by voting against a quest proposal you have been chosen to attend.\n\nEXILE:\nWhile Excalibur is in the Stone, you may declare as a King of the Realm, Uther, or Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.',
+
+        'Mordred' : 'You are hidden from all Good roles that could reveal that information.\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
+        'Morgana' : 'You appear like Merlin to Percival.\n\nWhile Excalibur is in the Stone, you may play Reversal cards on quests.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
+        'Maleagant' : 'You must play a Fail card on each mission you attend.\n\nEach time you are given the Scabbard, you may declare as Maleagant to force the next quest to have one additional knight attend it. This ability cannot be used on the final quest. This ability cannot be used if you use the Leader role to take the Scabbard.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
+        'Agravaine' : 'You have the Suspend power.\n\nSUSPEND:\nWhile Excalibur is in the Lake, after the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Bedivere, or Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. The next time you attend a quest, you MUST play that card.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
+        'Colgrevance' : 'You know not only who else is Evil, but what role each other Evil player possesses.\nEvil players know that there is a Colgrevance, but do not know that it is you or even that you are Evil.',
+        'Accolon' : 'You know Arthur and must beat him to Excalibur. Arthur does not know Excalibur\'s location, but does know which players gain power by having Excalibur there.\n\nTo claim Excalibur, you must gain possession of the Scabbard twice by any means. Once you do, you may search the current location for Excalibur rather than moving it. If it is in that location, you gain Excalibur immediately. On any future quests you attend, you may expend Excalibur\'s power to cause that Quest to fail, even when it would succeed.\n\nIf you wish, you may choose to declare as a Sword Seeker, Arthur, or Accolon (your choice), though you are not required to do so.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
+        'Lancelot' : 'You win if either three missions fail OR two missions fail and the assassination attempt at the end of the game fails. If only one quest fails or no quests fail, you are a valid assassination target. You cannot win if an assassination attempt succeeds.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).\n\nYou have the Reveal power.\n\nREVEAL:\nWhile Excalibur is at Camelot, you may declare as a Knight of Camelot, Galahad, or Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role. If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.',
+        'Vortigurn' : 'You have the Exile power.\n\nEXILE:\nWhile Excalibur is in the Stone, you may declare as a King of the Realm, Uther, or Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
+        'Annowre' : 'You know where Excalibur may be retrieved. You lose the game if anyone expends Excalibur\'s power.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
+        'Palamedes' : 'You know Iseult and you have the Exile power.\nIf you Exile Tristan, you can no longer lose the game unless he or Iseult are assassinated. Tristan will then be required to play only Failures on any quests he attends, and you will only be allowed to play Success cards on quests. Tristan and Iseult remain assassination targets and if either of them are assassinated, you lose the game.\n\nEXILE:\nWhile Excalibur is in the Stone, you may declare as a King of the Realm, Uther, or Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).\n\nEXILED PLAYER:\nIf you are Tristan, Palamedes is challenging you for the hand of your lady love. You are still Good but can only play Failure cards on quests. Palamedes is still Evil but can only play Success cards on quests. You and Iseult are still valid asssassination targets, so you must keep your role secret if you hope to win.',
+        'Mab' : 'You are a member of the Fairy Court. You can only play Rot cards on quests. You ignore the effects of the Holy Grail.\n\nIf The Holy Grail is ever fully corrupted, you win the game unless the mortals can identify you and the other members of the Fairy Court. After The Holy Grail is corrupted, you may play any card you want on any quests you attend.',
+        'Oberon' : 'You are a member of the Fairy Court. You can play Rot or Regrowth cards on quests. You know Gawain and Bertilak.\n\nIf The Holy Grail is ever fully corrupted, you win the game unless the mortals can identify you and the other members of the Fairy Court. After The Holy Grail is corrupted, you may play any card you want on any quests you attend.',
+
+        'Pelinor' : 'You are Neutral in this battle and have no allies in this game.\n\nYour nemesis is The Questing Beast, who is also Neutral.\n\nCARDS YOU CAN PLAY:\n> \"Success\"\n> \"Reversal\"\n\nTO WIN:\n> The Fifth Quest must occur and you must be on it.\n> Do one of the following:\n>>> Go on the Fifth Quest if The Questing Beast is NOT present.\n>>> Defeat The Questing Beast by declaring as Pelinor on the Fifth Quest while the Questing Beast IS present.\n>>> You MUST declare BEFORE the cards are read.\n>>> Beware, though! If The Questing Beast is not on the Fifth Quest when you declare as Pelinor, you lose and The Questing Beast wins instead.\n\nABOUT THE QUESTING BEAST:\n> The Questing Beast can see who you are.\n> The Questing Beast must play a \"The Questing Beast Was Here\" card at least once to win, but may play a \"Reversal\" card once per game.\n> If The Questing Beast does not play a \"The Questing Beast Was Here\" card at least once before the Fifth Quest, you automatically win by attending the Fifth Quest, even if The Questing Beast is present.',
+        'The Questing Beast' : 'You are Neutral in this battle and have no allies in this game.\n\nYour nemesis is Pelinor, who is also Neutral.\n\nCARDS YOU CAN PLAY:\n> \"The Questing Beast Was Here.\"\n> \"Reversal\" (Only Once Per Game)\n\n\nTO WIN:\n> The Fifth Quest Must Occur.\n> You must play at least one \"The Questing Beast Was Here\" card.\n> Complete one of the following two options:\n>>> Go on the Fifth Quest undetected.\n>>> Trick Pelinor into declaring while you are NOT on the Fifth Quest.\n\nABOUT PELINOR:\n> Pelinor cannot see you, though you can see him.\n>Pelinor also wants to reach the Fifth Quest and must go on it to win.\n> Beware! If Pelinor suspects you are on the Fifth Quest, he may declare as Pelinor, causing you to lose. (If Pelinor declares incorrectly, you automatically win and Pelinor loses.)\n> If niether you nor Pelinor are on the Fifth Quest, you both lose.',
+        'Kay' : 'You are neutral and equally pulled to the Good and Evil sides, but you do have one ally who is either Good or Evil. You must determine if this ally is Good or Evil and assist as best you can. You may play Success or Failure cards on missions. You only win the game if your ally wins the game. Niether Evil players nor Merlin can identify you as Good or Evil.',
+}.get(role,'ERROR: No description available.')
+
+
 def get_rumors(my_player, players, relics):
     rumors = []
 
@@ -300,43 +341,7 @@ def get_excalibur():
     excalibur_decoy2 = random.choice(excalibur_hiding_places)
 
     return excalibur_location, excalibur_decoy1, excalibur_decoy2
-######################################################################################################################################
-# Victory Point Calculations
-def get_victory_points(my_player, players):
-    player_vp = []
-
-    # VP for Team
-    # NO NEED FOR PLAYER IN PLAYERS - THE INITAL CALL IS ALREADY DONE BY PLAYER
-    for player in players:
-        str1 = '\033[1m' + 'VICTORY POINTS' + '\033[0m' + '\n\n'
-        player_vp.append(str1)
-        # Team related VPs.
-        if player.team == 'Good':
-            str2 = '\033[1m' + 'Good:' + '\033[0m' + ' If three quests succeed, you gain 3 Victory Points.\n'
-            player_vp.append(str2)
-        if player.team == 'Evil':
-            str2 = '\033[1m' + 'Evil:' + '\033[0m' + ' If three quests fail, you gain 3 Victory Points.\n'
-            player_vp.append(str2)
-
-        # Origin related VPs.
-        if player.origin == 'Mortal' and player.role != 'Kay':
-            str3 = '\033[1m' + 'Mortal:' + '\033[0m' + ' If the Holy Grail remains Uncorrupted, you gain 1 Victory Point.\n'
-            player_vp.append(str3)
-        if player.origin == 'Fae':
-            str3 = '\033[1m' + 'Fae:' + '\033[0m' + ' If the Holy Grail becomes Corrupted, you gain 2 Victory Points.\n     If you are Identified by the Mortals at the end of the game, you lose those 2 Victory Points.\n'
-            player_vp.append(str3)
-
-        # Role related VPs.
-        if player.role == 'Kay':
-            str4 = '\033[1m' + 'Ally:' + '\033[0m' + ' Your Victory Points are equal to those of your Ally.\n'
-            player_vp.append(str4)
-#        if player.role == 'Pelinor':
-
-
-    return player_vp
-                             
-
-            
+          
 
 class Player():
     # Players have the following traits
@@ -835,9 +840,196 @@ else:
     font.size = Pt(14)
     font.italic = True
 
+insertHR(paragraph)
+
+# Abilities
+paragraph = document.add_paragraph()
+paragraph_format = paragraph.paragraph_format
+paragraph_format.space_before = 0
+paragraph_format.space_after = 0
+
+
+run = paragraph.add_run("Abilities:\n ")
+font = run.font
+font.name = 'Caladea'
+font.size = Pt(14)
+font.bold = True
+
+run = paragraph.add_run("get_role_description(player.role)\n ")
+font = run.font
+font.name = 'Caladea'
+font.size = Pt(14)
 
 insertHR(paragraph)
 
+# Secret Information
+paragraph = document.add_paragraph()
+paragraph_format = paragraph.paragraph_format
+paragraph_format.space_before = 0
+paragraph_format.space_after = 0
+
+
+run = paragraph.add_run("Secret Information:\n ")
+font = run.font
+font.name = 'Caladea'
+font.size = Pt(14)
+font.bold = True
+
+run = paragraph.add_run("'\n'.join(player.info)\n ")
+font = run.font
+font.name = 'Caladea'
+font.size = Pt(14)
+
+insertHR(paragraph)
+
+# Victory Points
+paragraph = document.add_paragraph()
+paragraph_format = paragraph.paragraph_format
+paragraph_format.space_before = 0
+paragraph_format.space_after = 0
+
+
+run = paragraph.add_run("Victory Points:\n ")
+font = run.font
+font.name = 'Caladea'
+font.size = Pt(14)
+font.bold = True
+
+# Team Points
+if player.team == 'Good':
+    run = paragraph.add_run('Good: ')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.bold = True
+    run = paragraph.add_run('If three quests succeeded, you gain 3 Victory Points.\n')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+elif player.team == 'Evil':
+    run = paragraph.add_run('Evil: ')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.bold = True
+    run = paragraph.add_run('If three quests failed, you gain 3 Victory Points.\n')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+
+# Origin Points
+if player.origin == 'Mortal and player.role != 'Kay':
+    run = paragraph.add_run('Mortal: ')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.bold = True
+    run = paragraph.add_run('If the Holy Grail remains Uncorrupted, you gain 1 Victory Point.\n        If you identified a Fae during The Wild Hunt, you gain 1 Victory Point.\n')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+elif player.origin == 'Fae':
+    run = paragraph.add_run('Fae: ')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.bold = True
+    run = paragraph.add_run('If the Holy Grail has become Corrupted, you gain 2 Victory Points.\n        If you were identified by one or more Mortals during the Wild Hunt, you lose 1 Victory Point.\n')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+
+# Assassin Point
+if player.is_Assassin == True:
+    run = paragraph.add_run('Assassin: ')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.bold = True
+    run = paragraph.add_run('If you correctly assassinated a Target, you gain 1 Victory Point.\n')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+
+# Role Points
+
+try:
+    run = paragraph.add_run(player.role + ': ')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.bold = True
+    run = paragraph.add_run(get_role_victory_points(player.role))
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+except:
+    pass
+    
+
+# Bedivere
+if player.role == 'Bedivere':
+    run = paragraph.add_run('Bedivere: ')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.bold = True
+    run = paragraph.add_run('thing')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+
+# Bertilak - NONE
+
+# Bors
+if player.role == 'Bors':
+    run = paragraph.add_run('Bors: ')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.bold = True
+    run = paragraph.add_run('')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+
+# Dagonet - NONE
+
+# Ector - NONE
+
+# Galahad 
+if player.role == 'Galahad':
+    run = paragraph.add_run('Galahad: ')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.bold = True
+    run = paragraph.add_run('If you used your Reveal power, gain 1 Victory Point.\n')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    
+    
+    
+    
+    
+    
+        # Origin related VPs.
+        if player.origin == 'Mortal' and player.role != 'Kay':
+            str3 = '\033[1m' + 'Mortal:' + '\033[0m' + ' If the Holy Grail remains Uncorrupted, you gain 1 Victory Point.\n'
+            player_vp.append(str3)
+        if player.origin == 'Fae':
+            str3 = '\033[1m' + 'Fae:' + '\033[0m' + ' If the Holy Grail becomes Corrupted, you gain 2 Victory Points.\n     If you are Identified by the Mortals at the end of the game, you lose those 2 Victory Points.\n'
+            player_vp.append(str3)
+
+        # Role related VPs.
+        if player.role == 'Kay':
+            str4 = '\033[1m' + 'Ally:' + '\033[0m' + ' Your Victory Points are equal to those of your Ally.\n'
+            player_vp.append(str4)
+#        if player.role == 'Pelinor':
+
+
+    return player_vp
 
 document.save('word.docx')
 
