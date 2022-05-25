@@ -34,11 +34,48 @@ def insertHR(paragraph):
 # get_role_descriptions - this is called when information files are generated.
 def get_role_description(role):
     return {
+        # Good Roles
+        'Arthur' : 'You know each player that is seeking Excalibur in the right place. That is, each player that gains some benefit from Excalibur being in the location Excalibur is actually hidden.\n\nObtain Excalibur:\nYou may declare as a Sword Seeker, Arthur, or Accolon (your choice) to begin your search. After you declare, each time you are given the Scabbard, you may search the current location for Excalibur instead of changing the location. If it is in that location, you gain Excalibur and can use the Expend Excalibur ability.\n\nExpend Excalibur: (Once per game. Must have found Excalibur.)\nWhen you attend a quest, once all of the quest cards are returned but before they are read, you may force the quest to succeed even when it would otherwise fail.',
+        'Bedivere' : 'Suspend: (You gain this ability when you gain the Scabbard, but choose not to move Excalibur)\nWhile Excalibur is in the Lake, after the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Bedivere, or Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. The next time you attend a quest, you MUST play that card.',
+        'Bertilak' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.',
+        'Bors' : 'For each time you used Cleanse to negate a Rot or Regrowth, gain 1 Victory Point.\n      For each time you used Cleanse and did not negate a Rot or Regrowth, lose 1 Victory Point.',
+        # 'Dagonet' : 'NONE',
+        # 'Ector' : 'NONE',
+        'Galahad' : 'If you used your Reveal power, gain 1 Victory Point.\n',
+        'Gawain' : 'If you are assassinated, you lose 2 Victory Points, all Evil players gain 1 Victory Point, and all Fae players gain 4 Victory Points.\n',
+        'Guinevere' : 'If you are assassinated, you lose 2 Victory Points and all Evil players gain 2 Victory Points.\n',
+        'Iseult' : 'If you are assassinated as Iseult, you lose 4 Victory Points and all Evil players gain 4 Victory Points.\n        If you are assassinated as a Lover (and not named as Iseult), you lose 3 Victory Points and all Evil players gain 3 Victory Points.\n        If Tristan is Assassinated, you lose 2 Victory Points.\n',
+        'Lamorak' : 'If you are assassinated, you lose 3 Victory Points and all Evil players gain 3 Victory Points.\n',
+        'Merlin' : 'If you are assassinated, you lose 4 Victory Points and all Evil players gain 4 Victory Points.\n',
+        'Nimue' : 'If Excalibur is in the Lake at the end of the game, you gain 1 Victory Point.\n',
+        'Percival' : 'If Merlin is assassinated, you lose 3 Victory Points.\n',
+        # 'Titania' : 'NONE',
+        'Tristan' : 'If you are assassinated as Tristan, you lose 4 Victory Points and all Evil players gain 4 Victory Points.\n        If you are assassinated as a Lover (and not named as Tristan), you lose 3 Victory Points and all Evil players gain 3 Victory Points.\n        If Iseult is Assassinated, you lose 2 Victory Points.\n'',
+        'Uther' : 'If you used your Exile power, gain 1 Victory Point.\n',
+
+        # Evil Roles
+        'Accolon' : 'If you expended Excalibur\'s power, all other Evil players gain 1 Victory Point and you gain 2 Victory Points.\n       If you do not obtain Excalibur, you lose 1 Victory Point.',
+        # 'Agravaine' : 'NONE',
+        'Annowre' : 'If are in possession of the Excalibur card for the correct location at the end of the game, you gain 3 Victory Points.\n        Each time you are caught taking an Excalibur card, you must return it to the Excalibur stack and you lose 1 Victory Point.\n        If Excalibur\'s power is expended, you lose 5 Victory Points.\n',
+        # 'Colgrevance' : 'NONE',
+        'Lancelot' : 'If the assassination attempt is successful at all, you lose 3 Victory Points.\n          If you are assassinated while a valid target, you lose 3 additional Victory Points.\n',
+        # 'Mab' : 'NONE',
+        'Maleagant' : 'Each time the Scabbard is given to you, you gain 1 Victory Point.\n           If the Scabbard is never given to you, you lose 2 Victory Points.\n',
+        'Mordred' : 'At the end of the game, before the Assassination Attempt, choose one player. If that player loses one or more Victory Points, you may gain the same number of Victory Points.\n         If your chosen player does not lose any Victory Points, that player gains 2 Victory Points and you lose 2 Victory Points.\n',
+        # 'Morgana' : 'NONE',
+        # 'Oberon' : 'NONE',
+        'Palamedes' : 'If you Exiled Tristan, you gain 3 Victory Points.\n           If you Exiled a player that is not Tristan, you lose 1 Victory Point.\n           If Tristan or Iseult are assassinated, you lose 6 Victory Points.\n',
+        #'Vortigurn' : 'NONE',
+
+        # Neutral Roles
+        'Kay' : 'Your Victory Point total is equal to the Victory Point total of your ally.',
+        'Pelinor' : 'If you attended the Fifth Quest, you gain 2 Victory Points.\n         If you declared as Pelinor while the Questing Beast was on the Fifth Quest with you, you gain 3 Victory Points.\n         If you declared as Pelinor while the Questing Beast was not on the Fifth Quest with you, you lose 5 Victory Points.\n         If no The Questing Beast Was Here cards were played before the Fifth Quest, you gain 5 Victory Points.\n',
+        'The Questing Beast' : 'If you DID attend the Fifth Quest and Pelinor did NOT declare, you gain 5 Victory Points.\n                    If you DID attend the Fifth Quest and Pelinor DID declare, you lose 3 Victory Points.\n                    If you did NOT attend the Fifth Quest and Pelinor DID declare, you gain 5 Victory Points.\n                    If you did NOT attend the Fifth Quest and Pelinor did NOT declare, you lose 3 Victory Points.\n                    If no The Questing Beast Was Here cards were played before the Fifth Quest, you lose 5 Victory Points.\n',
+
         'Tristan' : 'The person you see is also Good and is aware that you are Good.\nYou and Iseult are each a valid Assassination target. You and Iseult each know one location that Excalibur is not.',
         'Iseult' : 'The person you see is also Good and is aware that you are Good.\nYou and Tristan are each a valid Assassination target. You and Tristan each know one location that Excalibur is not.',
         'Merlin' : 'You know which people have Evil roles, but not who has any specific role.\n\nYou are a valid Assassination target.\n\nWhile Excalibur is in the Lake, you may play Reversal cards on quests.',
         'Percival' : 'You know which people have the Merlin and Morgana roles, but not who has each.\n\nWhile Excalibur is at Camelot, you may play Reversal cards on quests.',
-        'Arthur' : 'You must obtain Excalibur to ensure victory for your forces. To do this, you must search for Excalibur in one or more or three locations: The Stone, The Lake, or At Camelot.\nYou may declare as a Sword Seeker, Arthur, or Accolon (your choice) to begin your search. After you declare, each time you are given the Scabbard, you may search the current location for Excalibur instead of changing the location. If it is in that location, you gain Excalibur.\nOnce you have Excalibur, when you go on a quest, you may expend its power to force a quest to succeed even when it would otherwise fail. You must expend Excalibur before the cards are read, but after they have been given to the Leader.\nOnce you expend Excalibur\'s power, you can no longer use this ability.',
         'Titania' : 'You appear as Evil to all players with Evil roles (except Colgrevance).',
         'Nimue' : 'You are a member of the Fairy Court. You can only play Regrowth cards on quests. If you are given The Holy Grail, you must play Success cards unless Excalibur is in the Lake, in which case, you may still play Regrowth cards.\n\nIf The Holy Grail is ever fully corrupted, you win the game unless the mortals can identify you and the other members of the Fairy Court. After The Holy Grail is corrupted, you may play any card you want on any quests you attend.',
         'Galahad' : 'You can gain the Reveal power only by going on the First or Fourth Quest.\n\nREVEAL:\nWhile Excalibur is at Camelot, you may declare as a Knight of Camelot, Galahad, or Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role. If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.',
@@ -47,10 +84,9 @@ def get_role_description(role):
         'Ector' : 'You know which Good roles are in the game, but not who has any given role.',
         'Dagonet' : 'You cannot speak, but can communicate through gibberish sounds and body language.\n\nYou know Arthur.\n\nYou appear Evil to Merlin and to all Evil players.\n\nOnly Ector may know if Dagonet is in this game.',
         'Uther' : 'You can gain the Exile power by either voting against your own quest proposal while you are the leader, or by voting against a quest proposal you have been chosen to attend.\n\nEXILE:\nWhile Excalibur is in the Stone, you may declare as a King of the Realm, Uther, or Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.',
-        'Bedivere' : 'You can gain the Suspend power by choosing not to move Excalibur when you have the Scabbard.\n\nSUSPEND:\nWhile Excalibur is in the Lake, after the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Bedivere, or Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. The next time you attend a quest, you MUST play that card.',
         'Gawain' : 'You know all members of the Fairy Court, Good and Evil. Your presence has caused the Grail to start slightly corrupted.\n\nYou are a valid assassination target.\n\nEXTRA:\nIf there are NO members of the Fairy Court in this game, you may play Reversal cards on quests.',
         'Bors' : 'You may play Cleanse cards on quests. The Cleanse cards do not count as Successes or Failures, but remove any Regrowth or Rot cards from the quest cards. If Cleanse is the only remaining card, it counts as a Failure. If Cleanse does not remove any Regrowth or Rot cards, it counts as a Failure. Keep a secret tally of how many Regrowth or Rot cards you removed. When that number reaches three or higher, you may declare as Bors to claim the Holy Grail. If you do this, the Final Quest can only Fail if two or more Failure cards are played.',
-        'Bertilak' : 'You are a member of the Fairy Court. You can only play Regrowth cards on quests. If you are given The Holy Grail, you must play Rot cards instead.\n\nIf The Holy Grail is ever fully corrupted, you win the game unless the mortals can identify you and the other members of the Fairy Court. After The Holy Grail is corrupted, you may play any card you want on any quests you attend.',
+        'Bertilak' : '',
 
         'Mordred' : 'You are hidden from all Good roles that could reveal that information.\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
         'Morgana' : 'You appear like Merlin to Percival.\n\nWhile Excalibur is in the Stone, you may play Reversal cards on quests.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
@@ -117,10 +153,10 @@ def get_role_information(my_player,players,relics):
 def get_role_victory_points(role):
     return {
         # Good Roles
-        'Arthur' : 'If you expended Excalibur\'s power, all other Good players gain 1 Victory Point and you gain 2 Victory Points.\n       If you do not obtain Excalibur, you lose 1 Victory Point.',
+        'Arthur' : 'If you expended Excalibur\'s power, all other Good players gain 1 Victory Point and you gain 2 Victory Points.\n       If you do not obtain Excalibur, you lose 1 Victory Point.\n',
         'Bedivere' : 'If you used your Suspend power, gain 1 Victory Point.\n',
         # 'Bertilak' : 'NONE',
-        'Bors' : 'For each time you used Cleanse to negate a Rot or Regrowth, gain 1 Victory Point.\n      For each time you used Cleanse and did not negate a Rot or Regrowth, lose 1 Victory Point.',
+        'Bors' : 'For each time you used Cleanse to negate a Rot or Regrowth, gain 1 Victory Point.\n      For each time you used Cleanse and did not negate a Rot or Regrowth, lose 1 Victory Point.\n',
         # 'Dagonet' : 'NONE',
         # 'Ector' : 'NONE',
         'Galahad' : 'If you used your Reveal power, gain 1 Victory Point.\n',
