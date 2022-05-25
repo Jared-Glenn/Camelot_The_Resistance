@@ -35,15 +35,15 @@ def insertHR(paragraph):
 def get_role_description(role):
     return {
         # Good Roles
-        'Arthur' : 'You know each player that is seeking Excalibur in the right place. That is, each player that gains some benefit from Excalibur being in the location Excalibur is actually hidden.\n\nObtain Excalibur:\nYou may declare as a Sword Seeker, Arthur, or Accolon (your choice) to begin your search. After you declare, each time you are given the Scabbard, you may search the current location for Excalibur instead of changing the location. If it is in that location, you gain Excalibur and can use the Expend Excalibur ability.\n\nExpend Excalibur: (Once per game. Must have found Excalibur.)\nWhen you attend a quest, once all of the quest cards are returned but before they are read, you may force the quest to succeed even when it would otherwise fail.',
-        'Bedivere' : 'Suspend: (You gain this ability when you gain the Scabbard, but choose not to move Excalibur)\nWhile Excalibur is in the Lake, after the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Bedivere, or Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. The next time you attend a quest, you MUST play that card.',
-        'Bertilak' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.',
-        'Bors' : 'For each time you used Cleanse to negate a Rot or Regrowth, gain 1 Victory Point.\n      For each time you used Cleanse and did not negate a Rot or Regrowth, lose 1 Victory Point.',
-        # 'Dagonet' : 'NONE',
-        # 'Ector' : 'NONE',
-        'Galahad' : 'If you used your Reveal power, gain 1 Victory Point.\n',
-        'Gawain' : 'If you are assassinated, you lose 2 Victory Points, all Evil players gain 1 Victory Point, and all Fae players gain 4 Victory Points.\n',
-        'Guinevere' : 'If you are assassinated, you lose 2 Victory Points and all Evil players gain 2 Victory Points.\n',
+        'Arthur' : 'You know each player that is seeking Excalibur in the right place. That is, each player that gains some benefit from Excalibur being in the location Excalibur is actually hidden.\n\nObtain Excalibur:\nYou may declare as a Sword Seeker, Arthur, or Accolon (your choice) to begin your search. After you declare, each time you are given the Scabbard, you may search the current location for Excalibur instead of changing the location. If it is in that location, you gain Excalibur and can use the Expend Excalibur ability.\n\nExpend Excalibur: (Once per game. Must have found Excalibur.)\nWhen you attend a quest, once all of the quest cards are returned but before they are read, you may force the quest to succeed even when it would otherwise fail.\n',
+        'Bedivere' : 'Suspend: (You gain this ability when you gain the Scabbard, but choose not to move Excalibur)\nWhile Excalibur is in the Lake, after the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Bedivere, or Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. The next time you attend a quest, you MUST play that card.\n',
+        'Bertilak' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\n',
+        'Bors' : 'You have access to Cleanse cards.\n\n Cleanse Cards:\nIf there is a Rot or Regrowth card revealed on the same quest, negate all Cleanse, Rot, and Regrowth cards.\nIf no Rot or Regrowth cards are revealed on the same quest, Cleanse cards count as Failure cards.\n\nDo not count as Successes or Failures, but remove any Regrowth or Rot cards from the quest cards. If Cleanse is thno Rot or Regrowth cards are revealed on the same quest, Cleanse cards count as Failure cards.\n\nWhile Excalibur is at Camelot, you may choose to declare as Bors. After you declare, the next time you successfully remove a Rot or Regrowth from a quest with a Cleanse card, you may Cleanse the Holy Grail as well, moving the Holy Grail one step further from Corruption.\n',
+        'Dagonet' : 'You cannot speak, but can communicate through gibberish sounds and body language.\n\nYou know Arthur.\n\nYou appear Evil to Merlin and to all Evil players.\n\nOnly Ector may know if Dagonet is in this game.\n',
+        'Ector' : 'You know which Good roles are in the game, but not who has any given role.\n',
+        'Galahad' : 'Reveal: (You gain this ability when you attend the First or Fourth Quest)\nWhile Excalibur is at Camelot, you may declare as a Knight of Camelot, Galahad, or Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, Arthur, Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.',
+        'Gawain' : 'You know all members of the Fairy Court, Good and Evil. Your presence has caused the Grail to start closer to corruption.\n',
+        'Guinevere' : 'You know two \"rumors\" about other players.\n\Rumors tell you who knows something about another player, but does not explain that connection. You must use your wits to determine how the pieces fit together.',
         'Iseult' : 'If you are assassinated as Iseult, you lose 4 Victory Points and all Evil players gain 4 Victory Points.\n        If you are assassinated as a Lover (and not named as Iseult), you lose 3 Victory Points and all Evil players gain 3 Victory Points.\n        If Tristan is Assassinated, you lose 2 Victory Points.\n',
         'Lamorak' : 'If you are assassinated, you lose 3 Victory Points and all Evil players gain 3 Victory Points.\n',
         'Merlin' : 'If you are assassinated, you lose 4 Victory Points and all Evil players gain 4 Victory Points.\n',
@@ -78,15 +78,10 @@ def get_role_description(role):
         'Percival' : 'You know which people have the Merlin and Morgana roles, but not who has each.\n\nWhile Excalibur is at Camelot, you may play Reversal cards on quests.',
         'Titania' : 'You appear as Evil to all players with Evil roles (except Colgrevance).',
         'Nimue' : 'You are a member of the Fairy Court. You can only play Regrowth cards on quests. If you are given The Holy Grail, you must play Success cards unless Excalibur is in the Lake, in which case, you may still play Regrowth cards.\n\nIf The Holy Grail is ever fully corrupted, you win the game unless the mortals can identify you and the other members of the Fairy Court. After The Holy Grail is corrupted, you may play any card you want on any quests you attend.',
-        'Galahad' : 'You can gain the Reveal power only by going on the First or Fourth Quest.\n\nREVEAL:\nWhile Excalibur is at Camelot, you may declare as a Knight of Camelot, Galahad, or Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role. If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.',
-        'Guinevere' : 'You know two \"rumors\" about other players, but (with the exception of Arthur) nothing about their roles.\n\nThese rumors give you a glimpse at somebody else\'s character information, telling you who they know something about, but not what roles they are.\n\nFor instance, you if you heard a rumor about Player A seeing Player B, it might mean Player A is Merlin seeing an Evil player, or it might mean they are both Evil and can see each other.',
+        'Guinevere' : '',
         'Lamorak' : 'You can see two pairs of players.\nOne pair of players are against each other (Good and Evil or Pelinor and the Questing Beast), and the other pair are on the same side (Evil and Evil or Good and Good).',
-        'Ector' : 'You know which Good roles are in the game, but not who has any given role.',
-        'Dagonet' : 'You cannot speak, but can communicate through gibberish sounds and body language.\n\nYou know Arthur.\n\nYou appear Evil to Merlin and to all Evil players.\n\nOnly Ector may know if Dagonet is in this game.',
         'Uther' : 'You can gain the Exile power by either voting against your own quest proposal while you are the leader, or by voting against a quest proposal you have been chosen to attend.\n\nEXILE:\nWhile Excalibur is in the Stone, you may declare as a King of the Realm, Uther, or Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.',
-        'Gawain' : 'You know all members of the Fairy Court, Good and Evil. Your presence has caused the Grail to start slightly corrupted.\n\nYou are a valid assassination target.\n\nEXTRA:\nIf there are NO members of the Fairy Court in this game, you may play Reversal cards on quests.',
-        'Bors' : 'You may play Cleanse cards on quests. The Cleanse cards do not count as Successes or Failures, but remove any Regrowth or Rot cards from the quest cards. If Cleanse is the only remaining card, it counts as a Failure. If Cleanse does not remove any Regrowth or Rot cards, it counts as a Failure. Keep a secret tally of how many Regrowth or Rot cards you removed. When that number reaches three or higher, you may declare as Bors to claim the Holy Grail. If you do this, the Final Quest can only Fail if two or more Failure cards are played.',
-        'Bertilak' : '',
+        'Gawain' : '',
 
         'Mordred' : 'You are hidden from all Good roles that could reveal that information.\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
         'Morgana' : 'You appear like Merlin to Percival.\n\nWhile Excalibur is in the Stone, you may play Reversal cards on quests.\n\nLike other Evil characters, you know who else is Evil (except Colgrevance).',
@@ -237,18 +232,18 @@ get_conditional_cards(role):
         # Good Roles
         # 'Arthur' : 'NONE',
         'Bedivere' : '[The Suspended Card] (Must be played the next time you attend a quest.)\n',
-        'Bertilak' : 'Rot (Must be played when the Holy Grail is played on you.)\n',
+        'Bertilak' : 'Rot (Must be played when the Holy Grail is played on you.)\n[Any Card] (Available for each quest after the Holy Grail has been corrupted.)\n',
         'Bors' : 'Success (Must be played when the Holy Grail is played on you.)\n',
         # 'Dagonet' : 'NONE',
         # 'Ector' : 'NONE',
         # 'Galahad' : 'NONE',
-        'Gawain' : 'Reversal (If there are no Fae players in this game.)',
+        'Gawain' : 'Reversal (If there are no Fae players in this game.)\n',
         # 'Guinevere' : 'NONE',
         # 'Iseult' : 'NONE',
         # 'Lamorak' : 'NONE',
         'Merlin' : 'Reversal (Available when Excalibur is in the Lake, unless the Holy Grail is currently played on you.)\n',
-        'Nimue' : 'Success (Must be played when the Holy Grail is played on you, unless Excalibur is in the Lake.',
-        'Percival' : 'Reversal (Available when Excalibur is at Camelot, unless the Holy Grail is currently played on you.)',
+        'Nimue' : 'Success (Must be played when the Holy Grail is played on you, unless Excalibur is in the Lake.\n[Any Card] (Available for each quest after the Holy Grail has been corrupted.)\n',
+        'Percival' : 'Reversal (Available when Excalibur is at Camelot, unless the Holy Grail is currently played on you.)\n',
         # 'Titania' : 'NONE',
         # 'Tristan' : 'NONE'',
         # 'Uther' : 'NONE',
@@ -259,11 +254,11 @@ get_conditional_cards(role):
         'Annowre' : 'Success (Must be played when the Holy Grail is played on you.)\n',
         # 'Colgrevance' : 'Success (Must be played when the Holy Grail is played on you.)\n',
         'Lancelot' : 'Success (Must be played when the Holy Grail is played on you.)\n',
-        # 'Mab' : 'NONE',
+        'Mab' : '[Any Card] (Available for each quest after the Holy Grail has been corrupted.)\n',
         'Maleagant' : 'Success (Must be played when the Holy Grail is played on you.)\n',
         'Mordred' : 'Success (Must be played when the Holy Grail is played on you.)\n',
         'Morgana' : 'Success (Must be played when the Holy Grail is played on you.)\nReversal (Available when Excalibur is in the Stone, unless the Holy Grail is currently played on you.)\n',
-        'Oberon' : 'Success (Must be played when the Holy Grail is played on you.)\n',
+        'Oberon' : 'Success (Must be played when the Holy Grail is played on you.)\n[Any Card] (Available for each quest after the Holy Grail has been corrupted.)\n',
         'Palamedes' : 'Success (Must be played when the Holy Grail is played on you.)\nSuccess (Must be played on each quest after you have Exiled Tristan.)',
         'Vortigurn' : 'Success (Must be played when the Holy Grail is played on you.)\n',
 
@@ -1118,7 +1113,7 @@ if player.origin == 'Mortal and player.role != 'Kay':
     font.name = 'Caladea'
     font.size = Pt(14)
     font.bold = True
-    run = paragraph.add_run('If the Holy Grail remains Uncorrupted, you gain 1 Victory Point.\n        If you identified a Fae during The Wild Hunt, you gain 2 Victory Points.\n')
+    run = paragraph.add_run('If the Holy Grail has become corrupted, you lose 2 Victory Points.\n        If you identified a Fae during The Wild Hunt, you gain 2 Victory Points.\n')
     font = run.font
     font.name = 'Caladea'
     font.size = Pt(14)
@@ -1128,7 +1123,7 @@ elif player.origin == 'Fae':
     font.name = 'Caladea'
     font.size = Pt(14)
     font.bold = True
-    run = paragraph.add_run('If the Holy Grail has become Corrupted, you gain 3 Victory Points.\n        For each Mortal that identified you during the Wild Hunt, you lose 1 Victory Point.\n')
+    run = paragraph.add_run('If the Holy Grail has become Corrupted, you gain 2 Victory Points.\n        For each Mortal that identified you during the Wild Hunt, you lose 1 Victory Point.\n')
     font = run.font
     font.name = 'Caladea'
     font.size = Pt(14)
