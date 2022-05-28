@@ -35,42 +35,42 @@ def insertHR(paragraph):
 def get_role_description(role):
     return {
         # Good Roles
-        'King Arthur' : 'You know each player that is seeking Excalibur in the right place. That is, each player that gains some benefit from Excalibur being in the location Excalibur is actually hidden.\n\nObtain Excalibur: (Must have declared as a Sword Seeker, King Arthur, or Sir Accolon [your choice].)\nAfter you declare, each time you are given the Scabbard, you may search the current location for Excalibur instead of changing the location. If it is in that location, you gain Excalibur and can use the Expend Excalibur ability.\n\nExpend Excalibur: (Once per game. Must have found Excalibur.)\nWhen you attend a quest, once all of the quest cards are returned but before they are read, you may force the quest to succeed even when it would otherwise fail.\n',
-        'Sir Bedivere' : 'Suspend: (You gain this ability when you gain the Scabbard, but choose not to move Excalibur)\nOnce per game, while Excalibur is in the Lake, after the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Sir Bedivere, or Sir Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. If you remove a Failure card, the next time you attend a quest, you MUST play a Failure card unless the Holy Grail is played on you.\n',
+        'King Arthur' : 'You know each player that is seeking Excalibur in the right place. That is, each player that gains some benefit from Excalibur being in the location Excalibur is actually hidden.\n\nOBTAIN EXCALIBUR: (Must have declared as a Sword Seeker, King Arthur, or Sir Accolon [your choice].)\nAfter you declare, each time you are given the Scabbard, you may search the current location for Excalibur instead of changing the location. If it is in that location, you gain Excalibur and can use the Expend Excalibur ability.\n\nEXPEND EXCALIBUR: (Once per game. Must have found Excalibur.)\nWhen you attend a quest, once all of the quest cards are returned but before they are read, you may force the quest to succeed even when it would otherwise fail.\n',
+        'Sir Bedivere' : 'SUSPEND: (You gain this ability when you gain the Scabbard, but choose not to move Excalibur)\nOnce per game, while Excalibur is in the Lake, after the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Sir Bedivere, or Sir Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. If you remove a Failure card, the next time you attend a quest, you MUST play a Failure card unless the Holy Grail is played on you.\n',
         'Sir Bertilak, The Green Knight' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\n',
-        'Sir Bors' : 'You have access to Cleanse cards.\n\n Cleanse Cards:\nIf there is a Rot or Regrowth card revealed on the same quest, negate all Cleanse, Rot, and Regrowth cards.\nIf no Rot or Regrowth cards are revealed on the same quest, Cleanse cards count as Failure cards.\n\nDo not count as Successes or Failures, but remove any Regrowth or Rot cards from the quest cards. If Cleanse is thno Rot or Regrowth cards are revealed on the same quest, Cleanse cards count as Failure cards.\n\nWhile Excalibur is at Camelot, you may choose to declare as Sir Bors. After you declare, the next time you successfully remove a Rot or Regrowth from a quest with a Cleanse card, you may Cleanse the Holy Grail as well, moving the Holy Grail one step further from Corruption.\n',
-        'Sir Dagonet' : 'You cannot speak, but can communicate through gibberish sounds and body language.\n\nYou know King Arthur.\n\nYou appear Evil to Merlin and to all Evil players.\n\nOnly Sir Ector may know if Sir Dagonet is in this game.\n',
+        'Sir Bors' : 'You have access to Cleanse cards.\n\nCLEANSE CARDS:\nIf there is a Rot or Regrowth card revealed on the same quest, negate all Cleanse, Rot, and Regrowth cards.\nIf no Rot or Regrowth cards are revealed on the same quest, Cleanse cards count as Failure cards.\n\nWhile Excalibur is at Camelot, you may choose to declare as Sir Bors. After you declare, the next time you successfully remove a Rot or Regrowth from a quest with a Cleanse card, you may Cleanse the Holy Grail as well, moving the Holy Grail one step further from Corruption.\n',
+        'Sir Dagonet' : 'You cannot speak, but can communicate through gibberish sounds and body language.\nYou know King Arthur.\nYou appear Evil to Merlin and to all Evil players.\nOnly Sir Ector may know if Sir Dagonet is in this game.\n',
         'Sir Ector' : 'You know which Good roles are in the game, but not who has any given role.\n',
-        'Sir Galahad' : 'Reveal: (You gain this ability when you attend the First or Fourth Quest.)\nOnce per game, while Excalibur is at Camelot, you may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, King Arthur, Sir Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.',
-        'Sir Gawain' : 'You know all members of the Fairy Court, Good and Evil. Your presence has caused the Grail to start closer to corruption.\n',
-        'Queen Guinevere' : 'You know two \"rumors\" about other players.\n\Rumors tell you who knows something about another player, but does not explain that connection. You must use your wits to determine how the pieces fit together.\n',
+        'Sir Galahad' : 'REVEAL: (You gain this ability when you attend the First or Fourth Quest.)\nOnce per game, while Excalibur is at Camelot, you may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, King Arthur, Sir Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.',
+        'Sir Gawain' : 'You know all members of the Fairy Court, Good and Evil.\nYour presence has caused the Grail to start closer to corruption.\n',
+        'Queen Guinevere' : 'You know two \"rumors\" about other players.\nRumors tell you who knows something about another player, but does not explain that connection. You must use your wits to determine how the pieces fit together.\n',
         'Lady Iseult' : 'The person you see is also Good and is aware that you are Good.\nYou can be assassinated as either a Lover (which includes either Sir Tristan or Lady Iseult) or as Lady Iseult specifically.\nYou and Sir Tristan each know one location that Excalibur cannot be found.\n.',
         'Sir Lamorak' : 'You can see two pairs of players.\nOne pair of players are on opposite sides (Good and Evil or Sir Pelinor and the Questing Beast), and the other pair are on the same side (Evil and Evil or Good and Good).',
         'Merlin' : 'You know which people have Evil roles, but not who has any specific role.\n',
         'Lady Nimue, The Lady of the Lake' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\n',
         'Sir Percival' : 'You know which people have the Merlin and Lady Morgana roles, but not who has each.\n',
-        'Queen Titania of the Seelie Fairies' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\n\nYou appear as Evil to all players with Evil roles (except Sir Colgrevance).\n',
+        'Queen Titania of the Seelie Fairies' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\nYou appear as Evil to all players with Evil roles (except Sir Colgrevance).\n',
         'Sir Tristan' : 'The person you see is also Good and is aware that you are Good.\nYou can be assassinated as either a Lover (which includes either Sir Tristan or Lady Iseult) or as Sir Tristan specifically.\nYou and Lady Iseult each know one location that Excalibur cannot be found.\n.',
-        'King Uther' : 'Exile: (You gain this ability when you vote against your own quest proposal or a quest proposal in which you have been chosen to attend.)\nOnce per game, while Excalibur is in the Stone, you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.',
+        'King Uther' : 'EXILE: (You gain this ability when you vote against your own quest proposal or a quest proposal in which you have been chosen to attend.)\nOnce per game, while Excalibur is in the Stone, you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.',
 
         # Evil Roles
-        'Sir Accolon' : 'You know King Arthur.\n\nObtain Excalibur: (Once per game. Must have obtained the Scabbard twice [by any means].)\nOnce per game, when you obtain the Scabbard, you may search the current location for Excalibur instead of changing the location. If it is in that location, you gain Excalibur and can use the Expend Excalibur ability.\n\nExpend Excalibur: (Once per game. Must have found Excalibur.)\nWhen you attend a quest, once all of the quest cards are returned but before they are read, you may force the quest to fail even when it would otherwise succeed.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
-        'Sir Agravaine' : 'You have the Suspend ability.\n\nSuspend:\nOnce per game, while Excalibur is in the Lake, after the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Sir Bedivere, or Sir Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. If you remove a Failure card, the next time you attend a quest, you MUST play a Failure card unless the Holy Grail is played on you.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
-        'Annowre' : 'You know where Excalibur may be retrieved.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
-        'Sir Colgrevance' : 'You know not only who else is Evil, but what role each other Evil player possesses.\n\nEvil players know that there is a Sir Colgrevance, but do not know that it is you or even that you are Evil.',
-        'Sir Lancelot' : 'You have the Reveal ability.\n\nReveal:\nOnce per game, while Excalibur is at Camelot, you may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, King Arthur, Sir Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
-        'Queen Mab of the Unseelie Fairies' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\n\nYou ignore the effects of the Holy Grail.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
-        'Sir Maleagant' : 'Each time you are given the Scabbard, you may declare as Sir Maleagant to force the next quest to have one additional knight attend it. This ability cannot be used on the final quest. This ability cannot be used if you use the Leader role to take the Scabbard.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
-        'Sir Mordred' : 'You are hidden from all Good roles that could reveal that information.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
-        'Lady Morgana' : 'You appear like Merlin to Sir Percival.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
-        'King Oberon of the Fairy Court' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\n\nYou know Sir Gawain and Sir Bertilak, The Green Knight.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
-        'Sir Palamedes' : 'You know Lady Iseult and you have the Exile ability.\n\nEXILE:\nWhile Excalibur is in the Stone, you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n\nATTENTION TRISTAN PLAYER:\nIf you have been Exiled by Sir Palamedes, you are now ONLY allowed to play Failure cards on quests unless affected by the Holy Grail (in which case, you must play a Success card).\nYou are still on the Good team and your Victory Points are unchanged.\nYou are still a valid Assassination Target.',
-        'King Vortigurn' : 'Exile:\nOnce per game, while Excalibur is in the Stone, you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
+        'Sir Accolon' : 'You know King Arthur.\n\nOBTAIN EXCALIBUR: (Once per game. Must have obtained the Scabbard twice [by any means].)\nOnce per game, when you obtain the Scabbard, you may search the current location for Excalibur instead of changing the location. If it is in that location, you gain Excalibur and can use the Expend Excalibur ability.\n\nEXPEND EXCALIBUR: (Once per game. Must have found Excalibur.)\nWhen you attend a quest, once all of the quest cards are returned but before they are read, you may force the quest to fail even when it would otherwise succeed.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
+        'Sir Agravaine' : 'You have the Suspend ability.\n\nSUSPEND:\nOnce per game, while Excalibur is in the Lake, after the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Sir Bedivere, or Sir Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. If you remove a Failure card, the next time you attend a quest, you MUST play a Failure card unless the Holy Grail is played on you.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
+        'Lady Annowre' : 'You know where Excalibur may be retrieved.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
+        'Sir Colgrevance' : 'You know not only who else is Evil, but what role each other Evil player possesses.\nEvil players know that there is a Sir Colgrevance, but do not know that it is you or even that you are Evil.',
+        'Sir Lancelot' : 'You have the Reveal ability.\n\nREVEAL:\nOnce per game, while Excalibur is at Camelot, you may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, King Arthur, Sir Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
+        'Queen Mab of the Unseelie Fairies' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\nYou ignore the effects of the Holy Grail.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
+        'Sir Maleagant' : 'Each time you are given the Scabbard, you may declare as Sir Maleagant to force the next quest to have one additional knight attend it. This ability cannot be used on the final quest. This ability cannot be used if you use the Leader role to take the Scabbard.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
+        'Sir Mordred' : 'You are hidden from all Good roles that could reveal that information.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
+        'Lady Morgana' : 'You appear like Merlin to Sir Percival.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
+        'King Oberon of the Fairy Court' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\nYou know Sir Gawain and Sir Bertilak, The Green Knight.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
+        'Sir Palamedes' : 'You know Lady Iseult and you have the Exile ability.\n\nEXILE:\nWhile Excalibur is in the Stone, you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n\nATTENTION TRISTAN PLAYER:\nIf you have been Exiled by Sir Palamedes, you are now ONLY allowed to play Failure cards on quests unless affected by the Holy Grail (in which case, you must play a Success card).\nYou are still on the Good team and your Victory Points are unchanged.\nYou are still a valid Assassination Target.\nWhen Sir Palamedes retrieves you, you must reveal that you are Tristan to him.\n',
+        'King Vortigurn' : 'EXILE:\nOnce per game, while Excalibur is in the Stone, you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
 
         # Neutral Roles
-        'Sir Kay' : 'You are neutral and equally pulled to the Good and Evil sides, but you do have one ally who is either Good or Evil. You must determine if this ally is Good or Evil and assist as best you can.\n\nNiether Evil players nor Merlin can identify you as Good or Evil.',
-        'Sir Pelinor' : 'You are Neutral in this battle and have no allies in this game.\nYour nemesis is The Questing Beast, who is also Neutral.\n\nYou have the Battle the Beast ability.\n\nBattle the Beast: (You must be on the Fifth Quest to use this ability)\nAfter all quest cards have been collected, but before they are read, you declare as Sir Pelinor. If the Questing Beast must reveal itself to all players.le the Questing Beast IS present.\n>>> You MUST declare BEFORE the cards are read.\n>>> Beware, though! If The Questing Beast is not on the Fifth Quest when you declare as Sir Pelinor, you lose and The Questing Beast wins instead.\n\nABOUT THE QUESTING BEAST:\n> The Questing Beast can see who you are.\n> The Questing Beast must play a \"The Questing Beast Was Here\" card at least once to win, but may play a \"Reversal\" card once per game.\n> If The Questing Beast does not play a \"The Questing Beast Was Here\" card at least once before the Fifth Quest, you automatically win by attending the Fifth Quest, even if The Questing Beast is present.',
-        'The Questing Beast' : 'You are Neutral in this battle and have no allies in this game.\nYour nemesis is Sir Pelinor, who is also Neutral.\n\nABOUT PELINOR:\n Sir Pelinor cannot see you, though you can see him.\nPelinor also wants to reach the Fifth Quest and must go on it to win.\nBeware! If Sir Pelinor suspects you are on the Fifth Quest, he may declare as Sir Pelinor, causing you to lose Victory Points.\n',
+        'Sir Kay' : 'You are neutral and equally pulled to the Good and Evil sides, but you do have one ally who is either Good or Evil. You must determine if this ally is Good or Evil and assist as best you can.\nNiether Evil players nor Merlin can identify you as Good or Evil.',
+        'Sir Pelinor' : 'You are Neutral in this battle and have no allies in this game.\nYour nemesis is The Questing Beast, who is also Neutral.\nYou have the Battle the Beast ability.\n\nBATTLE THE BEAST: (You must be on the Fifth Quest to use this ability)\nAfter all quest cards have been collected, but before they are read, you may declare as Sir Pelinor. The Questing Beast must reveal itself to all players.\n\nABOUT THE QUESTING BEAST:\nThe Questing Beast can see who you are.\nThe Questing Beast must play at least one \"The Questing Beast Was Here\" card or will lose significant Victory Points.\nIt may play a \"Reversal\" card once per game.\n',
+        'The Questing Beast' : 'You are Neutral in this battle and have no allies in this game.\nYour nemesis is Sir Pelinor, who is also Neutral.\n\nABOUT PELINOR:\nSir Pelinor cannot see you, though you can see him.\nPelinor also wants to reach the Fifth Quest to gain additional Victory Points.\nBeware! If Sir Pelinor suspects you are on the Fifth Quest, he may declare as Sir Pelinor, causing you to reveal yourself and lose Victory Points.\n',
 
 }.get(role,'ERROR: No description available.')
 
@@ -108,7 +108,7 @@ def get_role_information(my_player,players,relics):
         'Sir Accolon' : [[f'{player.name} is King Arthur.' for player in players if player.role == 'King Arthur'], [f'{player.name} is Evil.' for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Sir Colgrevance') or (player.role == 'Queen Titania of the Seelie Fairies') or (player.role == 'Sir Dagonet')]],
         'Sir Lancelot' : [f'{player.name} is Evil.' for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Sir Colgrevance') or (player.role == 'Queen Titania of the Seelie Fairies') or (player.role == 'Sir Dagonet')],
         'King Vortigurn' : [f'{player.name} is Evil.' for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Sir Colgrevance') or (player.role == 'Queen Titania of the Seelie Fairies') or (player.role == 'Sir Dagonet')],
-        'Annowre' : [[f'{player.name} is Evil.' for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Sir Colgrevance') or (player.role == 'Queen Titania of the Seelie Fairies') or (player.role == 'Sir Dagonet')], [f'{relic.location}' for relic in relics if relic.name == 'Excalibur']],
+        'Lady Annowre' : [[f'{player.name} is Evil.' for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Sir Colgrevance') or (player.role == 'Queen Titania of the Seelie Fairies') or (player.role == 'Sir Dagonet')], [f'{relic.location}' for relic in relics if relic.name == 'Excalibur']],
         'Sir Palamedes' : [[f'{player.name} is Evil.' for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Sir Colgrevance') or (player.role == 'Queen Titania of the Seelie Fairies') or (player.role == 'Sir Dagonet')], [f'{player.name} is Lady Iseult.' for player in players if player.role == 'Lady Iseult']],
         'Queen Mab of the Unseelie Fairies' : [f'{player.name} is Evil.' for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Sir Colgrevance') or (player.role == 'Queen Titania of the Seelie Fairies') or (player.role == 'Sir Dagonet')],
         'King Oberon of the Fairy Court' : [[f'{player.name} is Evil.' for player in players if (player.team == 'Evil' and player != my_player and player.role != 'Sir Colgrevance') or (player.role == 'Queen Titania of the Seelie Fairies') or (player.role == 'Sir Dagonet')], [f'{player.name} is Sir Gawain.' for player in players if player.role == 'Sir Gawain'], [f'{player.name} is Sir Bertilak, The Green Knight.' for player in players if player.role == 'Sir Bertilak, The Green Knight']],
@@ -126,7 +126,7 @@ def get_role_victory_points(role):
         'Sir Bertilak, The Green Knight' : 'NONE',
         'Sir Bors' : 'For each time you used Cleanse to negate a Rot or Regrowth, gain 1 Victory Point.\n      For each time you used Cleanse and did not negate a Rot or Regrowth, lose 1 Victory Point.\n',
         'Sir Dagonet' : 'NONE',
-        'Sir Ector' : 'NONE',
+        'Sir Ector' : 'If you are assassinated, you lose 3 Victory Points and all Evil players gain 3 Victory Points.\n',
         'Sir Galahad' : 'If you used your Reveal power, gain 1 Victory Point.\n',
         'Sir Gawain' : 'If you are assassinated, you lose 2 Victory Points, all Evil players gain 1 Victory Point, and all Fae players gain 4 Victory Points.\n',
         'Queen Guinevere' : 'If you are assassinated, you lose 2 Victory Points and all Evil players gain 2 Victory Points.\n',
@@ -142,7 +142,7 @@ def get_role_victory_points(role):
         # Evil Roles
         'Sir Accolon' : 'If you expended Excalibur\'s power, all other Evil players gain 1 Victory Point and you gain 2 Victory Points.\n       If you do not obtain Excalibur, you lose 1 Victory Point.',
         'Sir Agravaine' : 'NONE',
-        'Annowre' : 'If are in possession of the Excalibur card for the correct location at the end of the game, you gain 3 Victory Points.\n        Each time you are caught taking an Excalibur card, you must return it to the Excalibur stack and you lose 1 Victory Point.\n        If Excalibur\'s power is expended, you lose 5 Victory Points.\n',
+        'Lady Annowre' : 'If are in possession of the Excalibur card for the correct location at the end of the game, you gain 3 Victory Points.\n        Each time you are caught taking an Excalibur card, you must return it to the Excalibur stack and you lose 1 Victory Point.\n        If Excalibur\'s power is expended, you lose 5 Victory Points.\n',
         'Sir Colgrevance' : 'NONE',
         'Sir Lancelot' : 'If the assassination attempt is successful at all, you lose 3 Victory Points.\n          If YOU are assassinated (while a valid target), you lose an additional 3 Victory Points.\n          If the Assassination Attempt fails and exactly two quests have failed, you gain 3 Victory Points.\n',
         'Queen Mab of the Unseelie Fairies' : 'NONE',
@@ -154,7 +154,7 @@ def get_role_victory_points(role):
         'King Vortigurn' : 'NONE',
 
         # Neutral Roles
-        'Sir Kay' : 'Your Victory Point total is equal to the Victory Point total of your ally.',
+        'Sir Kay' : 'Your Victory Point total is equal to the Victory Point total of your ally.\n',
         'Sir Pelinor' : 'If you attended the Fifth Quest, you gain 2 Victory Points.\n         If you declared as Sir Pelinor while the Questing Beast was on the Fifth Quest with you, you gain 3 Victory Points.\n         If you declared as Sir Pelinor while the Questing Beast was not on the Fifth Quest with you, you lose 5 Victory Points.\n         If no The Questing Beast Was Here cards were played before the Fifth Quest, you gain 5 Victory Points.\n',
         'The Questing Beast' : 'If you DID attend the Fifth Quest and Sir Pelinor did NOT declare, you gain 5 Victory Points.\n                    If you DID attend the Fifth Quest and Sir Pelinor DID declare, you lose 3 Victory Points.\n                    If you did NOT attend the Fifth Quest and Sir Pelinor DID declare, you gain 5 Victory Points.\n                    If you did NOT attend the Fifth Quest and Sir Pelinor did NOT declare, you lose 3 Victory Points.\n                    If no The Questing Beast Was Here cards were played before the Fifth Quest, you lose 5 Victory Points.\n',
 }.get(role,'ERROR: No description available.')
@@ -204,6 +204,7 @@ def get_conditional_cards(role):
     return {
         # Good Roles
         '1-King Arthur' : 'NONE',
+        '3-King Arthur' : 'NONE',
         '1-Sir Bedivere' : 'NONE',
         '3-Sir Bedivere' : '[The Suspended Card] ',
         '4-Sir Bedivere' : '(Must be played the next time you attend a quest.)\n',
@@ -212,22 +213,29 @@ def get_conditional_cards(role):
         '3-Sir Bertilak, The Green Knight' : '[Any Card] ',
         '4-Sir Bertilak, The Green Knight' : '(Available for each quest after the Holy Grail has been corrupted.)\n',
         '1-Sir Bors' : 'NONE',
+        '3-Sir Bors' : 'NONE',
         '1-Sir Dagonet' : 'NONE',
+        '3-Sir Dagonet' : 'NONE',
         '1-Sir Ector' : 'NONE',
+        '3-Sir Ector' : 'NONE',
         '1-Sir Galahad' : 'NONE',
+        '3-Sir Galahad' : 'NONE',
         '1-Sir Gawain' : 'Reversal ',
         '2-Sir Gawain' : '(If there are no Fae players in this game.)\n',
+        '3-Sir Gawain' : 'NONE',
         '1-Queen Guinevere' : 'NONE',
         '1-Lady Iseult' : 'NONE',
         '1-Sir Lamorak' : 'NONE',
         '1-Merlin' : 'Reversal ',
         '2-Merlin' : '(Available when Excalibur is in the Lake, unless the Holy Grail is currently played on you.)\n',
+        '3-Merlin' : 'NONE',
         '1-Lady Nimue, The Lady of the Lake' : 'Success ',
         '2-Lady Nimue, The Lady of the Lake' : '(Must be played when the Holy Grail is played on you, unless Excalibur is in the Lake.)\n',
         '3-Lady Nimue, The Lady of the Lake' : '[Any Card] ',
         '4-Lady Nimue, The Lady of the Lake' : '(Available for each quest after the Holy Grail has been corrupted.)\n',
         '1-Sir Percival' : 'Reversal ',
         '2-Sir Percival' : '(Available when Excalibur is at Camelot, unless the Holy Grail is currently played on you.)\n',
+        '3-Sir Percival' : 'NONE',
         '1-Queen Titania of the Seelie Fairies' : 'NONE',
         '3-Queen Titania of the Seelie Fairies' : '[Any Card] ',
         '4-Queen Titania of the Seelie Fairies' : '(Available for each quest after the Holy Grail has been corrupted.)\n',
@@ -237,7 +245,7 @@ def get_conditional_cards(role):
         # Evil Roles
         '1-Sir Accolon' : 'NONE',
         '1-Sir Agravaine' : 'NONE',
-        '1-Annowre' : 'NONE',
+        '1-Lady Annowre' : 'NONE',
         '1-Sir Colgrevance' : 'NONE',
         '1-Sir Lancelot' : 'NONE',
         '1-Queen Mab of the Unseelie Fairies' : 'NONE',
@@ -247,20 +255,24 @@ def get_conditional_cards(role):
         '1-Sir Mordred' : 'NONE',
         '1-Lady Morgana' : 'Reversal ',
         '2-Lady Morgana' : '(Available when Excalibur is in the Stone, unless the Holy Grail is currently played on you.)\n',
+        '3-Lady Morgana' : 'NONE',
         '1-King Oberon of the Fairy Court' : 'NONE',
         '3-King Oberon of the Fairy Court' : '[Any Card] ',
         '4-King Oberon of the Fairy Court' : '(Available for each quest after the Holy Grail has been corrupted.)\n',
         '1-Sir Palamedes' : 'Success ',
         '2-Sir Palamedes' : '(Must be played on each quest after you have Exiled Sir Tristan.)\n',
+        '3-Sir Palamedes' : 'NONE',
         '1-King Vortigurn' : 'NONE',
 
         # Neutral Roles
         '1-Sir Kay' : 'Success ',
         '2-Sir Kay' : '(Must be played when the Holy Grail is played on you.)\n',
+        '3-Sir Kay' : 'NONE',
         '1-Sir Pelinor' : 'NONE',
         '1-The Questing Beast' : 'Reversal ',
         '2-The Questing Beast' : '(Available once per game.)\n',
-}.get(role,'ERROR: No description available.')
+        '3-The Questing Beast' : 'NONE'
+}.get(role,'NONE')
 
 def get_rumors(my_player, players, relics):
     rumors = []
@@ -631,7 +643,7 @@ def get_player_info(player_names):
 
     # establish available roles
     good_roles = ['Merlin', 'Sir Percival', 'King Arthur', 'Sir Dagonet']
-    evil_roles = ['Sir Mordred', 'Lady Morgana', 'Sir Accolon', 'Annowre']
+    evil_roles = ['Sir Mordred', 'Lady Morgana', 'Sir Accolon', 'Lady Annowre']
     neutral_roles = ['Sir Kay']
                     
     # 6 plus
@@ -854,7 +866,7 @@ def get_player_info(player_names):
         paragraph_format.space_before = 0
         paragraph_format.space_after = 0
     
-        run = paragraph.add_run("        " + player.name + ",")
+        run = paragraph.add_run("    " + player.name + ",")
         font = run.font
         font.name = 'Breathe Fire III'
         font.size = Pt(50)
@@ -892,14 +904,13 @@ def get_player_info(player_names):
     
         insertHR(paragraph)
     
-    
         # Allegiance
         paragraph = document.add_paragraph()
         paragraph_format = paragraph.paragraph_format
         paragraph_format.space_before = 0
         paragraph_format.space_after = 0
     
-        run = paragraph.add_run("\n     Allegiance: ")
+        run = paragraph.add_run("\nAllegiance: ")
         font = run.font
         font.name = 'Caladea'
         font.size = Pt(14)
@@ -931,7 +942,7 @@ def get_player_info(player_names):
         paragraph_format.space_before = 0
         paragraph_format.space_after = 0
     
-        run = paragraph.add_run("     Origins: ")
+        run = paragraph.add_run("Origins: ")
         font = run.font
         font.name = 'Caladea'
         font.size = Pt(14)
@@ -957,7 +968,7 @@ def get_player_info(player_names):
         paragraph_format.space_after = 0
     
         if player.role == 'Sir Lancelot':
-            run = paragraph.add_run("     Assassination? ")
+            run = paragraph.add_run("Assassination? ")
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(14)
@@ -969,7 +980,7 @@ def get_player_info(player_names):
             font.size = Pt(14)
             font.italic = True
         elif player.team == 'Evil' and player.is_assassin == False:
-            run = paragraph.add_run("     Assassination? ")
+            run = paragraph.add_run("Assassination? ")
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(14)
@@ -981,7 +992,7 @@ def get_player_info(player_names):
             font.size = Pt(14)
             font.italic = True
         elif player.is_assassin == True:
-            run = paragraph.add_run("     Assassination? ")
+            run = paragraph.add_run("Assassination? ")
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(14)
@@ -993,8 +1004,8 @@ def get_player_info(player_names):
             font.size = Pt(14)
             font.italic = True
             font.color.rgb = RGBColor(255, 0, 0) # Blood Red
-        elif player.role == 'Sir Tristan' or player.role == 'Lady Iseult' or player.role == 'Merlin' or player.role == 'Queen Guinevere' or player.role == 'Sir Lamorak' or player.role == 'Sir Gawain':
-            run = paragraph.add_run("     Assassination? ")
+        elif player.role == 'Sir Tristan' or player.role == 'Lady Iseult' or player.role == 'Merlin' or player.role == 'Queen Guinevere' or player.role == 'Sir Lamorak' or player.role == 'Sir Gawain' or player.role == 'Sir Ector':
+            run = paragraph.add_run("Assassination? ")
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(14)
@@ -1006,7 +1017,7 @@ def get_player_info(player_names):
             font.size = Pt(14)
             font.italic = True
         else:
-            run = paragraph.add_run("     Assassination? ")
+            run = paragraph.add_run("Assassination? ")
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(14)
@@ -1017,7 +1028,8 @@ def get_player_info(player_names):
             font.name = 'Caladea'
             font.size = Pt(14)
             font.italic = True
-    
+
+        
         insertHR(paragraph)
     
         # Abilities
@@ -1037,67 +1049,116 @@ def get_player_info(player_names):
         font = run.font
         font.name = 'Caladea'
         font.size = Pt(11)
-    
+
+        # Secret Information
+        if len(player.info) != 0:
+            paragraph = document.add_paragraph()
+            paragraph_format = paragraph.paragraph_format
+            paragraph_format.space_before = 0
+            paragraph_format.space_after = 0
+
+            run = paragraph.add_run("Secret Information:\n")
+            font = run.font
+            font.name = 'Caladea'
+            font.size = Pt(14)
+            font.bold = True
+            run = paragraph.add_run('\n'.join(player.info))
+            font = run.font
+            font.name = 'Caladea'
+            font.size = Pt(11)
+            
+        insertHR(paragraph)
+
         # Cards You Can Play
         paragraph = document.add_paragraph()
         paragraph_format = paragraph.paragraph_format
         paragraph_format.space_before = 0
         paragraph_format.space_after = 0
     
-    
-        run = paragraph.add_run("Playable Cards:\n")
+        run = paragraph.add_run("\nPlayable Cards:\n")
         font = run.font
         font.name = 'Caladea'
         font.size = Pt(14)
         font.bold = True
         font.underline = True
-    
         run = paragraph.add_run(get_playable_cards(player.role))
         font = run.font
         font.name = 'Caladea'
-        font.size = Pt(14)
+        font.size = Pt(12)
         font.bold = True
     
         # Conditional Cards
-        # ############ REDO ## Needs to be adjusted so it pulls only when there is info needed.
-        try:
+        first_cards = get_conditional_cards('1-' + player.role)
+        second_cards = get_conditional_cards('2-' + player.role)
+        third_cards = get_conditional_cards('3-' + player.role)
+        fourth_cards = get_conditional_cards('4-' + player.role)
+        if first_cards != 'NONE':
             paragraph = document.add_paragraph()
             paragraph_format = paragraph.paragraph_format
             paragraph_format.space_before = 0
             paragraph_format.space_after = 0
-            run = paragraph.add_run('Conditional Cards: (When you can play them.)\n')
+            run = paragraph.add_run('Conditional Cards: ')
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(14)
             font.bold = True
             font.underline = True
-            run = paragraph.add_run(get_conditional_cards(player.role) + '\n')
+            run = paragraph.add_run('(When you can play them.)\n')
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(14)
-        except:
-            pass
+            font.bold = True
+            font.italic = True
+            run = paragraph.add_run(first_cards)
+            font = run.font
+            font.name = 'Caladea'
+            font.size = Pt(12)
+            run = paragraph.add_run(second_cards)
+            font = run.font
+            font.name = 'Caladea'
+            font.size = Pt(12)
+            font.italic = True
+            if third_cards != 'NONE':
+                run = paragraph.add_run(third_cards)
+                font = run.font
+                font.name = 'Caladea'
+                font.size = Pt(12)
+                font.bold = True
+                font.italic = True
+                run = paragraph.add_run(fourth_cards)
+                font = run.font
+                font.name = 'Caladea'
+                font.size = Pt(12)
+                font.italic = True
+        elif third_cards != 'NONE':
+            paragraph = document.add_paragraph()
+            paragraph_format = paragraph.paragraph_format
+            paragraph_format.space_before = 0
+            paragraph_format.space_after = 0
+            run = paragraph.add_run('Conditional Cards: ')
+            font = run.font
+            font.name = 'Caladea'
+            font.size = Pt(14)
+            font.bold = True
+            font.underline = True
+            run = paragraph.add_run('(When you can play them.)\n')
+            font = run.font
+            font.name = 'Caladea'
+            font.size = Pt(14)
+            font.bold = True
+            font.italic = True
+            run = paragraph.add_run(third_cards)
+            font = run.font
+            font.name = 'Caladea'
+            font.size = Pt(12)
+            font.bold = True
+            font.italic = True
+            run = paragraph.add_run(fourth_cards)
+            font = run.font
+            font.name = 'Caladea'
+            font.size = Pt(12)
+            font.italic = True
         
-        insertHR(paragraph)
-    
-        # Secret Information
-        paragraph = document.add_paragraph()
-        paragraph_format = paragraph.paragraph_format
-        paragraph_format.space_before = 0
-        paragraph_format.space_after = 0
-    
-        # Add if statement removing this heading if len(player.info) == 0 #####################################
-        run = paragraph.add_run("Secret Information:\n")
-        font = run.font
-        font.name = 'Caladea'
-        font.size = Pt(14)
-        font.bold = True
-    
-        run = paragraph.add_run('\n'.join(player.info) + '\n')
-        font = run.font
-        font.name = 'Caladea'
-        font.size = Pt(11)
-    
         insertHR(paragraph)
     
         # Victory Points
@@ -1142,7 +1203,7 @@ def get_player_info(player_names):
             font.name = 'Caladea'
             font.size = Pt(11)
             font.bold = True
-            run = paragraph.add_run('If the Holy Grail has become corrupted, you lose 2 Victory Points.\n        If you identified a Fae during The Wild Hunt, you gain 2 Victory Points.\n')
+            run = paragraph.add_run('If the Holy Grail has become corrupted, you lose 2 Victory Points.\n             If you identified a Fae during The Wild Hunt, you gain 2 Victory Points.\n')
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(11)
@@ -1152,7 +1213,7 @@ def get_player_info(player_names):
             font.name = 'Caladea'
             font.size = Pt(11)
             font.bold = True
-            run = paragraph.add_run('If the Holy Grail has become Corrupted, you gain 2 Victory Points.\n        For each Mortal that identified you during the Wild Hunt, you lose 1 Victory Point.\n')
+            run = paragraph.add_run('If the Holy Grail has become Corrupted, you gain 2 Victory Points.\n             For each Mortal that identified you during the Wild Hunt, you lose 1 Victory Point.\n')
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(11)
@@ -1170,19 +1231,17 @@ def get_player_info(player_names):
             font.size = Pt(11)
         
         # Role Points
-        
-        try:
+        role_points = get_role_victory_points(player.role)
+        if role_points != "NONE":
             run = paragraph.add_run(player.role + ': ')
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(11)
             font.bold = True
-            run = paragraph.add_run(get_role_victory_points(player.role))
+            run = paragraph.add_run(role_points)
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(11)
-        except:
-            pass
             
         player_file = "game/{}.docx".format(player.name)
         document.save(player_file)
