@@ -121,7 +121,7 @@ def get_role_information(my_player,players,relics):
 def get_role_victory_points(role):
     return {
         # Good Roles
-        'King Arthur' : 'If you expended Excalibur\'s power, all other Good players gain 1 Victory Point and you gain 2 Victory Points.\n       If you do not obtain Excalibur, you lose 1 Victory Point.\n',
+        'King Arthur' : 'If you expended Excalibur\'s power, all other Good players gain 1 Victory Point and you gain 2 Victory Points.\n      If you do not obtain Excalibur, you lose 1 Victory Point.\n',
         'Sir Bedivere' : 'If you used your Suspend power, gain 1 Victory Point.\n',
         'Sir Bertilak, The Green Knight' : 'NONE',
         'Sir Bors' : 'For each time you used Cleanse to negate a Rot or Regrowth, gain 1 Victory Point.\n      For each time you used Cleanse and did not negate a Rot or Regrowth, lose 1 Victory Point.\n',
@@ -130,33 +130,33 @@ def get_role_victory_points(role):
         'Sir Galahad' : 'If you used your Reveal power, gain 1 Victory Point.\n',
         'Sir Gawain' : 'If you are assassinated, you lose 2 Victory Points, all Evil players gain 1 Victory Point, and all Fae players gain 4 Victory Points.\n',
         'Queen Guinevere' : 'If you are assassinated, you lose 2 Victory Points and all Evil players gain 2 Victory Points.\n',
-        'Lady Iseult' : 'If you are assassinated as Lady Iseult, you lose 4 Victory Points and all Evil players gain 4 Victory Points.\n        If you are assassinated as a Lover (and not named as Lady Iseult), you lose 3 Victory Points and all Evil players gain 3 Victory Points.\n        If Sir Tristan is Assassinated, you lose 2 Victory Points.\n',
+        'Lady Iseult' : 'If you are assassinated as Lady Iseult, you lose 4 Victory Points and all Evil players gain 4 Victory Points.\n      If you are assassinated as a Lover (and not named as Lady Iseult), you lose 3 Victory Points and all Evil players gain 3 Victory Points.\n      If Sir Tristan is Assassinated, you lose 2 Victory Points.\n',
         'Sir Lamorak' : 'If you are assassinated, you lose 3 Victory Points and all Evil players gain 3 Victory Points.\n',
         'Merlin' : 'If you are assassinated, you lose 4 Victory Points and all Evil players gain 4 Victory Points.\n',
         'Lady Nimue, The Lady of the Lake' : 'If Excalibur is in the Lake at the end of the game, you gain 1 Victory Point.\n',
         'Sir Percival' : 'If Merlin is assassinated, you lose 3 Victory Points.\n',
         'Queen Titania of the Seelie Fairies' : 'NONE',
-        'Sir Tristan' : 'If you are assassinated as Sir Tristan, you lose 4 Victory Points and all Evil players gain 4 Victory Points.\n        If you are assassinated as a Lover (and not named as Sir Tristan), you lose 3 Victory Points and all Evil players gain 3 Victory Points.\n        If Lady Iseult is Assassinated, you lose 2 Victory Points.\n',
+        'Sir Tristan' : 'If you are assassinated as Sir Tristan, you lose 4 Victory Points and all Evil players gain 4 Victory Points.\n        If you are assassinated as a Lover (and not named as Sir Tristan), you lose 3 Victory Points and all Evil players gain 3 Victory Points.\n      If Lady Iseult is Assassinated, you lose 2 Victory Points.\n',
         'King Uther' : 'If you used your Exile power, gain 1 Victory Point.\n',
 
         # Evil Roles
-        'Sir Accolon' : 'If you expended Excalibur\'s power, all other Evil players gain 1 Victory Point and you gain 2 Victory Points.\n       If you do not obtain Excalibur, you lose 1 Victory Point.',
+        'Sir Accolon' : 'If you expended Excalibur\'s power, all other Evil players gain 1 Victory Point and you gain 2 Victory Points.\n      If you do not obtain Excalibur, you lose 1 Victory Point.',
         'Sir Agravaine' : 'NONE',
-        'Lady Annowre' : 'If are in possession of the Excalibur card for the correct location at the end of the game, you gain 3 Victory Points.\n        Each time you are caught taking an Excalibur card, you must return it to the Excalibur stack and you lose 1 Victory Point.\n        If Excalibur\'s power is expended, you lose 5 Victory Points.\n',
+        'Lady Annowre' : 'If are in possession of the Excalibur card for the correct location at the end of the game, you gain 3 Victory Points.\n      Each time you are caught taking an Excalibur card, you must return it to the Excalibur stack and you lose 1 Victory Point.\n      If Excalibur\'s power is expended, you lose 5 Victory Points.\n',
         'Sir Colgrevance' : 'NONE',
-        'Sir Lancelot' : 'If the assassination attempt is successful at all, you lose 3 Victory Points.\n          If YOU are assassinated (while a valid target), you lose an additional 3 Victory Points.\n          If the Assassination Attempt fails and exactly two quests have failed, you gain 3 Victory Points.\n',
+        'Sir Lancelot' : 'If the assassination attempt is successful at all, you lose 3 Victory Points.\n      If YOU are assassinated (while a valid target), you lose an additional 3 Victory Points.\n      If the Assassination Attempt fails and exactly two quests have failed, you gain 3 Victory Points.\n',
         'Queen Mab of the Unseelie Fairies' : 'NONE',
-        'Sir Maleagant' : 'Each time the Scabbard is given to you, you gain 1 Victory Point.\n           If the Scabbard is never given to you, you lose 2 Victory Points.\n',
-        'Sir Mordred' : 'At the end of the game, before the Assassination Attempt, choose one player. If that player loses one or more Victory Points, you may gain the same number of Victory Points.\n         If your chosen player does not lose any Victory Points, that player gains 2 Victory Points and you lose 2 Victory Points.\n',
+        'Sir Maleagant' : 'Each time the Scabbard is given to you, you gain 1 Victory Point.\n      If the Scabbard is never given to you, you lose 2 Victory Points.\n',
+        'Sir Mordred' : 'At the end of the game, before the Assassination Attempt, choose one player. If that player loses one or more Victory Points, you may gain the same number of Victory Points.\n      If your chosen player does not lose any Victory Points, that player gains 2 Victory Points and you lose 2 Victory Points.\n',
         'Lady Morgana' : 'NONE',
         'King Oberon of the Fairy Court' : 'NONE',
-        'Sir Palamedes' : 'If you Exiled Sir Tristan, you gain 3 Victory Points.\n           If you Exiled a player that is not Sir Tristan, you lose 1 Victory Point.\n           If Sir Tristan or Lady Iseult are assassinated, you lose 6 Victory Points.\n',
+        'Sir Palamedes' : 'If you Exiled Sir Tristan, you gain 3 Victory Points.\n      If you Exiled a player that is not Sir Tristan, you lose 1 Victory Point.\n      If Sir Tristan or Lady Iseult are assassinated, you lose 6 Victory Points.\n',
         'King Vortigurn' : 'NONE',
 
         # Neutral Roles
         'Sir Kay' : 'Your Victory Point total is equal to the Victory Point total of your ally.\n',
-        'Sir Pelinor' : 'If you attended the Fifth Quest, you gain 2 Victory Points.\n         If you declared as Sir Pelinor while the Questing Beast was on the Fifth Quest with you, you gain 3 Victory Points.\n         If you declared as Sir Pelinor while the Questing Beast was not on the Fifth Quest with you, you lose 5 Victory Points.\n         If no The Questing Beast Was Here cards were played before the Fifth Quest, you gain 5 Victory Points.\n',
-        'The Questing Beast' : 'If you DID attend the Fifth Quest and Sir Pelinor did NOT declare, you gain 5 Victory Points.\n                    If you DID attend the Fifth Quest and Sir Pelinor DID declare, you lose 3 Victory Points.\n                    If you did NOT attend the Fifth Quest and Sir Pelinor DID declare, you gain 5 Victory Points.\n                    If you did NOT attend the Fifth Quest and Sir Pelinor did NOT declare, you lose 3 Victory Points.\n                    If no The Questing Beast Was Here cards were played before the Fifth Quest, you lose 5 Victory Points.\n',
+        'Sir Pelinor' : 'If you attended the Fifth Quest, you gain 2 Victory Points.\n      If you declared as Sir Pelinor while the Questing Beast was on the Fifth Quest with you, you gain 3 Victory Points.\n      If you declared as Sir Pelinor while the Questing Beast was not on the Fifth Quest with you, you lose 5 Victory Points.\n         If no The Questing Beast Was Here cards were played before the Fifth Quest, you gain 5 Victory Points.\n',
+        'The Questing Beast' : 'If you DID attend the Fifth Quest and Sir Pelinor did NOT declare, you gain 5 Victory Points.\n      If you DID attend the Fifth Quest and Sir Pelinor DID declare, you lose 3 Victory Points.\n      If you did NOT attend the Fifth Quest and Sir Pelinor DID declare, you gain 5 Victory Points.\n      If you did NOT attend the Fifth Quest and Sir Pelinor did NOT declare, you lose 3 Victory Points.\n      If no The Questing Beast Was Here cards were played before the Fifth Quest, you lose 5 Victory Points.\n',
 }.get(role,'ERROR: No description available.')
 
 def get_playable_cards(role):
@@ -762,7 +762,6 @@ def get_player_info(player_names):
             available_roles.remove(role)
         evil_roles_in_game.append(random.choice(available_roles))
             
-            
     # roles after validation
     #print(good_roles_in_game)
     #print(evil_roles_in_game)
@@ -792,14 +791,19 @@ def get_player_info(player_names):
             gp.set_origin('Mortal')
 
     # Assign Compatable Evil Player to Assassin role.
+    assassin_player = None
     if evil_players[0].role != 'Sir Lancelot' and evil_players[0].role != 'Sir Palamedes' and evil_players[0].role != 'King Oberon of the Fairy Court':
         evil_players[0].is_assassin = True
-    elif evil_players[1].role != 'Sir Lancelot' and evil_players[0].role != 'Sir Palamedes' and evil_players[0].role != 'King Oberon of the Fairy Court':
+        assassin_player = evil_players[0].name
+    elif evil_players[1].role != 'Sir Lancelot' and evil_players[1].role != 'Sir Palamedes' and evil_players[1].role != 'King Oberon of the Fairy Court':
         evil_players[1].is_assassin = True
-    elif evil_players[2].role != 'Sir Lancelot' and evil_players[0].role != 'Sir Palamedes' and evil_players[0].role != 'King Oberon of the Fairy Court':
+        assassin_player = evil_players[1].name
+    elif evil_players[2].role != 'Sir Lancelot' and evil_players[2].role != 'Sir Palamedes' and evil_players[2].role != 'King Oberon of the Fairy Court':
         evil_players[2].is_assassin = True
+        assassin_player = evil_players[2].name
     else:
         evil_players[3].is_assassin = True
+        assassin_player = evil_players[3].name
 
     # Evil Team: Set Team and Origin.
     for ep in evil_players:
@@ -818,7 +822,10 @@ def get_player_info(player_names):
         np.set_role(new_role)
         np.set_team('Neutral')
         player_of_role[new_role] = np
-        np.set_origin('Mortal')
+        if np.role != 'The Questing Beast':
+            np.set_origin('Mortal')
+        else:
+            np.set_origin('Fae')
                     
     for player in players:
         if player.role == 'Sir Kay':
@@ -1106,17 +1113,18 @@ def get_player_info(player_names):
             run = paragraph.add_run('(When you can play them.)\n')
             font = run.font
             font.name = 'Caladea'
-            font.size = Pt(14)
+            font.size = Pt(12)
             font.bold = True
             font.italic = True
             run = paragraph.add_run(first_cards)
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(12)
-            run = paragraph.add_run(second_cards)
+            font.bold = True
+            run = paragraph.add_run('      ' + second_cards)
             font = run.font
             font.name = 'Caladea'
-            font.size = Pt(12)
+            font.size = Pt(10)
             font.italic = True
             if third_cards != 'NONE':
                 run = paragraph.add_run(third_cards)
@@ -1125,10 +1133,10 @@ def get_player_info(player_names):
                 font.size = Pt(12)
                 font.bold = True
                 font.italic = True
-                run = paragraph.add_run(fourth_cards)
+                run = paragraph.add_run('      ' + fourth_cards)
                 font = run.font
                 font.name = 'Caladea'
-                font.size = Pt(12)
+                font.size = Pt(10)
                 font.italic = True
         elif third_cards != 'NONE':
             paragraph = document.add_paragraph()
@@ -1144,7 +1152,7 @@ def get_player_info(player_names):
             run = paragraph.add_run('(When you can play them.)\n')
             font = run.font
             font.name = 'Caladea'
-            font.size = Pt(14)
+            font.size = Pt(12)
             font.bold = True
             font.italic = True
             run = paragraph.add_run(third_cards)
@@ -1153,10 +1161,10 @@ def get_player_info(player_names):
             font.size = Pt(12)
             font.bold = True
             font.italic = True
-            run = paragraph.add_run(fourth_cards)
+            run = paragraph.add_run('      ' + fourth_cards)
             font = run.font
             font.name = 'Caladea'
-            font.size = Pt(12)
+            font.size = Pt(10)
             font.italic = True
         
         insertHR(paragraph)
@@ -1176,56 +1184,86 @@ def get_player_info(player_names):
     
         # Team Points
         if player.team == 'Good':
-            run = paragraph.add_run('Good: ')
+            run = paragraph.add_run('Good:\n')
             font = run.font
             font.name = 'Caladea'
-            font.size = Pt(11)
+            font.size = Pt(12)
             font.bold = True
-            run = paragraph.add_run('If three quests succeeded, you gain 3 Victory Points.\n')
+            run = paragraph.add_run('      If three quests succeeded, you gain 3 Victory Points.\n')
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(11)
         elif player.team == 'Evil':
-            run = paragraph.add_run('Evil: ')
+            run = paragraph.add_run('Evil:\n')
             font = run.font
             font.name = 'Caladea'
-            font.size = Pt(11)
+            font.size = Pt(12)
             font.bold = True
-            run = paragraph.add_run('If three quests failed, you gain 3 Victory Points.\n')
+            run = paragraph.add_run('      If three quests failed, you gain 3 Victory Points.\n')
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(11)
         
         # Origin Points
-        if player.origin == 'Mortal' and player.role != 'Sir Kay':
-            run = paragraph.add_run('Mortal: ')
+        if player.origin == 'Mortal' and player.role != 'Sir Kay' and player.role != 'Sir Gawain':
+            run = paragraph.add_run('Mortal:\n')
             font = run.font
             font.name = 'Caladea'
-            font.size = Pt(11)
+            font.size = Pt(12)
             font.bold = True
-            run = paragraph.add_run('If the Holy Grail has become corrupted, you lose 2 Victory Points.\n             If you identified a Fae during The Wild Hunt, you gain 2 Victory Points.\n')
+            run = paragraph.add_run('      If the Holy Grail has become corrupted, you lose 2 Victory Points.\n      If you identified a Fae during The Wild Hunt, you gain 2 Victory Points.\n')
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(11)
-        elif player.origin == 'Fae':
-            run = paragraph.add_run('Fae: ')
+        elif player.role == 'Sir Kay':
+            run = paragraph.add_run('Mortal:\n')
             font = run.font
             font.name = 'Caladea'
-            font.size = Pt(11)
+            font.size = Pt(12)
             font.bold = True
-            run = paragraph.add_run('If the Holy Grail has become Corrupted, you gain 2 Victory Points.\n             For each Mortal that identified you during the Wild Hunt, you lose 1 Victory Point.\n')
+            run = paragraph.add_run('      If you identified a Fae during The Wild Hunt, you and your ally both gain 2 Victory Points.\n')
+            font = run.font
+            font.name = 'Caladea'
+            font.size = Pt(11)
+        elif player.role == 'Sir Gawain':
+            run = paragraph.add_run('Mortal:\n')
+            font = run.font
+            font.name = 'Caladea'
+            font.size = Pt(12)
+            font.bold = True
+            run = paragraph.add_run('      If the Holy Grail has become corrupted, you lose 2 Victory Points.\n')
+            font = run.font
+            font.name = 'Caladea'
+            font.size = Pt(11)
+        elif player.origin == 'Fae' and player.role != 'The Questing Beast':
+            run = paragraph.add_run('Fae:\n')
+            font = run.font
+            font.name = 'Caladea'
+            font.size = Pt(12)
+            font.bold = True
+            run = paragraph.add_run('      If the Holy Grail has become Corrupted, you gain 2 Victory Points.\n      For each Mortal that identified you during the Wild Hunt, you lose 1 Victory Point.\n')
+            font = run.font
+            font.name = 'Caladea'
+            font.size = Pt(11)
+        elif player.role == 'The Questing Beast':
+            run = paragraph.add_run('Fae:\n')
+            font = run.font
+            font.name = 'Caladea'
+            font.size = Pt(12)
+            font.bold = True
+            run = paragraph.add_run('      If the Holy Grail has become Corrupted, you gain 2 Victory Points.\n')
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(11)
         
         # Assassin Point
         if player.is_assassin == True:
-            run = paragraph.add_run('Assassin: ')
+            run = paragraph.add_run('Assassin:\n')
             font = run.font
             font.name = 'Caladea'
-            font.size = Pt(11)
+            font.size = Pt(12)
             font.bold = True
-            run = paragraph.add_run('If you correctly assassinated a Target, you gain 1 Victory Point.\n')
+            run = paragraph.add_run('      If you correctly assassinated a Target, you gain 1 Victory Point.\n')
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(11)
@@ -1233,12 +1271,12 @@ def get_player_info(player_names):
         # Role Points
         role_points = get_role_victory_points(player.role)
         if role_points != "NONE":
-            run = paragraph.add_run(player.role + ': ')
+            run = paragraph.add_run(player.role + ':\n')
             font = run.font
             font.name = 'Caladea'
-            font.size = Pt(11)
+            font.size = Pt(12)
             font.bold = True
-            run = paragraph.add_run(role_points)
+            run = paragraph.add_run('      ' + role_points)
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(11)
@@ -1277,6 +1315,7 @@ def get_player_info(player_names):
         for relic in relics:
             if relic == "Excalibur":
                 file.write(f'{relic.location}')
+        file.write(assassin_player + ' is the Assassin.')
 
 if __name__ == "__main__":
 #    if not (6 <= len(sys.argv) <= 13):
