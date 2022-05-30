@@ -790,6 +790,17 @@ def get_player_info(player_names):
         else:
             gp.set_origin('Mortal')
 
+    # Evil Team: Set Team and Origin.
+    for ep in evil_players:
+        new_role = evil_roles_in_game.pop()
+        ep.set_role(new_role)
+        ep.set_team('Evil')
+        player_of_role[new_role] = ep
+        if ep.role == 'Queen Mab of the Unseelie Fairies' or ep.role == 'King Oberon of the Fairy Court':
+            ep.set_origin('Fae')
+        else:
+            ep.set_origin('Mortal')
+
     # Assign Compatable Evil Player to Assassin role.
     assassin_player = None
     if evil_players[0].role != 'Sir Lancelot' and evil_players[0].role != 'Sir Palamedes' and evil_players[0].role != 'King Oberon of the Fairy Court':
@@ -804,17 +815,6 @@ def get_player_info(player_names):
     else:
         evil_players[3].is_assassin = True
         assassin_player = evil_players[3].name
-
-    # Evil Team: Set Team and Origin.
-    for ep in evil_players:
-        new_role = evil_roles_in_game.pop()
-        ep.set_role(new_role)
-        ep.set_team('Evil')
-        player_of_role[new_role] = ep
-        if ep.role == 'Queen Mab of the Unseelie Fairies' or ep.role == 'King Oberon of the Fairy Court':
-            ep.set_origin('Fae')
-        else:
-            ep.set_origin('Mortal')
 
     # Neutral Team: Set Team and Origin.
     for np in neutral_players:
@@ -981,7 +981,7 @@ def get_player_info(player_names):
             font.size = Pt(14)
             font.italic = True
             font.bold = True
-            run = paragraph.add_run("CONDITIONAL (You may be assassinated if FEWER than two quests fail.)\n ")
+            run = paragraph.add_run("CONDITIONAL (You cannot be assassinated once TWO quests have failed.)\n ")
             font = run.font
             font.name = 'Caladea'
             font.size = Pt(14)
@@ -1287,35 +1287,150 @@ def get_player_info(player_names):
 
     first_player = random.sample(players,1)[0]
     fae_count = 0
-    with open("game/1. Read to Start.docx", "w") as file:
-        file.write("FIRST LEADER:\nThe player proposing the first mission is {}.\n\n".format(first_player.name))
-        file.write("THE HOLY GRAIL\n")
-        for player in players:
-            if player.origin == "Fae":
-                fae_count += 1
-            if player.role == "Sir Gawain":
-                fae_count -= 1
+    ######## CREATE FIRST DOCUMENT
+    document = Document()
+    sections = document.sections
+    section = sections[0]
+    
+    section.top_margin = Inches(0.5)
+    section.bottom_margin = Inches(0.5)
+    section.left_margin = Inches(0.5)
+    section.right_margin = Inches(0.5)
+    
+    paragraph = document.add_paragraph()
+    paragraph_format = paragraph.paragraph_format
+    paragraph_format.space_before = 0
+    paragraph_format.space_after = 0
+    
+    
+    run = paragraph.add_run("First Leader:\n")
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.bold = True
+    run = paragraph.add_run('The player proposing the first mission is {}.\n\n'.format(first_player.name))
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(12)
+    
+    run = paragraph.add_run("The Holy Grail:\n")
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.bold = True
+    
+    for player in players:
+        if player.origin == "Fae":
+            fae_count += 1
+        if player.role == "Sir Gawain":
+            fae_count -= 1
         if fae_count < 1:
             fae_count = 1
-        file.write(f'The Holy Grail is {(fae_count*2) + random.choice([4,5,5])} Fae Spells away from Corruption.')
-        #file.write("\n" + second_mission_starter + " is the starting player of the 2nd round.\n")
+    
+    run = paragraph.add_run(f'The Holy Grail is {((fae_count-1)*2) + random.choice([1,2,2]) + random.choice([4,5,5])} Fae Spells away from Corruption.')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(12)
+    
+    first_file = "game/1. Read to Start.docx".format(player.name)
+    document.save(first_file)
 
-    with open("game/Do NOT Open.docx", "w") as file:
-        file.write("Player -> Role\n\n GOOD TEAM:\n")
-        for gp in good_players:
-            file.write("{} -> {}\n".format(gp.name, gp.role))
-        file.write("\nEVIL TEAM:\n")
-        for ep in evil_players:
-            file.write("{} -> {}\n".format(ep.name,ep.role))
-        if len(neutral_players) > 0:
-            file.write("\nNEUTRAL TEAM:\n")
-            for np in neutral_players:
-                file.write("{} -> {}\n".format(np.name,np.role))
-        file.write(f'\nEXCALIBUR:\n')
-        for relic in relics:
-            if relic == "Excalibur":
-                file.write(f'{relic.location}')
-        file.write(assassin_player + ' is the Assassin.')
+    ####### CREATE DO NOT OPEN DOCUMENT
+    document = Document()
+    sections = document.sections
+    section = sections[0]
+    
+    section.top_margin = Inches(0.5)
+    section.bottom_margin = Inches(0.5)
+    section.left_margin = Inches(0.5)
+    section.right_margin = Inches(0.5)
+    
+    paragraph = document.add_paragraph()
+    paragraph_format = paragraph.paragraph_format
+    paragraph_format.space_before = 0
+    paragraph_format.space_after = 0
+    
+    
+    run = paragraph.add_run("Player -> Team\n")
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(16)
+    font.bold = True
+    run = paragraph.add_run("Good Team:\n")
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.bold = True
+    font.underline = True
+    
+    for gp in good_players:
+        run = paragraph.add_run("{} -> {}\n".format(gp.name, gp.role))
+        font = run.font
+        font.name = 'Caladea'
+        font.size = Pt(12)
+        
+    run = paragraph.add_run("\nEvil Team:\n")
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(14)
+    font.bold = True
+    font.underline = True
+
+    for ep in evil_players:
+        run = paragraph.add_run("{} -> {}\n".format(ep.name, ep.role))
+        font = run.font
+        font.name = 'Caladea'
+        font.size = Pt(12)
+        
+    if len(neutral_players) > 0:
+        run = paragraph.add_run("\nNeutral Team:\n")
+        font = run.font
+        font.name = 'Caladea'
+        font.size = Pt(14)
+        font.bold = True
+        font.underline = True
+        for np in neutral_players:
+            run = paragraph.add_run("{} -> {}\n".format(np.name, np.role))
+            font = run.font
+            font.name = 'Caladea'
+            font.size = Pt(12)
+    
+    paragraph = document.add_paragraph()
+    paragraph_format = paragraph.paragraph_format
+    paragraph_format.space_before = 0
+    paragraph_format.space_after = 0
+    
+    run = paragraph.add_run("\nExcalibur:\n")
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(16)
+    font.bold = True
+    
+    for relic in relics:
+        if relic.name == 'Excalibur':
+            run = paragraph.add_run(f'{relic.location}')
+            font = run.font
+            font.name = 'Caladea'
+            font.size = Pt(12)
+    
+    paragraph = document.add_paragraph()
+    paragraph_format = paragraph.paragraph_format
+    paragraph_format.space_before = 0
+    paragraph_format.space_after = 0
+    
+    run = paragraph.add_run("\nAssassin:\n")
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(16)
+    font.bold = True
+    run = paragraph.add_run(assassin_player + ' is the Assassin.')
+    font = run.font
+    font.name = 'Caladea'
+    font.size = Pt(12)
+    font.bold = True
+    
+    DONT_file = "game/2. Do NOT Open.docx".format(player.name)
+    document.save(DONT_file)
 
 if __name__ == "__main__":
 #    if not (6 <= len(sys.argv) <= 13):
