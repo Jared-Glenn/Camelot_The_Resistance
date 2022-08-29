@@ -1437,8 +1437,8 @@ if __name__ == "__main__":
  #       print("Invalid number of players")
   #      exit(1)
 
-    #players = sys.argv[1:]
-    players = ["Jared", "Beka", "Ethan", "Ellie", "Abbie", "Gennie", "Dustin", "Raechel", "Mom", "Hunter", "Marlee", "Clayton"]
+    players = sys.argv[1:]
+    #players = ["Jared", "Beka", "Ethan", "Ellie", "Abbie", "Gennie", "Dustin", "Raechel", "Mom", "Hunter", "Marlee", "Clayton"]
     num_players = len(players)
     players = set(players) # use as a set to avoid duplicate players
     players = list(players) # convert to list
@@ -1448,7 +1448,4 @@ if __name__ == "__main__":
         exit(1)
 
     get_player_info(players)
-
-
-# Test change
 
