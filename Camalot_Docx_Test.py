@@ -117,3 +117,5 @@ insertHR(paragraph)
 
 
 document.save('word.docx')
+
+# Note: See 'issues' for additional bugs to address.
