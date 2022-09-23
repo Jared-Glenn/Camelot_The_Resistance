@@ -711,7 +711,7 @@ def get_player_info(player_names):
                 break
             else:
                 continue
-        if is_Palamedes == False and random.choice([True,False]):
+        if not is_Palamedes and random.choice([True,False]):
             rerolled = random.choice(evil_roles_in_game)
             evil_roles_in_game.remove(rerolled)
             evil_roles_in_game.append('Sir Palamedes')
