@@ -803,13 +803,14 @@ def get_player_info(player_names):
 
     # Assign Compatable Evil Player to Assassin role.
     assassin_player = None
-    if evil_players[0].role != 'Sir Lancelot' and evil_players[0].role != 'Sir Palamedes' and evil_players[0].role != 'King Oberon of the Fairy Court':
+    non_assassins = ['Sir Lancelot', 'Sir Palamedes', 'King Oberon of the Fairy Court']
+    if evil_players[0].role not in non_assassins:
         evil_players[0].is_assassin = True
         assassin_player = evil_players[0].name
-    elif evil_players[1].role != 'Sir Lancelot' and evil_players[1].role != 'Sir Palamedes' and evil_players[1].role != 'King Oberon of the Fairy Court':
+    elif evil_players[1].role not in non_assassins:
         evil_players[1].is_assassin = True
         assassin_player = evil_players[1].name
-    elif evil_players[2].role != 'Sir Lancelot' and evil_players[2].role != 'Sir Palamedes' and evil_players[2].role != 'King Oberon of the Fairy Court':
+    elif evil_players[2].role not in non_assassins:
         evil_players[2].is_assassin = True
         assassin_player = evil_players[2].name
     else:
