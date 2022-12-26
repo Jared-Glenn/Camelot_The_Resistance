@@ -55,4 +55,6 @@ When a player is made the leader, they also gain access to the Holy Grail and ca
 
 Beware when using it, however, because Queen Mab is unaffected by the Holy Grail and Sir Bertilak (normally on the side of Good) *must* play Rot while holding it.
 
+### Excalibur
 
+Excalibur is a major source of power in the game and a source of conflict between good and evil. Unfortunately, Excalibur is hidden at the beginning of each game with only a suspected location for the blade being negotiated among the other players.
