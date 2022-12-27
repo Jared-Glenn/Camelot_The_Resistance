@@ -58,3 +58,5 @@ Beware when using it, however, because Queen Mab is unaffected by the Holy Grail
 ### Excalibur
 
 Excalibur is a major source of power in the game and a source of conflict between good and evil. Unfortunately, Excalibur is hidden at the beginning of each game with only a suspected location for the blade being negotiated among the other players.
+
+Excalibur can be suspected to be in one of three locations: Camelot, The Lake, and The Stone. There is a definitive location for Excalibur, which must be determined by several player roles. When a player attempts to claim Excalibur, this location can be verified through the "Do Not Open" file.
