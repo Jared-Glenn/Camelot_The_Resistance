@@ -55,8 +55,14 @@ When a player is made the leader, they also gain access to the Holy Grail and ca
 
 Beware when using it, however, because Queen Mab is unaffected by the Holy Grail and Sir Bertilak (normally on the side of Good) *must* play Rot while holding it.
 
-### Excalibur
+#### Excalibur
 
-Excalibur is a major source of power in the game and a source of conflict between good and evil. Unfortunately, Excalibur is hidden at the beginning of each game with only a suspected location for the blade being negotiated among the other players.
+Excalibur is a major source of power in the game and a source of conflict between good and evil. Excalibur can be in one of three locations: Camelot, The Lake, and The Stone. At the start of the game, place all three Excalibur Location cards in a stack with the starting location on top (as inidicated by the Game Start file). Regardless of its starting or later locations, Excalibur may only be claimed in ONE of these locations, determined randomly before the game starts, and only by King Arthur or Sir Accolon, who are on the side of good and evil, respectively.
 
-Excalibur can be suspected to be in one of three locations: Camelot, The Lake, and The Stone. There is a definitive location for Excalibur, which must be determined by several player roles. When a player attempts to claim Excalibur, this location can be verified through the "Do Not Open" file.
+Arthur and Accolon are not guarenteed to appear in any single game, but if they obtain Excalibur, their team will be at a significant advantage. Be certain to trust those you allow to obtain the sword.
+
+##### The Scabbard
+The Scabbard is part of the Excalibur relic, and starts in the players' hands at the start of the game. At the start of the game, the Leader assigns the Scabbard to one player prior to assigning the first Quest. Each round thereafter, the Scabbard is passed by the person who holds it. It may be passed to any player except the player who held it last.
+
+
+
