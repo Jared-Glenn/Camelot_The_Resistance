@@ -64,5 +64,6 @@ Arthur and Accolon are not guarenteed to appear in any single game, but if they 
 ##### The Scabbard
 The Scabbard is part of the Excalibur relic, and starts in the players' hands at the start of the game. At the start of the game, the Leader assigns the Scabbard to one player prior to assigning the first Quest. Each round thereafter, the Scabbard is passed by the person who holds it. It may be passed to any player except the player who held it last.
 
-
+## Role Information
+At the start of the game, run the program by inputting the names of each player. The game will randomly determine roles and assign them to the inputted names. Open the "Game" folder. Each player should privately open the file with his or her name on it and read it. Players are highly encouraged to take a picture of the document with their phone so they can access that information later, as needed.
 
