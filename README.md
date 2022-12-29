@@ -3,6 +3,9 @@
 ## Rules Overview
 The rules for Camelot follow the standard rules for "The Resistance" game, and is based on the game "Avalon." Importantly, though, this game has diverged significantly from the mechanics of either of these games, and so players will need to become accustomed to the new rules.
 
+## Role Information
+At the start of the game, run the program by inputting the names of each player. The game will randomly determine roles and assign them to the inputted names. Open the "Game" folder. Each player should privately open the file with his or her name on it and read it. Players are highly encouraged to take a picture of the document with their phone so they can access that information later, as needed.
+
 ### Points
 The most important change to the game is the addition of Victory Points, which each player accumulates individually. Players gain points from their role (character), their faction (Arthur or Mordred), and their origin (Mortal or Fae). Players may also lose points if they or another player take or avoid certain actions. Manipulating other players into losing Victory Points while you gain as many as possible is the most integral part of the game.
 
@@ -64,6 +67,5 @@ Arthur and Accolon are not guarenteed to appear in any single game, but if they 
 ##### The Scabbard
 The Scabbard is part of the Excalibur relic, and starts in the players' hands at the start of the game. At the start of the game, the Leader assigns the Scabbard to one player prior to assigning the first Quest. Each round thereafter, the Scabbard is passed by the person who holds it. It may be passed to any player except the player who held it last.
 
-## Role Information
-At the start of the game, run the program by inputting the names of each player. The game will randomly determine roles and assign them to the inputted names. Open the "Game" folder. Each player should privately open the file with his or her name on it and read it. Players are highly encouraged to take a picture of the document with their phone so they can access that information later, as needed.
+
 
