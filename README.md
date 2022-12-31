@@ -71,8 +71,24 @@ The Scabbard is part of the Excalibur relic, and starts in the players' hands at
 
 ### Five Players
 *Good:* Merlin, Sir Pervival, King Arthur, Sir Dagonet
+
 *Evil:* Sir Mordred, Lady Morgana, Sir Accolon, Lady Annowre
+
 *Neutral:* Sir Kay
 
 
+### Six Players
+*Good:* Merlin, Sir Pervival, King Arthur, Sir Dagonet, Lady Iseult, Sir Tristan, Queen Guinevere
+
+*Evil:* Sir Mordred, Lady Morgana, Sir Accolon, Lady Annowre, Sir Palamedes, Sir Maleagant
+
+*Neutral:* Sir Kay
+
+
+### Seven Players
+*Good:* Merlin, Sir Pervival, King Arthur, Sir Dagonet, Lady Iseult, Sir Tristan, Queen Guinevere, King Uther, Sir Bedivere, Sir Galahad, Sir Ector
+
+*Evil:* Sir Mordred, Lady Morgana, Sir Accolon, Lady Annowre, Sir Palamedes, Sir Maleagant, King Vortigurn, Sir Lancelot, Sir Agravaine
+
+*Neutral:* Sir Kay
 
