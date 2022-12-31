@@ -67,5 +67,12 @@ Arthur and Accolon are not guarenteed to appear in any single game, but if they 
 ##### The Scabbard
 The Scabbard is part of the Excalibur relic, and starts in the players' hands at the start of the game. At the start of the game, the Leader assigns the Scabbard to one player prior to assigning the first Quest. Each round thereafter, the Scabbard is passed by the person who holds it. It may be passed to any player except the player who held it last.
 
+## Roles by Player Count
+
+### Five Players
+*Good:* Merlin, Sir Pervival, King Arthur, Sir Dagonet
+*Evil:* Sir Mordred, Lady Morgana, Sir Accolon, Lady Annowre
+*Neutral:* Sir Kay
+
 
 
