@@ -68,6 +68,7 @@ Arthur and Accolon are not guarenteed to appear in any single game, but if they 
 The Scabbard is part of the Excalibur relic, and starts in the players' hands at the start of the game. At the start of the game, the Leader assigns the Scabbard to one player prior to assigning the first Quest. Each round thereafter, the Scabbard is passed by the person who holds it. It may be passed to any player except the player who held it last.
 
 ## Roles by Player Count
+Each player count uses certain player roles that should function well at the given count. Not all of the specified roles will appear in a game with the given number of players, but the role will be selected from among the roles given.
 
 ### Five Players
 *Good:* Merlin, Sir Pervival, King Arthur, Sir Dagonet
@@ -89,6 +90,14 @@ The Scabbard is part of the Excalibur relic, and starts in the players' hands at
 *Good:* Merlin, Sir Pervival, King Arthur, Sir Dagonet, Lady Iseult, Sir Tristan, Queen Guinevere, King Uther, Sir Bedivere, Sir Galahad, Sir Ector
 
 *Evil:* Sir Mordred, Lady Morgana, Sir Accolon, Lady Annowre, Sir Palamedes, Sir Maleagant, King Vortigurn, Sir Lancelot, Sir Agravaine
+
+*Neutral:* Sir Kay
+
+
+### Eight or Nine Players
+*Good:* Merlin, Sir Pervival, King Arthur, Sir Dagonet, Lady Iseult, Sir Tristan, Queen Guinevere, King Uther, Sir Bedivere, Sir Galahad, Sir Ector, Lady Nimue (The Lady of the Lake), Sir Bertilak (The Green Knight), Sir Gawain, Sir Bors, Queen Titania of the Seelie Fairies
+
+*Evil:* Sir Mordred, Lady Morgana, Sir Accolon, Lady Annowre, Sir Palamedes, Sir Maleagant, King Vortigurn, Sir Lancelot, Sir Agravaine, Queen Mab of the Unseelie Fairies, King Oberon of the Fairy Court
 
 *Neutral:* Sir Kay
 
