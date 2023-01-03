@@ -101,3 +101,11 @@ Each player count uses certain player roles that should function well at the giv
 
 *Neutral:* Sir Kay
 
+
+### Ten or More Players
+*Good:* Merlin, Sir Pervival, King Arthur, Sir Dagonet, Lady Iseult, Sir Tristan, Queen Guinevere, King Uther, Sir Bedivere, Sir Galahad, Sir Ector, Lady Nimue (The Lady of the Lake), Sir Bertilak (The Green Knight), Sir Gawain, Sir Bors, Queen Titania of the Seelie Fairies, Sir Lamorak
+
+*Evil:* Sir Mordred, Lady Morgana, Sir Accolon, Lady Annowre, Sir Palamedes, Sir Maleagant, King Vortigurn, Sir Lancelot, Sir Agravaine, Queen Mab of the Unseelie Fairies, King Oberon of the Fairy Court, Sir Colgrevance
+
+*Neutral:* Sir Kay, Sir Pelinor, The Questing Beast
+
