@@ -144,7 +144,10 @@ You are able to play Cleanse cards (see Card Types below).
 
 #### Sir Dagonet
 You cannot speak, but can communicate through gibberish sounds and body language.\nYou know King Arthur.\nYou appear Evil to Merlin and to all Evil players.\nOnly Sir Ector may know if Sir Dagonet is in this game.\n',
-        'Sir Ector' : 'You know which Good roles are in the game, but not who has any given role.\n',
+
+
+#### Sir Ector
+You know which Good roles are in the game, but not who has any given role.\n',
         'Sir Galahad' : 'REVEAL: (You gain this ability when you attend the First or Fourth Quest.)\nOnce per game, while Excalibur is at Camelot, you may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, King Arthur, Sir Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.',
         'Sir Gawain' : 'You know all members of the Fairy Court, Good and Evil.\nYour presence has caused the Grail to start closer to corruption.\n',
         'Queen Guinevere' : 'You know two \"rumors\" about other players.\nRumors tell you who knows something about another player, but does not explain that connection. You must use your wits to determine how the pieces fit together.\n',
