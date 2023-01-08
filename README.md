@@ -151,7 +151,9 @@ You know which Good roles are in the game, but not who has any given role.\n',
 
 #### Sir Galahad
 REVEAL: (You gain this ability when you attend the First or Fourth Quest.)\nOnce per game, while Excalibur is at Camelot, you may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, King Arthur, Sir Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.',
-        'Sir Gawain' : 'You know all members of the Fairy Court, Good and Evil.\nYour presence has caused the Grail to start closer to corruption.\n',
+
+#### Sir Gawain
+You know all members of the Fairy Court, Good and Evil.\nYour presence has caused the Grail to start closer to corruption.\n',
         'Queen Guinevere' : 'You know two \"rumors\" about other players.\nRumors tell you who knows something about another player, but does not explain that connection. You must use your wits to determine how the pieces fit together.\n',
         'Lady Iseult' : 'The person you see is also Good and is aware that you are Good.\nYou can be assassinated as either a Lover (which includes either Sir Tristan or Lady Iseult) or as Lady Iseult specifically.\nYou and Sir Tristan each know one location that Excalibur cannot be found.\n.',
         'Sir Lamorak' : 'You can see two pairs of players.\nOne pair of players are on opposite sides (Good and Evil or Sir Pelinor and the Questing Beast), and the other pair are on the same side (Evil and Evil or Good and Good).',
