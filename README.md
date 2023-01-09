@@ -127,10 +127,9 @@ When you attend a quest, once all of the quest cards are returned but before the
 
 
 #### Sir Bedivere
-You have the Suspend ability under certain certain circumstances. You must activate this ability before you can use it.
+You gain the Suspend power, but only after you gain the Scabbard and choose not to move Excalibur. Otherwise, you do not gain this power.
 
 ##### Suspend
-**You gain this ability when you gain the Scabbard, but choose not to move Excalibur.**
 *Once per game, while Excalibur is in the Lake.*
 After the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Sir Bedivere, or Sir Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. If you remove a Failure card, the next time you attend a quest, you MUST play a Failure card unless the Holy Grail is played on you.
 
@@ -150,11 +149,18 @@ You cannot speak, but can communicate through gibberish sounds and body language
 You know which Good roles are in the game, but not who has any given role.\n',
 
 #### Sir Galahad
-REVEAL: (You gain this ability when you attend the First or Fourth Quest.)\nOnce per game, while Excalibur is at Camelot, you may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, King Arthur, Sir Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.',
+You gain the Reveal power, but only after you attend either the First or Fourth Quest. Otherwise, you do not gain this power.
+
+##### Suspend
+*Once per game, while Excalibur is in at Camelot.*
+You may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, King Arthur, Sir Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.
 
 #### Sir Gawain
-You know all members of the Fairy Court, Good and Evil.\nYour presence has caused the Grail to start closer to corruption.\n',
-        'Queen Guinevere' : 'You know two \"rumors\" about other players.\nRumors tell you who knows something about another player, but does not explain that connection. You must use your wits to determine how the pieces fit together.\n',
+You know all members of the Fairy Court, Good and Evil. However, your presence has caused the Grail to start closer to corruption.
+
+#### Queen Guinevere
+You know two "rumors" about other players. Rumors tell you who knows something about another player, but does not explain how that person knows it. You must use your wits to determine how the pieces fit together.
+
         'Lady Iseult' : 'The person you see is also Good and is aware that you are Good.\nYou can be assassinated as either a Lover (which includes either Sir Tristan or Lady Iseult) or as Lady Iseult specifically.\nYou and Sir Tristan each know one location that Excalibur cannot be found.\n.',
         'Sir Lamorak' : 'You can see two pairs of players.\nOne pair of players are on opposite sides (Good and Evil or Sir Pelinor and the Questing Beast), and the other pair are on the same side (Evil and Evil or Good and Good).',
         'Merlin' : 'You know which people have Evil roles, but not who has any specific role.\n',
