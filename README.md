@@ -161,7 +161,10 @@ You know all members of the Fairy Court, Good and Evil. However, your presence h
 ### Queen Guinevere
 You know two "rumors" about other players. Rumors tell you who knows something about another player, but does not explain how that person knows it. You must use your wits to determine how the pieces fit together.
 
-        'Lady Iseult' : 'The person you see is also Good and is aware that you are Good.\nYou can be assassinated as either a Lover (which includes either Sir Tristan or Lady Iseult) or as Lady Iseult specifically.\nYou and Sir Tristan each know one location that Excalibur cannot be found.\n.',
+### Lady Iseult
+*You are an Assassination target, and can be named as either a Lover or Iseult.*
+You and Sir Tristan each know who the other is and also know one location that Excalibur **cannot** be found.
+
         'Sir Lamorak' : 'You can see two pairs of players.\nOne pair of players are on opposite sides (Good and Evil or Sir Pelinor and the Questing Beast), and the other pair are on the same side (Evil and Evil or Good and Good).',
         'Merlin' : 'You know which people have Evil roles, but not who has any specific role.\n',
         'Lady Nimue, The Lady of the Lake' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\n',
