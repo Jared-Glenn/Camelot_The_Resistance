@@ -165,7 +165,8 @@ You know two "rumors" about other players. Rumors tell you who knows something a
 *You are an Assassination target, and can be named as either a Lover or Iseult.*
 You and Sir Tristan each know who the other is and also know one location that Excalibur **cannot** be found.
 
-        'Sir Lamorak' : 'You can see two pairs of players.\nOne pair of players are on opposite sides (Good and Evil or Sir Pelinor and the Questing Beast), and the other pair are on the same side (Evil and Evil or Good and Good).',
+### Sir Lamorak
+You can see two pairs of players. One pair of players are on opposite sides (Good and Evil or Sir Pelinor and the Questing Beast), and the other pair are on the same side (Evil and Evil or Good and Good).
         'Merlin' : 'You know which people have Evil roles, but not who has any specific role.\n',
         'Lady Nimue, The Lady of the Lake' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\n',
         'Sir Percival' : 'You know which people have the Merlin and Lady Morgana roles, but not who has each.\n',
