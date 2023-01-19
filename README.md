@@ -167,7 +167,10 @@ You and Sir Tristan each know who the other is and also know one location that E
 
 ### Sir Lamorak
 You can see two pairs of players. One pair of players are on opposite sides (Good and Evil or Sir Pelinor and the Questing Beast), and the other pair are on the same side (Evil and Evil or Good and Good).
-        'Merlin' : 'You know which people have Evil roles, but not who has any specific role.\n',
+
+### Merlin
+You know which people have Evil roles, but not who has any specific role.
+
         'Lady Nimue, The Lady of the Lake' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\n',
         'Sir Percival' : 'You know which people have the Merlin and Lady Morgana roles, but not who has each.\n',
         'Queen Titania of the Seelie Fairies' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\nYou appear as Evil to all players with Evil roles (except Sir Colgrevance).\n',
