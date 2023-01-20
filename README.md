@@ -171,7 +171,9 @@ You can see two pairs of players. One pair of players are on opposite sides (Goo
 ### Merlin
 You know which people have Evil roles, but not who has any specific role.
 
-        'Lady Nimue, The Lady of the Lake' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\n',
+### Lady Nimue, The Lady of the Lake
+You are a member of the Fairy Court and benefit from corrupting the Holy Grail.
+
         'Sir Percival' : 'You know which people have the Merlin and Lady Morgana roles, but not who has each.\n',
         'Queen Titania of the Seelie Fairies' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\nYou appear as Evil to all players with Evil roles (except Sir Colgrevance).\n',
         'Sir Tristan' : 'The person you see is also Good and is aware that you are Good.\nYou can be assassinated as either a Lover (which includes either Sir Tristan or Lady Iseult) or as Sir Tristan specifically.\nYou and Lady Iseult each know one location that Excalibur cannot be found.\n.',
