@@ -174,7 +174,9 @@ You know which people have Evil roles, but not who has any specific role.
 ### Lady Nimue, The Lady of the Lake
 You are a member of the Fairy Court and benefit from corrupting the Holy Grail.
 
-        'Sir Percival' : 'You know which people have the Merlin and Lady Morgana roles, but not who has each.\n',
+### Sir Percival
+You know which people have the Merlin and Lady Morgana roles, but not who has each.
+
         'Queen Titania of the Seelie Fairies' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\nYou appear as Evil to all players with Evil roles (except Sir Colgrevance).\n',
         'Sir Tristan' : 'The person you see is also Good and is aware that you are Good.\nYou can be assassinated as either a Lover (which includes either Sir Tristan or Lady Iseult) or as Sir Tristan specifically.\nYou and Lady Iseult each know one location that Excalibur cannot be found.\n.',
         'King Uther' : 'EXILE: (You gain this ability when you vote against your own quest proposal or a quest proposal in which you have been chosen to attend.)\nOnce per game, while Excalibur is in the Stone, you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.',
