@@ -196,8 +196,9 @@ You know King Arthur.\n\nOBTAIN EXCALIBUR: (Once per game. Must have obtained th
 ### Sir Agravaine 
 You have the Suspend ability.\n\nSUSPEND:\nOnce per game, while Excalibur is in the Lake, after the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Sir Bedivere, or Sir Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. If you remove a Failure card, the next time you attend a quest, you MUST play a Failure card unless the Holy Grail is played on you.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).
 
+### Lady Annowre
+You know where Excalibur may be retrieved.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).
 
-        'Lady Annowre' : 'You know where Excalibur may be retrieved.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
         'Sir Colgrevance' : 'You know not only who else is Evil, but what role each other Evil player possesses.\nEvil players know that there is a Sir Colgrevance, but do not know that it is you or even that you are Evil.',
         'Sir Lancelot' : 'You have the Reveal ability.\n\nREVEAL:\nOnce per game, while Excalibur is at Camelot, you may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, King Arthur, Sir Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
         'Queen Mab of the Unseelie Fairies' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\nYou ignore the effects of the Holy Grail.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
