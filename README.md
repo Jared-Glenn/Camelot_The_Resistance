@@ -208,7 +208,7 @@ You have the Reveal ability.\n\nREVEAL:\nOnce per game, while Excalibur is at Ca
 ### Queen Mab of the Unseelie Fairies
 You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\nYou ignore the effects of the Holy Grail.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).
 
-        'Sir Maleagant' : 'Each time you are given the Scabbard, you may declare as Sir Maleagant to force the next quest to have one additional knight attend it. This ability cannot be used on the final quest. This ability cannot be used if you use the Leader role to take the Scabbard.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).
+### Sir Maleagant'Each time you are given the Scabbard, you may declare as Sir Maleagant to force the next quest to have one additional knight attend it. This ability cannot be used on the final quest. This ability cannot be used if you use the Leader role to take the Scabbard.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).
 
         'Sir Mordred' : 'You are hidden from all Good roles that could reveal that information.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
         'Lady Morgana' : 'You appear like Merlin to Sir Percival.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
