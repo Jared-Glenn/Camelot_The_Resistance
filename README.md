@@ -234,7 +234,8 @@ You are neutral and equally pulled to the Good and Evil sides, but you do have o
 ### Sir Pelinor
 You are Neutral in this battle and have no allies in this game.\nYour nemesis is The Questing Beast, who is also Neutral.\nYou have the Battle the Beast ability.\n\nBATTLE THE BEAST: (You must be on the Fifth Quest to use this ability)\nAfter all quest cards have been collected, but before they are read, you may declare as Sir Pelinor. The Questing Beast must reveal itself to all players.\n\nABOUT THE QUESTING BEAST:\nThe Questing Beast can see who you are.\nThe Questing Beast must play at least one \"The Questing Beast Was Here\" card or will lose significant Victory Points.\nIt may play a \"Reversal\" card once per game.
 
-        'The Questing Beast' : 'You are Neutral in this battle and have no allies in this game.\nYour nemesis is Sir Pelinor, who is also Neutral.\n\nABOUT PELINOR:\nSir Pelinor cannot see you, though you can see him.\nPelinor also wants to reach the Fifth Quest to gain additional Victory Points.\nBeware! If Sir Pelinor suspects you are on the Fifth Quest, he may declare as Sir Pelinor, causing you to reveal yourself and lose Victory Points.\n',
+### The Questing Beast
+You are Neutral in this battle and have no allies in this game.\nYour nemesis is Sir Pelinor, who is also Neutral.\n\nABOUT PELINOR:\nSir Pelinor cannot see you, though you can see him.\nPelinor also wants to reach the Fifth Quest to gain additional Victory Points.\nBeware! If Sir Pelinor suspects you are on the Fifth Quest, he may declare as Sir Pelinor, causing you to reveal yourself and lose Victory Points.
         
         
         
