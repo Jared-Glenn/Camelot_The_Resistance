@@ -241,7 +241,18 @@ You are Neutral in this battle and have no allies in this game.\nYour nemesis is
         
 ## Card Types
 
+#### Success
 
+#### Failure
 
+#### Regrowth
+
+#### Rot
+
+#### Reverse
+
+#### Cleanse
+
+#### The Questing Beast Was Here
 
 \n\nCLEANSE CARDS:\nIf there is a Rot or Regrowth card revealed on the same quest, negate all Cleanse, Rot, and Regrowth cards.\nIf no Rot or Regrowth cards are revealed on the same quest, Cleanse cards count as Failure cards.\n\nWhile Excalibur is at Camelot, you may choose to declare as Sir Bors. After you declare, the next time you successfully remove a Rot or Regrowth from a quest with a Cleanse card, you may Cleanse the Holy Grail as well, moving the Holy Grail one step further from Corruption.\n',
