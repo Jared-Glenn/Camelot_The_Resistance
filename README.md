@@ -115,6 +115,7 @@ Each player count uses certain player roles that should function well at the giv
 
 
 ### King Arthur
+*Cards:* Success
 You know each player that is seeking Excalibur in the right place. That is, each player that gains some benefit from Excalibur being in the location Excalibur is actually hidden.
 
 ##### Obtain Excalibur
@@ -127,6 +128,7 @@ When you attend a quest, once all of the quest cards are returned but before the
 
 
 ### Sir Bedivere
+*Cards:* Success, **Suspended Card**
 You gain the Suspend power, but only after you gain the Scabbard and choose not to move Excalibur. Otherwise, you do not gain this power.
 
 ##### Suspend
@@ -135,124 +137,222 @@ After the quest cards have been collected for a quest, but before they are read,
 
 
 ### Sir Bertilak, The Green Knight
-You are a member of the Fairy Court and benefit from corrupting the Holy Grail.
+*Cards:* Regrowth, **Rot, Any Card**
+You are a member of the Fairy Court and benefit from corrupting the Holy Grail. If you have the Holy Grail played on you, you must play Rot on that quest.
+
+After the Holy Grail has been corrupted, you may play ANY card on quests.
 
 
 ### Sir Bors
+*Cards:* Success, Cleanse
 You are able to play Cleanse cards (see Card Types below).
 
 ### Sir Dagonet
-You cannot speak, but can communicate through gibberish sounds and body language.\nYou know King Arthur.\nYou appear Evil to Merlin and to all Evil players.\nOnly Sir Ector may know if Sir Dagonet is in this game.\n',
-
+*Cards:* Success
+You cannot speak, but can communicate through gibberish sounds and body language.\nYou know King Arthur.\nYou appear Evil to Merlin and to all Evil players. Only Sir Ector may know if Sir Dagonet is in this game.
 
 ### Sir Ector
-You know which Good roles are in the game, but not who has any given role.\n',
+*Cards:* Success
+You know which Good roles are in the game, but not who has any given role.
 
 ### Sir Galahad
+*Cards:* *Cards:*
 You gain the Reveal power, but only after you attend either the First or Fourth Quest. Otherwise, you do not gain this power.
 
-##### Suspend
+##### Reveal
 *Once per game, while Excalibur is in at Camelot.*
 You may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, King Arthur, Sir Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.
 
 ### Sir Gawain
+*Cards:* Success, **Reversal**
 You know all members of the Fairy Court, Good and Evil. However, your presence has caused the Grail to start closer to corruption.
 
+If there are no Fae players in the game (you have no secret information), you may also play Reversal cards.
+
 ### Queen Guinevere
+*Cards:* Success
 You know two "rumors" about other players. Rumors tell you who knows something about another player, but does not explain how that person knows it. You must use your wits to determine how the pieces fit together.
 
 ### Lady Iseult
+*Cards:* Success
 *You are an Assassination target, and can be named as either a Lover or Iseult.*
 You and Sir Tristan each know who the other is and also know one location that Excalibur **cannot** be found.
 
 ### Sir Lamorak
+*Cards:* Success
 You can see two pairs of players. One pair of players are on opposite sides (Good and Evil or Sir Pelinor and the Questing Beast), and the other pair are on the same side (Evil and Evil or Good and Good).
 
 ### Merlin
+*Cards:* Success, **Reversal**
 You know which people have Evil roles, but not who has any specific role.
 
+You may play Reversal cards while Excaliber is in the Lake (unless the Holy Grail is played on you).
+
 ### Lady Nimue, The Lady of the Lake
-You are a member of the Fairy Court and benefit from corrupting the Holy Grail.
+*Cards:* Regrowth, **Success, Any Card**
+You are a member of the Fairy Court and benefit from corrupting the Holy Grail. If the Holy Grail is played on you, you must play a Success card on that quest.
+
+After the Holy Grail has been corrupted, you may play ANY card on quests.
 
 ### Sir Percival
-You know which people have the Merlin and Lady Morgana roles, but not who has each.
+*Cards:* Success, **Reversal**
+You know which people have the Merlin and Lady Morgana roles, but not who has each. If you don't see anyone (your secret information is empty), niether Merlin nor Lady Morgana are in the game.
+
+You may play Reversal cards while Excaliber is at Camelot (unless the Holy Grail is played on you).
 
 ### Queen Titania of the Seelie Fairies
-You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\nYou appear as Evil to all players with Evil roles (except Sir Colgrevance).
+*Cards:* Regrowth, **Any Card**
+You are a member of the Fairy Court and benefit from corrupting the Holy Grail.
+
+You appear as Evil to all players with Evil roles (except Sir Colgrevance).
+
+After the Holy Grail has been corrupted, you may play ANY card on quests.
 
 ### Sir Tristan
+*Cards:* Success
 The person you see is also Good and is aware that you are Good.
-You can be assassinated as either a Lover (which includes either Sir Tristan or Lady Iseult) or as Sir Tristan specifically.\nYou and Lady Iseult each know one location that Excalibur cannot be found.
+You can be assassinated as either a Lover (which includes either Sir Tristan or Lady Iseult) or as Sir Tristan specifically.
+
+You and Lady Iseult each know one location that Excalibur cannot be found.
 
 ### King Uther
-EXILE: (You gain this ability when you vote against your own quest proposal or a quest proposal in which you have been chosen to attend.)\nOnce per game, while Excalibur is in the Stone, you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.
+*Cards:* Success
+You gain the Exile power, but only after you vote against your own quest proposal OR a quest proposal where you have been chosen to attend.
+
+##### Exile
+*Once per game, while Excaliber is in the Stone.
+After a new leader is selected (but before the vote occurs), you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area and access your character file. When the exile is over, you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.
 
 
 ### Evil Roles
 
 ### Sir Accolon
+*Cards:* Success, Failure
 You know King Arthur.\n\nOBTAIN EXCALIBUR: (Once per game. Must have obtained the Scabbard twice [by any means].)\nOnce per game, when you obtain the Scabbard, you may search the current location for Excalibur instead of changing the location. If it is in that location, you gain Excalibur and can use the Expend Excalibur ability.\n\nEXPEND EXCALIBUR: (Once per game. Must have found Excalibur.)\nWhen you attend a quest, once all of the quest cards are returned but before they are read, you may force the quest to fail even when it would otherwise succeed.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).
 
 ### Sir Agravaine 
+*Cards:* Success, Failure
 You have the Suspend ability.\n\nSUSPEND:\nOnce per game, while Excalibur is in the Lake, after the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Sir Bedivere, or Sir Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. If you remove a Failure card, the next time you attend a quest, you MUST play a Failure card unless the Holy Grail is played on you.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).
 
 ### Lady Annowre
+*Cards:* Success, Failure
 You know where Excalibur may be retrieved.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).
 
 ### Sir Colgrevance
+*Cards:* Success, Failure
 You know not only who else is Evil, but what role each other Evil player possesses.\nEvil players know that there is a Sir Colgrevance, but do not know that it is you or even that you are Evil.
 
 ### Sir Lancelot
+*Cards:* Success, Failure
 You have the Reveal ability.\n\nREVEAL:\nOnce per game, while Excalibur is at Camelot, you may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, King Arthur, Sir Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).
 
 ### Queen Mab of the Unseelie Fairies
-You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\nYou ignore the effects of the Holy Grail.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).
+*Cards:* Rot, **Any Card**
+You are a member of the Fairy Court and benefit from corrupting the Holy Grail.
+
+You may only play Rot cards on quests unless the Holy Grail is corrupted, even when the Holy Grail is played on you.
+
+After the Holy Grail has been corrupted, you may play ANY card on quests.
 
 ### Sir Maleagant
-Each time you are given the Scabbard, you may declare as Sir Maleagant to force the next quest to have one additional knight attend it. This ability cannot be used on the final quest. This ability cannot be used if you use the Leader role to take the Scabbard.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).
+*Cards:* Failure
+Each time you are given the Scabbard, you may declare as Sir Maleagant to force the next quest to have one additional knight attend it. This ability cannot be used on the final quest. This ability cannot be used if you use the Leader role to take the Scabbard.
+
+You may only play Failure cards on quests.
 
 ### Sir Mordred
+*Cards:* Success, Failure
 You are hidden from all Good roles that could reveal that information.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).
 
 ### Lady Morgana
-You appear like Merlin to Sir Percival.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).
+*Cards:* Success, Failure, **Reversal**
+You appear like Merlin to Sir Percival.
+
+You may play Reversal cards while Excaliber is in the Stone (unless the Holy Grail is played on you).
         
 ### King Oberon of the Fairy Court
-You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\nYou know Sir Gawain and Sir Bertilak, The Green Knight.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).
+*Cards:* Rot, Regrowth, **Any Card**
+You are a member of the Fairy Court and benefit from corrupting the Holy Grail.
+
+You know Sir Gawain and Sir Bertilak, The Green Knight.
+
+After the Holy Grail has been corrupted, you may play ANY card on quests.
         
 ### Sir Palamedes
-You know Lady Iseult and you have the Exile ability.\n\nEXILE:\nWhile Excalibur is in the Stone, you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n\nATTENTION TRISTAN PLAYER:\nIf you have been Exiled by Sir Palamedes, you are now ONLY allowed to play Failure cards on quests unless affected by the Holy Grail (in which case, you must play a Success card).\nYou are still on the Good team and your Victory Points are unchanged.\nYou are still a valid Assassination Target.\nWhen Sir Palamedes retrieves you, you must reveal that you are Tristan to him.
+*Cards:* Success, **Failure**
+You start with the ability to play Failure cards. You also know Lady Iseult and have the Exile ability.
+
+If you choose Sir Tristan, he loses the ability to play Success cards, but remains on Arthur's team. He remains a valid Assassination target, though you lose Victory Points if he is Assassinated. Tristan must reveal his identity when you retrieve him from exile.
+
+After you exile Sir Tristan, you lose the ability to play Failure cards.
+
+##### Exile
+*Once per game, while Excaliber is in the Stone.
+After a new leader is selected (but before the vote occurs), you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area and access your character file. When the exile is over, you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.
 
 ### King Vortigurn
-EXILE:\nOnce per game, while Excalibur is in the Stone, you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
+*Cards:* Success, Failure
+You start with the Exile ability.
+
+##### Exile
+*Once per game, while Excaliber is in the Stone.
+After a new leader is selected (but before the vote occurs), you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area and access your character file. When the exile is over, you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.
 
 ### Neutral Roles
 
 ### Sir Kay
-You are neutral and equally pulled to the Good and Evil sides, but you do have one ally who is either Good or Evil. You must determine if this ally is Good or Evil and assist as best you can.\nNiether Evil players nor Merlin can identify you as Good or Evil.
+*Cards:* Success, Failure, Rot, Regrowth
+You are neutral and equally pulled to the Good and Evil sides, but you do have one ally who is either Good or Evil. You must determine if this ally is Good or Evil and assist as best you can.
+
+Niether Evil players nor Merlin can identify you as Good or Evil.
+
+You must play Success cards when the Holy Grail is played on you.
 
 ### Sir Pelinor
-You are Neutral in this battle and have no allies in this game.\nYour nemesis is The Questing Beast, who is also Neutral.\nYou have the Battle the Beast ability.\n\nBATTLE THE BEAST: (You must be on the Fifth Quest to use this ability)\nAfter all quest cards have been collected, but before they are read, you may declare as Sir Pelinor. The Questing Beast must reveal itself to all players.\n\nABOUT THE QUESTING BEAST:\nThe Questing Beast can see who you are.\nThe Questing Beast must play at least one \"The Questing Beast Was Here\" card or will lose significant Victory Points.\nIt may play a \"Reversal\" card once per game.
+*Cards:* Success, Reversal
+You are Neutral in this battle and have no allies in this game. Your nemesis is The Questing Beast, who is also Neutral. You have the Battle the Beast ability.
+
+Your goal is to attend the final quest. If the Questing Beast is on that quest with you, you must use the Battle the Beast ability. If the Questing Beast is NOT on that final quest, you must NOT use the Battle the Beast ability. Performing these actions in the wrong combination will cost you significant Victory Points.
+
+##### Battle the Beast
+*Can only be used on the Fifth Quest.*
+After all quest cards have been collected, but before they are read, you may declare as Sir Pelinor. The Questing Beast must reveal itself to all players.
 
 ### The Questing Beast
-You are Neutral in this battle and have no allies in this game.\nYour nemesis is Sir Pelinor, who is also Neutral.\n\nABOUT PELINOR:\nSir Pelinor cannot see you, though you can see him.\nPelinor also wants to reach the Fifth Quest to gain additional Victory Points.\nBeware! If Sir Pelinor suspects you are on the Fifth Quest, he may declare as Sir Pelinor, causing you to reveal yourself and lose Victory Points.
+*Cards:* The Questing Beast Was Here, **Reversal**
+You are Neutral in this battle and have no allies in this game. You are Fae, however, and benefit from the Holy Grail's corruption (though not as much as other Fae). Your nemesis is Sir Pelinor, who is also Neutral.
+
+Your goal is to either prevent Sir Pelinor from attending the final quest or to trick Sir Pelinor into misusing his Battle the Beast ability. You must play at least one The Questing Beast Was Here card or lose significant Victory Points.
+
+You may play one Reversal card per game.
         
         
         
 ## Card Types
 
 #### Success
+A vote for a mission to succeed (its default state). This card essentially has no effect, since it will not change the outcome.
 
 #### Failure
+Alters the result of a mission to failure. If the mission was already failing, this card has no effect.
 
 #### Regrowth
+Works the same as a Success card during a quest. After the quest is over, the Holy Grail moves one step closer to corruption.
 
 #### Rot
+Works the same as a Failure card during a quest. After the quest is over, the Holy Grail moves one step closer to corruption.
 
 #### Reverse
+This card takes effect after each other card is applied (except other Reversal cards). Each Reversal card reverses the results of the quest. Thus, a failed quest becomes a success, and a successful quest becomes a failure. Two Reversal cards essentially cancel each other out.
+
+This only changes the result of the quest itself and will not affect the corruption of the Holy Grail if Rot or Regrowth are played.
 
 #### Cleanse
+If there is a Rot or Regrowth card revealed on this quest, negate all Cleanse, Rot, and Regrowth cards.
+
+Works the same as a Failure card unless negated.
 
 #### The Questing Beast Was Here
+Works the same as a Success card.
 
-\n\nCLEANSE CARDS:\nIf there is a Rot or Regrowth card revealed on the same quest, negate all Cleanse, Rot, and Regrowth cards.\nIf no Rot or Regrowth cards are revealed on the same quest, Cleanse cards count as Failure cards.\n\nWhile Excalibur is at Camelot, you may choose to declare as Sir Bors. After you declare, the next time you successfully remove a Rot or Regrowth from a quest with a Cleanse card, you may Cleanse the Holy Grail as well, moving the Holy Grail one step further from Corruption.\n',
+(This is the primary card played by the Questing Beast and acts as a clue to Sir Pelinor. It, otherwise, has no effect.)
