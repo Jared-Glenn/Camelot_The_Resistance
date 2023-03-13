@@ -9,7 +9,7 @@ from docx import Document
 from docx.shared import Pt, RGBColor, Length, Inches
 from docx.oxml.shared import OxmlElement
 from docx.oxml.ns import qn
-from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
 
 def insertHR(paragraph):
     p = paragraph._p  # p is the <w:p> XML element
@@ -36,12 +36,12 @@ def get_role_description(role):
     return {
         # Good Roles
         'King Arthur' : 'You know each player that is seeking Excalibur in the right place. That is, each player that gains some benefit from Excalibur being in the location Excalibur is actually hidden.\n\nOBTAIN EXCALIBUR: (Must have declared as a Sword Seeker, King Arthur, or Sir Accolon [your choice].)\nAfter you declare, each time you are given the Scabbard, you may search the current location for Excalibur instead of changing the location. If it is in that location, you gain Excalibur and can use the Expend Excalibur ability.\n\nEXPEND EXCALIBUR: (Once per game. Must have found Excalibur.)\nWhen you attend a quest, once all of the quest cards are returned but before they are read, you may force the quest to succeed even when it would otherwise fail.\n',
-        'Sir Bedivere' : 'SUSPEND: (You gain this ability when you gain the Scabbard, but choose not to move Excalibur)\nOnce per game, while Excalibur is in the Lake, after the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Sir Bedivere, or Sir Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. If you remove a Failure card, the next time you attend a quest, you MUST play a Failure card unless the Holy Grail is played on you.\n',
+        'Sir Bedivere' : 'SUSPEND: (You gain this ability when you gain the Scabbard, but choose not to move Excalibur)\nOnce per game, while the Excalibur Search is in the Lake, after the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Sir Bedivere, or Sir Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. If you remove a Failure card, the next time you attend a quest, you MUST play a Failure card unless the Holy Grail is played on you.\n',
         'Sir Bertilak, The Green Knight' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\n',
         'Sir Bors' : 'You have access to Cleanse cards.\n\nCLEANSE CARDS:\nIf there is a Rot or Regrowth card revealed on the same quest, negate all Cleanse, Rot, and Regrowth cards.\nIf no Rot or Regrowth cards are revealed on the same quest, Cleanse cards count as Failure cards.\n\nWhile Excalibur is at Camelot, you may choose to declare as Sir Bors. After you declare, the next time you successfully remove a Rot or Regrowth from a quest with a Cleanse card, you may Cleanse the Holy Grail as well, moving the Holy Grail one step further from Corruption.\n',
         'Sir Dagonet' : 'You cannot speak, but can communicate through gibberish sounds and body language.\nYou know King Arthur.\nYou appear Evil to Merlin and to all Evil players.\nOnly Sir Ector may know if Sir Dagonet is in this game.\n',
         'Sir Ector' : 'You know which Good roles are in the game, but not who has any given role.\n',
-        'Sir Galahad' : 'REVEAL: (You gain this ability when you attend the First or Fourth Quest.)\nOnce per game, while Excalibur is at Camelot, you may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, King Arthur, Sir Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.',
+        'Sir Galahad' : 'REVEAL: (You gain this ability when you attend the First or Fourth Quest.)\nOnce per game, while the Excalibur Search is at Camelot, you may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, King Arthur, Sir Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.',
         'Sir Gawain' : 'You know all members of the Fairy Court, Good and Evil.\nYour presence has caused the Grail to start closer to corruption.\n',
         'Queen Guinevere' : 'You know two \"rumors\" about other players.\nRumors tell you who knows something about another player, but does not explain that connection. You must use your wits to determine how the pieces fit together.\n',
         'Lady Iseult' : 'The person you see is also Good and is aware that you are Good.\nYou can be assassinated as either a Lover (which includes either Sir Tristan or Lady Iseult) or as Lady Iseult specifically.\nYou and Sir Tristan each know one location that Excalibur cannot be found.\n.',
@@ -51,20 +51,20 @@ def get_role_description(role):
         'Sir Percival' : 'You know which people have the Merlin and Lady Morgana roles, but not who has each.\n',
         'Queen Titania of the Seelie Fairies' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\nYou appear as Evil to all players with Evil roles (except Sir Colgrevance).\n',
         'Sir Tristan' : 'The person you see is also Good and is aware that you are Good.\nYou can be assassinated as either a Lover (which includes either Sir Tristan or Lady Iseult) or as Sir Tristan specifically.\nYou and Lady Iseult each know one location that Excalibur cannot be found.\n.',
-        'King Uther' : 'EXILE: (You gain this ability when you vote against your own quest proposal or a quest proposal in which you have been chosen to attend.)\nOnce per game, while Excalibur is in the Stone, you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.',
+        'King Uther' : 'EXILE: (You gain this ability when you vote against your own quest proposal or a quest proposal in which you have been chosen to attend.)\nOnce per game, while the Excalibur Search is in the Stone, you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.',
 
         # Evil Roles
         'Sir Accolon' : 'You know King Arthur.\n\nOBTAIN EXCALIBUR: (Once per game. Must have obtained the Scabbard twice [by any means].)\nOnce per game, when you obtain the Scabbard, you may search the current location for Excalibur instead of changing the location. If it is in that location, you gain Excalibur and can use the Expend Excalibur ability.\n\nEXPEND EXCALIBUR: (Once per game. Must have found Excalibur.)\nWhen you attend a quest, once all of the quest cards are returned but before they are read, you may force the quest to fail even when it would otherwise succeed.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
-        'Sir Agravaine' : 'You have the Suspend ability.\n\nSUSPEND:\nOnce per game, while Excalibur is in the Lake, after the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Sir Bedivere, or Sir Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. If you remove a Failure card, the next time you attend a quest, you MUST play a Failure card unless the Holy Grail is played on you.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
+        'Sir Agravaine' : 'You have the Suspend ability.\n\nSUSPEND:\nOnce per game, while the Excalibur Search is in the Lake, after the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Sir Bedivere, or Sir Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. If you remove a Failure card, the next time you attend a quest, you MUST play a Failure card unless the Holy Grail is played on you.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
         'Lady Annowre' : 'You know where Excalibur may be retrieved.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
         'Sir Colgrevance' : 'You know not only who else is Evil, but what role each other Evil player possesses.\nEvil players know that there is a Sir Colgrevance, but do not know that it is you or even that you are Evil.',
-        'Sir Lancelot' : 'You have the Reveal ability.\n\nREVEAL:\nOnce per game, while Excalibur is at Camelot, you may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, King Arthur, Sir Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
+        'Sir Lancelot' : 'You have the Reveal ability.\n\nREVEAL:\nOnce per game, while the Excalibur Search is at Camelot, you may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, King Arthur, Sir Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
         'Queen Mab of the Unseelie Fairies' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\nYou ignore the effects of the Holy Grail.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
         'Sir Maleagant' : 'Each time you are given the Scabbard, you may declare as Sir Maleagant to force the next quest to have one additional knight attend it. This ability cannot be used on the final quest. This ability cannot be used if you use the Leader role to take the Scabbard.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
         'Sir Mordred' : 'You are hidden from all Good roles that could reveal that information.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
         'Lady Morgana' : 'You appear like Merlin to Sir Percival.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
         'King Oberon of the Fairy Court' : 'You are a member of the Fairy Court and benefit from corrupting the Holy Grail.\nYou know Sir Gawain and Sir Bertilak, The Green Knight.\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
-        'Sir Palamedes' : 'You know Lady Iseult and you have the Exile ability.\n\nEXILE:\nWhile Excalibur is in the Stone, you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n\nATTENTION TRISTAN PLAYER:\nIf you have been Exiled by Sir Palamedes, you are now ONLY allowed to play Failure cards on quests unless affected by the Holy Grail (in which case, you must play a Success card).\nYou are still on the Good team and your Victory Points are unchanged.\nYou are still a valid Assassination Target.\nWhen Sir Palamedes retrieves you, you must reveal that you are Tristan to him.\n',
+        'Sir Palamedes' : 'You know Lady Iseult and you have the Exile ability.\n\nEXILE:\nWhile the Excalibur Search is in the Stone, you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n\nATTENTION TRISTAN PLAYER:\nIf you have been Exiled by Sir Palamedes, you are now ONLY allowed to play Failure cards on quests unless affected by the Holy Grail (in which case, you must play a Success card).\nYou are still on the Good team and your Victory Points are unchanged.\nYou are still a valid Assassination Target.\nWhen Sir Palamedes retrieves you, you must reveal that you are Tristan to him.\n',
         'King Vortigurn' : 'EXILE:\nOnce per game, while Excalibur is in the Stone, you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). You may only do this after a new leader is selected but before a quest vote occurs. If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area to view this information, and you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.\n\nLike other Evil characters, you know who else is Evil (except Sir Colgrevance).\n',
 
         # Neutral Roles
@@ -227,14 +227,14 @@ def get_conditional_cards(role):
         '1-Lady Iseult' : 'NONE',
         '1-Sir Lamorak' : 'NONE',
         '1-Merlin' : 'Reversal ',
-        '2-Merlin' : '(Available when Excalibur is in the Lake, unless the Holy Grail is currently played on you.)\n',
+        '2-Merlin' : '(Available when the Excalibur Search is in the Lake, unless the Holy Grail is currently played on you.)\n',
         '3-Merlin' : 'NONE',
         '1-Lady Nimue, The Lady of the Lake' : 'Success ',
         '2-Lady Nimue, The Lady of the Lake' : '(Must be played when the Holy Grail is played on you, unless Excalibur is in the Lake.)\n',
         '3-Lady Nimue, The Lady of the Lake' : '[Any Card] ',
         '4-Lady Nimue, The Lady of the Lake' : '(Available for each quest after the Holy Grail has been corrupted.)\n',
         '1-Sir Percival' : 'Reversal ',
-        '2-Sir Percival' : '(Available when Excalibur is at Camelot, unless the Holy Grail is currently played on you.)\n',
+        '2-Sir Percival' : '(Available when the Excalibur Search is at Camelot, unless the Holy Grail is currently played on you.)\n',
         '3-Sir Percival' : 'NONE',
         '1-Queen Titania of the Seelie Fairies' : 'NONE',
         '3-Queen Titania of the Seelie Fairies' : '[Any Card] ',
@@ -254,7 +254,7 @@ def get_conditional_cards(role):
         '1-Sir Maleagant' : 'NONE',
         '1-Sir Mordred' : 'NONE',
         '1-Lady Morgana' : 'Reversal ',
-        '2-Lady Morgana' : '(Available when Excalibur is in the Stone, unless the Holy Grail is currently played on you.)\n',
+        '2-Lady Morgana' : '(Available when the Excalibur Search is in the Stone, unless the Holy Grail is currently played on you.)\n',
         '3-Lady Morgana' : 'NONE',
         '1-King Oberon of the Fairy Court' : 'NONE',
         '3-King Oberon of the Fairy Court' : '[Any Card] ',
@@ -501,7 +501,6 @@ class Player():
 class Relic():
     # Relics have the following traits
     # name: the name of the relic as fed into system arguments
-    # type: the type the relic possesses
     # location: where the relic may be claimed
     # decoy1: first location where the relic is not found
     # decoy2: second location where the relic is not found
@@ -711,7 +710,7 @@ def get_player_info(player_names):
                 break
             else:
                 continue
-        if not is_Palamedes and random.choice([True,False]):
+        if is_Palamedes == False and random.choice([True,False]):
             rerolled = random.choice(evil_roles_in_game)
             evil_roles_in_game.remove(rerolled)
             evil_roles_in_game.append('Sir Palamedes')
@@ -803,14 +802,13 @@ def get_player_info(player_names):
 
     # Assign Compatable Evil Player to Assassin role.
     assassin_player = None
-    non_assassins = ['Sir Lancelot', 'Sir Palamedes', 'King Oberon of the Fairy Court']
-    if evil_players[0].role not in non_assassins:
+    if evil_players[0].role != 'Sir Lancelot' and evil_players[0].role != 'Sir Palamedes' and evil_players[0].role != 'King Oberon of the Fairy Court':
         evil_players[0].is_assassin = True
         assassin_player = evil_players[0].name
-    elif evil_players[1].role not in non_assassins:
+    elif evil_players[1].role != 'Sir Lancelot' and evil_players[1].role != 'Sir Palamedes' and evil_players[1].role != 'King Oberon of the Fairy Court':
         evil_players[1].is_assassin = True
         assassin_player = evil_players[1].name
-    elif evil_players[2].role not in non_assassins:
+    elif evil_players[2].role != 'Sir Lancelot' and evil_players[2].role != 'Sir Palamedes' and evil_players[2].role != 'King Oberon of the Fairy Court':
         evil_players[2].is_assassin = True
         assassin_player = evil_players[2].name
     else:
@@ -880,7 +878,7 @@ def get_player_info(player_names):
         font.size = Pt(50)
     
         paragraph = document.add_paragraph()
-        paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        paragraph.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
         paragraph_format = paragraph.paragraph_format
         paragraph_format.space_before = 0
         paragraph_format.space_after = 0
@@ -1438,8 +1436,8 @@ if __name__ == "__main__":
  #       print("Invalid number of players")
   #      exit(1)
 
-    players = sys.argv[1:]
-    #players = ["Jared", "Beka", "Ethan", "Ellie", "Abbie", "Gennie", "Dustin", "Raechel", "Mom", "Hunter", "Marlee", "Clayton"]
+    #players = sys.argv[1:]
+    players = ["Jared", "Greg", "Dustin", "Mick", "Leif", "Evan", "Mark"]
     num_players = len(players)
     players = set(players) # use as a set to avoid duplicate players
     players = list(players) # convert to list
@@ -1449,4 +1447,4 @@ if __name__ == "__main__":
         exit(1)
 
     get_player_info(players)
-
+    
