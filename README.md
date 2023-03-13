@@ -10,7 +10,7 @@ The rules for Camelot follow the standard rules for "The Resistance" game, and i
 3) **Quest Proposal:** The Leader proposes a contingent of knights to go on the next quest.
 4) **Vote:** The group votes for or against the quest. If it fails, repeat steps 1 and 3. (If this occurs three times in a row, the Evil players gain 3 Victory Points.)
 5) **Bestow the Grail:** The Leader selects a player to carry the Grail.
-6) **The Quest:** The chosen players all provide their cards to the Leader and the cards is revealed.
+6) **The Quest:** The chosen players all provide their cards to the Leader and the cards are revealed.
 7) **Results:** The results of the quest are determined and applied.
 8) **Onwards:** Discussion and return to step 1.
 
@@ -33,7 +33,7 @@ There are two main factions in the game: Good and Evil. Only one faction can win
 #### Arthur's Court (Good)
 Arthur's Court comprises the "Good" side of the major conflict. All members of the Good faction earn 3 Victory Points if, at the end of the game, at least three quests succeed.
 
-Arthur's Court usually has less information than the Minions of Mordred, but larger numbers. Members of the Court must attempt to decern each of the roles and determine who is on their side before three quests fail, or they are likely to lose the game.
+Arthur's Court usually has less information than the Minions of Mordred, but larger numbers. Members of the Court must attempt to discern each of the roles and determine who is on their side before three quests fail, or they are likely to lose the game.
 
 
 #### Minions of Mordred (Evil)
@@ -63,7 +63,7 @@ If the Holy Grail has not yet been corrupted, you can take steps to prevent this
 
 
 #### The Fairy Court (Fae)
-Fae are a magical and jealous group, keeping the world's wonder for themselves. As such, you must attempt to go on enough Quests that so that you can play your Regrowth (Success) or Rot (Failure) cards, thus corrupting the Holy Grail. Once the Grail has been corrupted, you will be awarded extra Victory Points, whether or not you participated.
+Fae are a magical and jealous group, keeping the world's wonder for themselves. As such, you must attempt to go on enough Quests so that you can play your Regrowth (Success) or Rot (Failure) cards, thus corrupting the Holy Grail. Once the Grail has been corrupted, you will be awarded extra Victory Points, whether or not you participated.
 
 Be aware, if you are identified as Fae during the Wild Hunt (whether or not the Grail has been corrupted), you will lose a significant number of Victory Points.
 
@@ -78,9 +78,9 @@ Beware when using it, however, because Queen Mab is unaffected by the Holy Grail
 
 #### Excalibur
 
-Excalibur is a major source of power in the game and a source of conflict between good and evil. Excalibur can be in one of three locations: Camelot, The Lake, and The Stone. At the start of the game, place all three Excalibur Location cards in a stack with the starting location on top (as inidicated by the Game Start file). Regardless of its starting or later locations, Excalibur may only be claimed in ONE of these locations, determined randomly before the game starts, and only by King Arthur or Sir Accolon, who are on the side of good and evil, respectively.
+Excalibur is a major source of power in the game and a source of conflict between good and evil. Excalibur can be in one of three locations: Camelot, The Lake, and The Stone. At the start of the game, place all three Excalibur Location cards in a stack with the starting location on top (as indicated by the Game Start file). Regardless of its starting or later locations, Excalibur may only be claimed in ONE of these locations, determined randomly before the game starts, and only by King Arthur or Sir Accolon, who are on the side of good and evil, respectively.
 
-Arthur and Accolon are not guarenteed to appear in any single game, but if they obtain Excalibur, their team will be at a significant advantage. Be certain to trust those you allow to obtain the sword.
+Arthur and Accolon are not guaranteed to appear in any single game, but if they obtain Excalibur, their team will be at a significant advantage. Be certain to trust those you allow to obtain the sword.
 
 ##### The Scabbard
 The Scabbard is part of the Excalibur relic, and starts in the players' hands at the start of the game. At the start of the game, the Leader assigns the Scabbard to one player prior to assigning the first Quest. Each round thereafter, the Scabbard is passed by the person who holds it. It may be passed to any player except the player who held it last.
@@ -232,7 +232,7 @@ You can see two pairs of players. One pair of players are on opposite sides (Goo
 
 You know which people have Evil roles, but not who has any specific role.
 
-You may play Reversal cards while Excaliber is in the Lake (unless the Holy Grail is played on you).
+You may play Reversal cards while the Excalibur Search is in the Lake (unless the Holy Grail is played on you).
 
 ### Lady Nimue, The Lady of the Lake
 **Cards:** Regrowth, *Success, Any Card*
@@ -244,9 +244,9 @@ After the Holy Grail has been corrupted, you may play ANY card on quests.
 ### Sir Percival
 **Cards:** Success, *Reversal*
 
-You know which people have the Merlin and Lady Morgana roles, but not who has each. If you don't see anyone (your secret information is empty), niether Merlin nor Lady Morgana are in the game.
+You know which people have the Merlin and Lady Morgana roles, but not who has each. If you don't see anyone (your secret information is empty), neither Merlin nor Lady Morgana are in the game.
 
-You may play Reversal cards while Excaliber is at Camelot (unless the Holy Grail is played on you).
+You may play Reversal cards while the Excalibur Search is at Camelot (unless the Holy Grail is played on you).
 
 ### Queen Titania of the Seelie Fairies
 **Cards:** Regrowth, *Any Card*
@@ -284,14 +284,14 @@ After a new leader is selected (but before the vote occurs), you may declare as 
 ### Sir Accolon
 **Cards:** Success, Failure
 
-You know King Arthur. You gain the Obtain Excaliber ability after you have obtained the Scabbard twice (by any means).
+You know King Arthur. You gain the Obtain Excalibur ability after you have obtained the Scabbard twice (by any means).
 
-##### Obtain Excaliber
+##### Obtain Excalibur
 *Once per game.*
 
 When you obtain the Scabbard, you may search the current location for Excalibur instead of changing the location. If it is in that location, you gain Excalibur and can use the Expend Excalibur ability.
 
-###### Expend Excaliber
+###### Expend Excalibur
 *Once per game. Must have found Excalibur.*
 
 When you attend a quest, once all of the quest cards are returned but before they are read, you may force the quest to fail even when it would otherwise succeed.
@@ -356,7 +356,7 @@ You are hidden from all Good roles that could reveal that information.\nLike oth
 
 You appear like Merlin to Sir Percival.
 
-You may play Reversal cards while Excaliber is in the Stone (unless the Holy Grail is played on you).
+You may play Reversal cards while the Excalibur Search is in the Stone (unless the Holy Grail is played on you).
         
 ### King Oberon of the Fairy Court
 **Cards:** Rot, Regrowth, *Any Card*
@@ -379,9 +379,9 @@ After you exile Sir Tristan, you lose the ability to play Failure cards.
 ##### Exile
 *Once per game, while the Excalibur Search is in the Stone.*
 
-After a new leader is selected (but before the vote occurs), you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area and access your character file. When the exile is over, you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.
+After a new leader is selected (but before the vote occurs), you may declare as a King of the Realm, King Uther, or King Vortigern (your choice). If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area and access your character file. When the exile is over, you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.
 
-### King Vortigurn
+### King Vortigern
 **Cards:** Success, Failure
 
 You start with the Exile ability.
@@ -389,7 +389,7 @@ You start with the Exile ability.
 ##### Exile
 *Once per game, while the Excalibur Search is in the Stone.*
 
-After a new leader is selected (but before the vote occurs), you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area and access your character file. When the exile is over, you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.
+After a new leader is selected (but before the vote occurs), you may declare as a King of the Realm, King Uther, or King Vortigern (your choice). If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area and access your character file. When the exile is over, you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.
 
 ### Neutral Roles
 
@@ -398,7 +398,7 @@ After a new leader is selected (but before the vote occurs), you may declare as 
 
 You are neutral and equally pulled to the Good and Evil sides, but you do have one ally who is either Good or Evil. You must determine if this ally is Good or Evil and assist as best you can.
 
-Niether Evil players nor Merlin can identify you as Good or Evil.
+Neither Evil players nor Merlin can identify you as Good or Evil.
 
 You must play Success cards when the Holy Grail is played on you.
 
