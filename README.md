@@ -3,6 +3,24 @@
 ## Rules Overview
 The rules for Camelot follow the standard rules for "The Resistance" game, and is based on the game "Avalon." Importantly, though, this game has diverged significantly from the mechanics of either of these games, and so players will need to become accustomed to the new rules.
 
+## Round Overview
+
+1) **New Leader:** The Leader Token passes to the next player to the Leader's right (or the player named in the Game Start file, if this is the first round).
+2) **Pass the Scabbard:** The Scabbard is passed to another player of the wielder's choice (or by the choice of the Leader, if this is the first round). It may not be passed to the Leader or to the previous player to hold it.
+3) **Quest Proposal:** The Leader proposes a contingent of knights to go on the next quest.
+4) **Vote:** The group votes for or against the quest. If it fails, repeat steps 1 and 3. (If this occurs three times in a row, the Evil players gain 3 Victory Points.)
+5) **Bestow the Grail:** The Leader selects a player to carry the Grail.
+6) **The Quest:** The chosen players all provide their cards to the Leader and the cards is revealed.
+7) **Results:** The results of the quest are determined and applied.
+8) **Onwards:** Discussion and return to step 1.
+
+## Endgame Overview
+
+1) **Assassination:** Evil players reveal themselves and the Assassin determines a target to assassinate. Both the Assassin and chosen target reveal their roles, and both are removed from the rest of the game.
+2) **Wild Hunt:** The remaining players all discuss who they believe are Fae. Each remaining player then stands and points at two other players. All players count to three and then all Fae players lower their hands, revealing how many players correctly identified the Fae in the game.
+3) **Victory Points:** Victory Points are determined and compared, determining the winner(s) of the game.
+
+
 ## Role Information
 At the start of the game, run the program by inputting the names of each player. The game will randomly determine roles and assign them to the inputted names. Open the "Game" folder. Each player should privately open the file with his or her name on it and read it. Players are highly encouraged to take a picture of the document with their phone so they can access that information later, as needed.
 
@@ -66,6 +84,8 @@ Arthur and Accolon are not guarenteed to appear in any single game, but if they 
 
 ##### The Scabbard
 The Scabbard is part of the Excalibur relic, and starts in the players' hands at the start of the game. At the start of the game, the Leader assigns the Scabbard to one player prior to assigning the first Quest. Each round thereafter, the Scabbard is passed by the person who holds it. It may be passed to any player except the player who held it last.
+
+At any point during the round, the player who holds the Scabbard may change the location of the Excalibur search.
 
 ## Roles by Player Count
 Each player count uses certain player roles that should function well at the given count. Not all of the specified roles will appear in a game with the given number of players, but the role will be selected from among the roles given.
@@ -133,10 +153,10 @@ When you attend a quest, once all of the quest cards are returned but before the
 ### Sir Bedivere
 **Cards:** Success, *Failure*
 
-You gain the Suspend power, but only after you gain the Scabbard and choose not to move Excalibur. Otherwise, you do not gain this power.
+You gain the Suspend power, but only after you gain the Scabbard and choose not to move the Excalibur Search. Otherwise, you do not gain this power.
 
 ##### Suspend
-*Once per game, while Excalibur is in the Lake.*
+*Once per game, while the Excalibur Search is in the Lake.*
 
 After the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Sir Bedivere, or Sir Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. If you remove a Failure card, the next time you attend a quest, you MUST play a Failure card unless the Holy Grail is played on you.
 
@@ -171,7 +191,7 @@ You know which Good roles are in the game, but not who has any given role.
 You gain the Reveal power, but only after you attend either the First or Fourth Quest. Otherwise, you do not gain this power.
 
 ##### Reveal
-*Once per game, while Excalibur is in at Camelot.*
+*Once per game, while the Excalibur Search is at Camelot.*
 
 You may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, King Arthur, Sir Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.
 
@@ -254,7 +274,7 @@ You and Lady Iseult each know one location that Excalibur cannot be found.
 You gain the Exile power, but only after you vote against your own quest proposal OR a quest proposal where you have been chosen to attend.
 
 ##### Exile
-*Once per game, while Excaliber is in the Stone.*
+*Once per game, while the Excalibur Search is in the Stone.*
 
 After a new leader is selected (but before the vote occurs), you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area and access your character file. When the exile is over, you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.
 
@@ -282,7 +302,7 @@ When you attend a quest, once all of the quest cards are returned but before the
 You start with the Suspend ability.
 
 ##### Suspend
-*Once per game, while Excalibur is in the Lake.*
+*Once per game, while the Excalibur Search is in the Lake.*
 
 After the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Sir Bedivere, or Sir Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. If you remove a Failure card, the next time you attend a quest, you MUST play a Failure card unless the Holy Grail is played on you.
 
@@ -306,7 +326,7 @@ You start with the Reveal ability.
 Your goal is to ensure that Evil wins, but not through assassination.
 
 ##### Reveal
-*Once per game, while Excalibur is in at Camelot.*
+*Once per game, while the Excalibur Search is in at Camelot.*
 
 You may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choice). When you do, you instruct all players to close their eyes and hold their fists out in front of them. Name one good role (for example, King Arthur, Sir Gawain, etc.). If a player has that role, they must raise their thumb to indicate they are playing that role. You can then instruct all players to put their hands down, open their eyes, and resume play normally.
 
@@ -357,7 +377,7 @@ If you choose Sir Tristan, he loses the ability to play Success cards, but remai
 After you exile Sir Tristan, you lose the ability to play Failure cards.
 
 ##### Exile
-*Once per game, while Excaliber is in the Stone.*
+*Once per game, while the Excalibur Search is in the Stone.*
 
 After a new leader is selected (but before the vote occurs), you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area and access your character file. When the exile is over, you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.
 
@@ -367,7 +387,7 @@ After a new leader is selected (but before the vote occurs), you may declare as 
 You start with the Exile ability.
 
 ##### Exile
-*Once per game, while Excaliber is in the Stone.*
+*Once per game, while the Excalibur Search is in the Stone.*
 
 After a new leader is selected (but before the vote occurs), you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess. The exiled player must leave the play area and access your character file. When the exile is over, you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.
 
