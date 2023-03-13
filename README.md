@@ -131,7 +131,7 @@ When you attend a quest, once all of the quest cards are returned but before the
 
 
 ### Sir Bedivere
-**Cards:** Success, *Suspended Card*
+**Cards:** Success, *Failure*
 
 You gain the Suspend power, but only after you gain the Scabbard and choose not to move Excalibur. Otherwise, you do not gain this power.
 
