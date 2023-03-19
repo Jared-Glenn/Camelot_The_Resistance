@@ -130,6 +130,23 @@ Each player count uses certain player roles that should function well at the giv
 *Neutral:* Sir Kay, Sir Pelinor, The Questing Beast
 
 
+## Variant Setups
+
+### The Wild Hunt
+Guaranteed equal mortals and Fae. Includes mortals with anti-Fae powers.
+
+### Quest for Excalibur
+Game will focus on Excalibur abilities. Arthur, Dagonet, Annowre, and Accolon, in particular.
+
+### Powers and Reversals
+Each of the major powers and reversal access are common here.
+
+### Deadly Nemeses
+Pelinor and the Questing Beast are in this, as well as Tristan and Palmedes.
+
+### Secret Knowledge
+Merlin, Gwenovere, Ector, Mordred, Morgana, and Percival are key players here.
+
 
 ## Roles Appendix
 
