@@ -22,7 +22,7 @@ The rules for Camelot follow the standard rules for "The Resistance" game, and i
 
 
 ## The App
-Each player should download the mobile app.
+Each player should download the mobile app and input the group code.
 
 ## Role Information
 At the start of the game, run the program by inputting the names of each player. The game will randomly determine roles and assign them to the inputted names. Open the "Game" folder. Each player should privately open the file with his or her name on it and read it. Players are highly encouraged to take a picture of the document with their phone so they can access that information later, as needed.
