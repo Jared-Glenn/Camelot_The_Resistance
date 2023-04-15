@@ -24,7 +24,7 @@ The rules for Camelot follow the standard rules for "The Resistance" game, and i
 ## The App
 Each player should download the mobile app and input the group code. Once all players have joined, the app will automatically assign a role to each player and provide character-specific information. This information should be kept private. After this information has been read and clarified, the game begins with the designated leader selecting the player who holds the scabbard and then choosing players for the first quest.
 
-At the end of the game, the Assassination and Wild Hunt can also be handled in the app. Simply have all players click the Assassin or Wild Hunt button to make their selections, as necessary. Once the selections are made, the app will determine final points for each player. Those totals are then passed into a ranking for the game.
+At the end of the game, the Assassination and Wild Hunt can also be handled in the app. Simply have all players click the Assassin or Wild Hunt button to make their selections, as necessary. Once the selections are made, the app will determine final points for each player. Those totals are then passed into a ranking for the game, which is displayed for all players.
 
 ## Role Information
 At the start of the game, run the program by inputting the names of each player. The game will randomly determine roles and assign them to the inputted names. Open the "Game" folder. Each player should privately open the file with his or her name on it and read it. Players are highly encouraged to take a picture of the document with their phone so they can access that information later, as needed.
