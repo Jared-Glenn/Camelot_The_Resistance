@@ -26,7 +26,7 @@ Each player should download the mobile app and input the group code. Once all pl
 
 At the end of the game, the Assassination and Wild Hunt can also be handled in the app. Simply have all players click the Assassin or Wild Hunt button to make their selections, as necessary. Once the selections are made, the app will determine final points for each player. Those totals are then passed into a ranking for the game, which is displayed for all players in a descending list.
 
-You may restart the game by exiting the current game. You may also choose to save a copy of the game's details and emailing them to yourself. High scores are saved for each character.
+You may restart the game by exiting the current game. You may also choose to save a copy of the game's details and emailing them to yourself. High scores are saved for each character and preserved in a Hall of Fame.
 
 ## Role Information
 At the start of the game, run the program by inputting the names of each player. The game will randomly determine roles and assign them to the inputted names. Open the "Game" folder. Each player should privately open the file with his or her name on it and read it. Players are highly encouraged to take a picture of the document with their phone so they can access that information later, as needed.
