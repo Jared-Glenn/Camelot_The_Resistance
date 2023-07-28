@@ -18,7 +18,7 @@ The rules for Camelot follow the standard rules for "The Resistance" game, and i
 
 1) **Assassination:** Evil players reveal themselves and the Assassin determines a target to assassinate. Both the Assassin and chosen target reveal their roles, and both are removed from the rest of the game.
 2) **Wild Hunt:** The remaining players all discuss who they believe are Fae. Each remaining player then stands and points at two other players. All players count to three and then all Fae players lower their hands, revealing how many players correctly identified the Fae in the game.
-3) **Victory Points:** Victory Points are determined and compared, determining the winner(s) of the game.
+3) **Victory Points:** Victory Points are determined and compared, determining the winner(s) of the gameand the rankings of the players.
 
 
 ## The App
