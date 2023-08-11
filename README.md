@@ -38,6 +38,8 @@ At the start of the game, run the program by inputting the names of each player.
 ### Points
 The most important change to the game is the addition of Victory Points, which each player accumulates individually. Players gain points from their role (character), their faction (Arthur or Mordred), and their origin (Mortal or Fae). Players may also lose points if they or another player take or avoid certain actions. Manipulating other players into losing Victory Points while you gain as many as possible is the most integral part of the game.
 
+Some characters have an innate advantage in this respect, with more opportunities to gain points. By the same token, they also have more opportunities to lose points.
+
 ### Factions
 There are two main factions in the game: Good and Evil. Only one faction can win the Quests portion of the game, which is the main conflict of the game.
 
@@ -51,7 +53,6 @@ Arthur's Court usually has less information than the Minions of Mordred, but lar
 The Minions of Mordred comprise the "Evil" side of the major conflict. All members of the Evil faction earn 3 Victory Points if, at the end of the game, at least three quests have failed.
 
 Minions of Mordred are usually few in number, but benefit from often knowing who is on their side, and sometimes much more information. Mordred's followers will need to move secretly and manipulate Arthur's superior numbers if they hope to prevent three quests from succeeding.
-
 
 #### Neutral Players
 In each game, there is a chance of a Neutral player appearing. These players have varying goals:
