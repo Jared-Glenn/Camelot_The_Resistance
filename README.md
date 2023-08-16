@@ -1,4 +1,4 @@
-# Camelot: The Resistance
+1# Camelot: The Resistance
 
 ## Rules Overview
 The rules for Camelot follow the standard rules for "The Resistance" game, and is based on the game "Avalon." Importantly, though, this game uses very different scoring mechanics and roles from either of these games, and so players will need to get used to the new rules or reference them in the app through the course of play.
@@ -77,7 +77,7 @@ If the Holy Grail has not yet been corrupted, you can take steps to prevent this
 #### The Fairy Court (Fae)
 Fae are a magical and jealous group, keeping the world's wonder for themselves. As such, you must attempt to go on enough Quests so that you can play your Regrowth (Success) or Rot (Failure) cards, thus corrupting the Holy Grail. Once the Grail has been corrupted, you will be awarded extra Victory Points, whether or not you participated.
 
-Be aware, if you are identified as Fae during the Wild Hunt (whether or not the Grail has been corrupted), you will lose a significant number of Victory Points.
+Be aware, if you are identified as Fae during the Wild Hunt (whether or not the Grail has been corrupted), you will lose a significant number of Victory Points, so it is important to keep your role a secret, even after the Grail is corrupted.
 
 
 ### Relics
