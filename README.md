@@ -12,7 +12,7 @@ The rules for Camelot follow the standard rules for "The Resistance" game, and i
 5) **Bestow the Grail:** The Leader selects a player to carry the Grail and the grail is transfered to that player.
 6) **The Quest:** The chosen players all provide their cards to the Leader and the cards are shuffled and then revealed.
 7) **Results:** The results of the quest are determined and applied.
-8) **Onwards:** Discussion and return to step 1.
+8) **Onwards:** Play now returns to step one, though it is often beneficial to briefly discuss the result of the quest.
 
 ## Endgame Overview
 
