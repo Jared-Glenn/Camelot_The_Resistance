@@ -178,6 +178,8 @@ After you declare, each time you are given the Scabbard, you may search the curr
 
 When you attend a quest, once all of the quest cards are returned but before they are read, you may force the quest to succeed even when it would otherwise fail.
 
+#### Advice
+Watch the players you know of closely when they move the search location for Excalibur, or arrange for them to get the Scabbard. The location they favor is likely to be where you can actually find it.
 
 ### Sir Bedivere
 **Cards:** Success, *Failure*
