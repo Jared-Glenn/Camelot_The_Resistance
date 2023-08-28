@@ -8,7 +8,7 @@ The rules for Camelot follow the standard rules for "The Resistance" game, and i
 1) **New Leader:** The Leader Token passes to the next player to the Leader's right (or the player named in the Game Start file, if this is the first round).
 2) **Pass the Scabbard:** The Scabbard is passed to another player of the wielder's choice (or by the choice of the Leader, if this is the first round). It may not be passed to the Leader or to the previous player to hold it.
 3) **Quest Proposal:** The Leader consults the number written on the next quest and proposes an equal number of players who will attend that quest. Leaders can choose themselves for a quest.
-4) **Vote:** The group votes for or against the quest. If it fails, repeat steps 1 and 3. (If this occurs three times in a row, the Evil players gain 3 Victory Points.)
+4) **Vote:** The group votes for or against the quest. The vote is a simple majority rules. Ties default to against. If it comes out against, repeat steps 1 and 3. (If this occurs three times in a row, the Evil players gain 3 Victory Points.)
 5) **Bestow the Grail:** The Leader selects a player to carry the Grail and the grail is transfered to that player.
 6) **The Quest:** The chosen players all provide their cards to the Leader and the cards are shuffled and then revealed.
 7) **Results:** The results of the quest are determined and applied.
