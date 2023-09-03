@@ -11,7 +11,7 @@ The rules for Camelot follow the standard rules for "The Resistance" game, and i
 4) **Vote:** The group votes for or against the quest. The vote is a simple majority rules. Ties default to against. If it comes out against, repeat steps 1 and 3. (If this occurs three times in a row, the Evil players gain 3 Victory Points.)
 5) **Bestow the Grail:** The Leader selects a player to carry the Grail and the grail is transfered to that player.
 6) **The Quest:** The chosen players all provide their cards to the Leader and the cards are shuffled and then revealed.
-7) **Results:** The results of the quest are determined and applied.
+7) **Results:** The results of the quest are determined and applied according to the results on the cards, as described below.
 8) **Onwards:** Play now returns to step one, though it is often beneficial to briefly discuss the result of the quest.
 
 ## Endgame Overview
