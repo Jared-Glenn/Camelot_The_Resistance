@@ -143,6 +143,7 @@ Each player count uses certain player roles that should function well at the giv
 
 
 ## Variant Setups
+Choosing one of these options will ensure that certain strategies and aspects of gameplay are front and center.
 
 ### The Wild Hunt
 Guaranteed equal mortals and Fae. Includes mortals with anti-Fae powers.
