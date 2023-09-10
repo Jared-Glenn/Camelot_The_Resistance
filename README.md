@@ -1,4 +1,4 @@
-1# Camelot: The Resistance
+# Camelot: The Resistance
 
 ## Rules Overview
 Camelot follows the standard rules for "The Resistance" game, and is based on the game "Avalon." Importantly, though, this game uses very different scoring mechanics and roles from either of these games, and so players will need to get used to the new rules or reference them in the app through the course of play in order to play.
