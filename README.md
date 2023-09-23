@@ -5,7 +5,7 @@ Camelot follows the standard rules for "The Resistance" game, and is based on th
 
 ## Round Overview
 
-1) **New Leader:** The Leader Token passes to the next player to the Leader's right (or the player named in the Game Start file, if this is the first round).
+1) **Change the Leader:** The Leader Token passes to the next player to the Leader's right (or the player named in the Game Start file, if this is the first round).
 2) **Pass the Scabbard:** The Scabbard is passed to another player of the wielder's choice (or by the choice of the Leader, if this is the first round). It may not be passed to the Leader or to the previous player to hold it.
 3) **Quest Proposal:** The Leader proposes a nunber of players for the next quest equal to the number written on the next quest on the board. Leaders can choose themselves for a quest.
 4) **Vote:** The group votes for or against the quest. The vote is a simple majority rules. Ties default to against. If it comes out against, repeat steps 1 and 3. (If this occurs three times in a row, the Evil players gain 3 Victory Points.)
