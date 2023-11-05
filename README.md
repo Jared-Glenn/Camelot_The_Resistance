@@ -1,7 +1,7 @@
 # Camelot: The Resistance
 
 ## Rules Overview
-Camelot's rules follow the standard rules for "The Resistance" game, and is based on the expansion and reimagining of the original game: "Avalon." Importantly, though, this game uses very different scoring mechanics and roles from either of these games, and so players will need to get used to the new rules or reference them in the app through the course of play in order to play.
+Camelot's rules follow the standard rules for "The Resistance" game, and is based on the expansion and reimagining of the original game: "Avalon." Importantly, though, this game uses very different scoring mechanics and roles from either of these games, and so, in order to play, players will need to get used to the new rules or reference them in the app through the course of play.
 
 ## Round Overview
 
