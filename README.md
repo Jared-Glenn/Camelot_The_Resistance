@@ -100,7 +100,9 @@ The Scabbard is part of the Excalibur relic, and starts in the players' hands at
 At any point during the round, the player who holds the Scabbard may change the location of the Excalibur search.
 
 ## Roles by Player Count
-Each player count uses certain player roles that should function well at the given count. Not all of the specified roles will appear in a game with the given number of players, but the role will be selected from among the roles given.
+Depending on the number of players, the pool of possible roles will change. This is meant to ensure that both sides are balanced and that no roles create problems. The pool of roles is adjusted automatically by the program.
+
+The guide below can help groups know which roles they need to be prepared for in any given game.
 
 ### Five Players
 *Good:* Merlin, Sir Pervival, King Arthur, Sir Dagonet
