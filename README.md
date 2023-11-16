@@ -95,7 +95,7 @@ Excalibur is a major source of power in the game and a source of conflict betwee
 Arthur and Accolon are not guaranteed to appear in any single game, but if they obtain Excalibur, their team will be at a significant advantage. Be certain to trust those you allow to obtain the sword.
 
 ##### The Scabbard
-The Scabbard is part of the Excalibur relic, and starts in the players' hands at the start of the game. At the start of the game, the Leader assigns the Scabbard to one player prior to assigning the first Quest. Each round thereafter, the Scabbard is passed by the person who holds it. It may be passed to any player except the player who held it last.
+The Scabbard is part of the Excalibur relic, and starts in the players' hands at the start of the game. At the start of the game, the Leader assigns the Scabbard to one player prior to assigning the first Quest. Each round thereafter, the Scabbard is passed by the person who holds it to any player (except themselves or the player who held it last).
 
 At any point during the round, the player who holds the Scabbard may change the location of the Excalibur search.
 
