@@ -479,9 +479,7 @@ This card takes effect after each other card is applied (except other Reversal c
 This only changes the result of the quest itself and will not affect the corruption of the Holy Grail if Rot or Regrowth are played.
 
 #### Cleanse
-If there is a Rot or Regrowth card revealed on this quest, negate all Cleanse, Rot, and Regrowth cards.
-
-Works the same as a Failure card unless negated.
+If there is a Rot or Regrowth card revealed on this quest, negate all Rot and Regrowth cards. If there are no Rot or Regrowth cards played on this quest, this card counts as a Failure card.
 
 #### The Questing Beast Was Here
 Works the same as a Success card.
