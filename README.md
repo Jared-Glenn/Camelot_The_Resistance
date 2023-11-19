@@ -485,3 +485,11 @@ If there is a Rot or Regrowth card revealed on this quest, negate all Rot and Re
 Works the same as a Success card.
 
 (This is the primary card played by the Questing Beast and acts as a clue to Sir Pelinor. It, otherwise, has no effect.)
+
+
+
+## Notes
+
+Perhaps combine the grail and the scabbard for simplicity. There's a lot of complexity that needs help.
+
+Excalibur locations is also confusing. Maybe they could be castles or areas in trouble.
