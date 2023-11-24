@@ -217,7 +217,7 @@ You cannot speak, but can communicate through gibberish sounds and body language
 
 **Assassination Target**
 
-You know which Good roles are in the game, but not who has any given role.
+You know which Good roles are in the game, but not who has any given role. Your player info page will include a list of all assigned roles.
 
 ### Sir Galahad
 **Cards:** Success
