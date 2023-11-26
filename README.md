@@ -164,6 +164,7 @@ Merlin, Gwenovere, Ector, Mordred, Morgana, and Percival are key players here.
 
 
 ## Roles Appendix
+The following is a list of each role and the associated knowledge, disadvantages, and abilities that come with it.
 
 
 ### King Arthur
