@@ -447,7 +447,7 @@ Your goal is to attend the final quest. If the Questing Beast is on that quest w
 ##### Battle the Beast
 *Can only be used on the Fifth Quest.*
 
-After all quest cards have been collected, but before they are read, you may declare as Sir Pelinor. The Questing Beast must reveal itself to all players.
+After all quest cards have been collected, but before they are read, you may declare as Sir Pelinor. The Questing Beast must reveal itself to all players. Depending on who has attended the quest, you will gain or lose points when you take this action.
 
 ### The Questing Beast
 **Cards:** The Questing Beast Was Here, *Reversal*
