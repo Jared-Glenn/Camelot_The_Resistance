@@ -41,7 +41,7 @@ The most important change to the game is the addition of Victory Points, which e
 Some characters have an innate advantage in this respect, with more opportunities to gain points. By the same token, they also have more opportunities to lose points.
 
 ### Factions
-There are two main factions in the game: Good and Evil. Only one faction can win the Quests portion of the game, which is the main conflict of the game.
+There are two main factions in the game: the Forces of Arthur (Good) and the Minions of Mordred (Evil). Only one faction can win the Quests portion of the game, which is the main conflict of the game.
 
 #### Arthur's Court (Good)
 Arthur's Court comprises the "Good" side of the major conflict. All members of the Good faction earn 3 Victory Points if, at the end of the game, at least three quests succeed.
