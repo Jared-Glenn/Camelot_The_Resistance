@@ -145,7 +145,7 @@ The guide below can help groups know which roles they need to be prepared for in
 
 
 ## Variant Setups
-Choosing one of these options will ensure that certain strategies and aspects of gameplay are front and center.
+Choosing one of these options will allow aspects of the chosen gameplay to be front and center.
 
 ### The Wild Hunt
 Guaranteed equal mortals and Fae. Includes mortals with anti-Fae powers.
