@@ -297,7 +297,7 @@ After the Holy Grail has been corrupted, you may play ANY card on quests.
 
 **Assassination Target**
 
-The person you see is also Good and is aware that you are Good.
+The person you see is also Good and is aware that you are Good. This player's role is Lady Iseult.
 
 You can be assassinated as either a Lover (which includes either Sir Tristan or Lady Iseult) or as Sir Tristan specifically.
 
