@@ -358,7 +358,7 @@ You know not only who else is Evil, but what role each other Evil player possess
 ### Sir Lancelot
 **Cards:** Success, Failure
 
-You start with the Reveal ability.
+You start the game with the Reveal ability.
 
 Your goal is to ensure that Evil wins, but not through assassination.
 
