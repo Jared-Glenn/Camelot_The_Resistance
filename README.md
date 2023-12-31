@@ -86,7 +86,7 @@ Be aware, if you are identified as Fae during the Wild Hunt (whether or not the 
 Relics are powerful items that the players have access to throughout the game: The Holy Grail and Excalibur. Both of them represent a powerful force in the hands of Arthur and his Court, but also may be used or misused by his enemies to steal victory from his grasp.
 
 #### The Holy Grail
-When a player is made the leader, they also gain access to the Holy Grail and can choose to assign the Grail to a single player at the outset of the Quest. Many roles have specific interactions with the Grail, but generally it prevents the chosen player from using Failure cards (or Rot cards, in the case of the Fae).
+When a player is made the leader, they also gain access to the Holy Grail and can choose to assign the Grail to a single player when people are assigned to a Quest. Many roles have specific interactions with the Grail, but generally it prevents the chosen player from using Failure cards (or Rot cards, in the case of the Fae).
 
 Beware when using it, however, because Queen Mab is unaffected by the Holy Grail and Sir Bertilak (normally on the side of Good) *must* play Rot while holding it.
 
