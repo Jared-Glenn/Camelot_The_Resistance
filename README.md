@@ -54,7 +54,7 @@ Arthur's Court usually has less information than the Minions of Mordred, but lar
 #### Minions of Mordred (Evil)
 The Minions of Mordred comprise the "Evil" side of the major conflict. All members of the Evil faction earn 3 Victory Points if, at the end of the game, at least three quests have failed.
 
-Minions of Mordred are comparatively few in number, but benefit from often knowing who is on their side, and sometimes much more information. Mordred's followers will need to move secretly and manipulate Arthur's superior numbers if they hope to prevent three quests from succeeding, thus improving their scores.
+Minions of Mordred are comparatively few in number, but do have a key advantage: they know who is on their side, and sometimes much more information. Mordred's followers will need to move secretly and manipulate Arthur's superior numbers if they hope to prevent three quests from succeeding, thus improving their scores.
 
 #### Neutral Players
 In each game, there is a chance of a Neutral player appearing. Each neutral player has differing goals, but what they all have in common is that they are not innately Good or Evil in the game, and in most cases do not gain or lose points depending on if a Quest succeeds or fails:
