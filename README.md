@@ -237,7 +237,7 @@ You may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choic
 
 **Assassination Target**
 
-You know all members of the Fairy Court, Good and Evil. However, your presence has caused the Grail to start closer to corruption.
+You know all members of the Fairy Court, both Good and Evil. However, your presence has caused the Grail to start closer to corruption.
 
 If there are no Fae players in the game (indicated by you not have any secret information), you may also play Reversal cards.
 
