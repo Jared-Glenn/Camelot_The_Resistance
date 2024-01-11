@@ -150,7 +150,7 @@ The guide below can help groups know which roles they need to be prepared for in
 Choosing one of these options will allow aspects of the chosen gameplay to be front and center.
 
 ### The Wild Hunt
-Guaranteed equal mortals and Fae. Includes mortals with anti-Fae powers.
+This variant guarantees equal mortals and Fae. Includes mortals with anti-Fae powers.
 
 ### Quest for Excalibur
 Game will focus on Excalibur abilities. Arthur, Dagonet, Annowre, and Accolon, in particular.
