@@ -246,7 +246,7 @@ If there are no Fae players in the game (indicated by you not have any secret in
 
 **Assassination Target**
 
-You know two "rumors" about other players. Rumors tell you who knows something about another player, but does not explain how that person knows it. You must use your wits to determine how the pieces fit together.
+You know two "rumors" about other players. Rumors are structured in this format: "Player A knows something about Player B." In short, they tell you who knows something about another player, but do not explain how that person knows it. You must use your wits to determine how the pieces fit together.
 
 ### Lady Iseult
 **Cards:** Success
