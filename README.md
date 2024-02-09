@@ -7,6 +7,8 @@ Roles are very different in this game, though, and we also introduce a scoring m
 
 ## Round Overview
 
+Take each of the following steps each round.
+
 1) **Change the Leader:** The current Leader passes thr Leader Token to the next player on their right (or the player named in the Game Start file, if this is the first round).
 2) **Pass the Scabbard:** The Scabbard is passed to another player of the wielder's choice (or by the choice of the Leader, if this is the first round). It may not be passed to the Leader or to the previous player to hold it.
 3) **Quest Proposal:** The Leader proposes a nunber of players for the next quest equal to the number written on the next quest on the board. Leaders can choose themselves for a quest.
