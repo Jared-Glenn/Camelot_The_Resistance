@@ -40,7 +40,7 @@ When completed, the app will be available here on Github.
 At the start of the game, run the program by inputting the names of each player. The game will randomly determine roles and assign them to the inputted names. Open the "Game" folder. Each player should privately open the file with his or her name on it and read it. Players are highly encouraged to take a picture of the document with their phone so they can access that information later, as needed.
 
 ### Points
-The most important change to the game is the addition of Victory Points, which each player accumulates individually. Players gain points from their role (character), their faction (Arthur or Mordred), and their origin (Mortal or Fae). Players may also lose points if they or another player take or avoid certain actions. Manipulating other players into losing Victory Points while you gain as many as possible is a higher level strategy that comes with playing several games.
+All players should be made aware of the addition of Victory Points, which each player accumulates individually, rather than working entirely as a team. Players gain points from their role (character), their faction (Arthur or Mordred), and their origin (Mortal or Fae). Players may also lose points if they or another player take or avoid certain actions. Manipulating other players into losing Victory Points while you gain as many as possible is a higher level strategy that comes with playing several games.
 
 Some characters have an innate advantage in this respect, with more opportunities to gain points. Of course they also have more opportunities to lose points.
 
