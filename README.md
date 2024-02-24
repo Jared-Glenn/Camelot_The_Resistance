@@ -16,7 +16,7 @@ Take each of the following steps each round.
 5) **Bestow the Grail:** The Leader selects one of players going on the quest to carry the Grail and the grail is transfered to that player.
 6) **The Quest:** The chosen players all provide their cards to the Leader and the cards are shuffled and then revealed.
 7) **Results:** The cards are revealed and the results of the quest are determined. All results are applied according to the cards.
-8) **Onwards:** Play now returns to step one, though it is often beneficial to briefly discuss the result of the quest.
+8) **Onwards:** Discuss the result of the quest and then start a new round from Step 1.
 
 ## Endgame Overview
 
