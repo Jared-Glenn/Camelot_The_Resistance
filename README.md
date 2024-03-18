@@ -42,7 +42,7 @@ At the start of the game, run the program by inputting the names of each player.
 ### Points
 All players should be made aware of the addition of Victory Points, which each player accumulates individually, rather than working entirely as a team. Players gain points from their role (character), their faction (Arthur or Mordred), and their origin (Mortal or Fae). Players may also lose points if they or another player take or avoid certain actions. Manipulating other players into losing Victory Points while you gain as many as possible is a higher level strategy that comes with playing several games.
 
-Some characters have an innate advantage in this respect, with more opportunities to gain points. Of course they also have more opportunities to lose points.
+Some characters have an innate advantage in this respect, with more opportunities to gain points. Of course they also have more opportunities to lose points, which is more of a disadvantage.
 
 ### Factions
 There are two main factions in the game: the Forces of Arthur (Good) and the Minions of Mordred (Evil). Only one faction can win the Quests portion of the game, which is the main conflict of the game.
