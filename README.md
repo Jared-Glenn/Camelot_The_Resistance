@@ -227,7 +227,7 @@ You know which Good roles are in the game, but not who has any given role. Your 
 ### Sir Galahad
 **Cards:** Success
 
-You gain the Reveal power, but only after you attend either the First or Fourth Quest. Otherwise, you do not gain this power.
+You gain the Reveal power, but only after you attend either the First or Fourth Quest. If you do not attend one of these quests, you do not gain this power.
 
 ##### Reveal
 *Once per game, while the Excalibur Search is at Camelot.*
