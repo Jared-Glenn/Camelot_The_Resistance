@@ -32,7 +32,7 @@ Some abilities can be handled through the app, allowing a player to select a tar
 
 At the end of the game, the app can also handle the Assassination and Wild Hunt. Simply have all players click the Wild Hunt button to make their selections. The Assassin will automatically be prompted to select a target, which will be removed from the game and award points accordingly. The assassin should still be allowed to talk to other players before making a decision, however. Once the selections are made, the app will determine final points for each player. Those totals are then passed into a ranking for the game, which is displayed for all players in a descending list.
 
-You may restart the game by exiting the current game and clicking on "New Game." A new code will be provided, which can be distributed to each player. You may also choose to save a copy of the game's details and emailing them to yourself. High scores are saved for each character and preserved in a Hall of Fame for each character role, which can be accessed from the Main Menu.
+You may restart the game by exiting the current game and clicking on the "New Game" button. A new code will be provided, which can be distributed to each player. You may also choose to save a copy of the game's details and emailing them to yourself. High scores are saved for each character and preserved in a Hall of Fame for each character role, which can be accessed from the Main Menu.
 
 When completed, the app will be available here on Github and various app stores.
 
