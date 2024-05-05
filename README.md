@@ -437,7 +437,7 @@ After a new leader is selected (but before the vote occurs), you may declare as 
 
 You are neutral and equally pulled to the Good and Evil sides, but you do have one ally who is either Good or Evil. You must determine if this ally is Good or Evil and assist as best you can.
 
-Neither Evil players nor Merlin can identify you as Good or Evil.
+Neither Evil players, Good players, nor Merlin will be able to identify you as Good or Evil.
 
 You must play Success cards when the Holy Grail is played on you.
 
