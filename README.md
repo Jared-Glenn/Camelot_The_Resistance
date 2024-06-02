@@ -13,7 +13,7 @@ Take each of the following steps, one at a time, during each round.
 2) **Pass the Scabbard:** The Scabbard is passed to another player of the wielder's choice (or by the choice of the Leader, if this is the first round). It may not be passed to the Leader or to the previous player to hold it.
 3) **Quest Proposal:** The Leader proposes several players to go on the quest, up to the number written on the next quest on the board. Leaders can choose themselves for a quest.
 4) **Vote:** The group votes for or against the quest. The vote is a simple majority rules. Ties default to against. If it comes out against, repeat steps 1 and 3. (If this occurs three times in a row, the Evil players immediately gain 3 Victory Points.)
-5) **Bestow the Grail:** The Leader selects one of players going on the quest to carry the Grail and the grail is transfered to that player.
+5) **Bestow the Grail:** The Leader selects one of players going on the quest to carry the Grail and the grail is transfered to that player. The player is beholden to the Grail's powers for that Quest.
 6) **The Quest:** The chosen players all provide their cards to the Leader and the cards are shuffled and then revealed.
 7) **Results:** The cards are revealed and the results of the quest are determined. All results are applied according to the cards.
 8) **Onwards:** Discuss the result of the quest and then start a new round from Step 1.
