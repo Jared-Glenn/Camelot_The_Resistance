@@ -95,11 +95,14 @@ Beware when using it, however, because Queen Mab is unaffected by the Holy Grail
 
 
 
+
+
 ##### Reworking the Fae and the Holy Grail
 
 The two axes alignment system isn't working properly. Rot and Growth add too many cards to the system and the good and evil aspect takes up far too much headspace for people to worry about the Fae. Add to that, there's not too much they can do to stop them.
 
 So how to fix it?
+
 
 
 
