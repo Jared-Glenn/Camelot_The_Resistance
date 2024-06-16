@@ -92,6 +92,18 @@ When a player is made the leader, they also gain access to the Holy Grail and ca
 
 Beware when using it, however, because Queen Mab is unaffected by the Holy Grail and Sir Bertilak (normally on the side of Good) *must* play Rot while holding it.
 
+
+
+
+##### Reworking the Fae and the Holy Grail
+
+The two axes alignment system isn't working properly. Rot and Growth add too many cards to the system and the good and evil aspect takes up far too much headspace for people to worry about the Fae. Add to that, there's not too much they can do to stop them.
+
+So how to fix it?
+
+
+
+
 #### Excalibur
 
 Excalibur is a major source of power in the game and a source of conflict between good and evil. Excalibur can be in one of three locations: Camelot, The Lake, and The Stone. At the start of the game, place all three Excalibur Location cards in a stack with the starting location on top (as indicated by the Game Start file). Regardless of its starting or later locations, Excalibur may only be claimed in ONE of these locations, determined randomly before the game starts, and only by King Arthur (on the side of Good) or Sir Accolon (on the side of Evil).
