@@ -104,6 +104,7 @@ The two axes alignment system isn't working properly. Rot and Growth add too man
 So how to fix it?
 
 * What if we generate tricks they can play on specific players if they correctly guess their roles, via the app?
+* What if they can play "Tricks" that cause two failures if there is one failure?
 
 
 
