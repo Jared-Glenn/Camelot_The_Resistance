@@ -106,6 +106,7 @@ So how to fix it?
 * What if we generate tricks they can play on specific players if they correctly guess their roles, via the app?
 * What if they can play "Tricks" that cause two failures if there is one failure?
 * Maybe Fae must ensure that certain players go on the quest (or don't go), and that grants them points. But how to make that a team thing without it being overpowered?
+* Maybe they just always want to get to the fifth quest? Like two successes and two failures. But then they are also on good or evil?
 
 
 
