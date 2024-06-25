@@ -1,7 +1,7 @@
 # Camelot: The Resistance
 
 ## Rules Overview
-Camelot's rules follow the normal rules for the social deduction game: "The Resistance", and is based on the expansion and reimagining of the original game: "Avalon." 
+Camelot's rules are based on the rules for the social deduction game: "The Resistance", and is based on the expansion and reimagining of the original game: "Avalon." 
 
 Roles are often more complex in this game, though, and we also introduce a scoring mechanic. In order to play, players will need to get used to the new rules or reference them in the app through the course of play.
 
