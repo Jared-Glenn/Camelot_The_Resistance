@@ -109,6 +109,7 @@ So how to fix it?
 * Maybe they just always want to get to the fifth quest? Like two successes and two failures. But then they are also on good or evil?
 * What if there's a way to make people act oddly on a quest or become ineligible for a quest?
 * What if they have to steal something? But how could you track that in the app? Camera? Gyroscope? Screen unlocked?
+* Give all roles a fae-related ability?
 
 
 
