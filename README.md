@@ -21,7 +21,7 @@ Take each of the following steps, one at a time, during each round.
 ## Endgame Overview
 
 1) **Assassination:** Evil players reveal themselves. The Assassin can then choose a target to assassinate. Both the Assassin and chosen target reveal their roles, and both are removed from the rest of the game - namely, the Wild Hunt section.
-2) **Wild Hunt:** The remaining players (not counting the assassin and their target) all discuss who they believe are Fae. Each remaining player then stands and points at two other players. All players count to three and then all Fae players lower their hands, revealing how many players correctly identified the Fae in the game.
+2) **Wild Hunt:** The remaining players (not counting the assassin and the target) all discuss who they believe are Fae. Each remaining player then stands and points at two other players. All players count to three and then all Fae players lower their hands, revealing how many players correctly identified the Fae in the game.
 3) **Victory Points:** Victory Points are added up individually and compared across the group, determining the winner(s) of the game, as well as the player rankings!
 
 
