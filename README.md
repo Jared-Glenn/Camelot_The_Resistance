@@ -111,6 +111,7 @@ So how to fix it?
 * What if they have to steal something? But how could you track that in the app? Camera? Gyroscope? Screen unlocked?
 * Give all roles a fae-related ability?
 * The problem is you're either good or evil. You know something or you don't. How to find a middle ground? How to create secondary objectives that don't ruin the main game?
+* Maybe a cross between the vote and the Holy Grail. Leader chooses people on Quest, then everyone votes who gets the Grail. Votes are done via the app, but are public knowledge. Voting history is maintained.
 
 
 
