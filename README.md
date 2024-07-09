@@ -37,7 +37,7 @@ You may restart the game by exiting the current game and clicking on the "New Ga
 When completed, the app will be available here on Github and various app stores, as well.
 
 ## Role Information
-At the start of the game, run the program by inputting the names of each player - the order does not matter, but include a space between each name. The game will randomly determine roles and assign them to the inputted names. Open the "Game" folder. Each player should privately open the file with his or her name on it and read it. Players are highly encouraged to take a picture of the document with their phone so they can access that information later, as needed.
+At the start of the game, run the program by inputting the names of each player - the order does not matter, but include a space between each name. The game will randomly determine alignment, roles, and players to assign them to. Open the "Game" folder. Each player should privately open the file with his or her name on it and read it. Players are highly encouraged to take a picture of the document with their phone so they can access that information later, as needed.
 
 ### Points
 Victory Points are a new mechanic of the game, which each player accumulates individually, rather than working entirely as a team. This is a significant difference from similar games, such as Avalon. Players gain points from their role (character), their faction (Arthur or Mordred), and their origin (Mortal or Fae). Players may also lose points if they fail to perform certain actions, or another player takes certain actions (such as assassinating them). Manipulating other players into losing Victory Points while you gain as many as possible is a higher level strategy that comes with playing several games.
