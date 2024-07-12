@@ -226,6 +226,8 @@ You gain the Suspend power, but only after you gain the Scabbard and choose not 
 
 After the quest cards have been collected for a quest, but before they are read, you can declare as a Guardian of Truth, Sir Bedivere, or Sir Agravaine (your choice). If you do, you may look at the quest cards before the leader and remove one of them. If you remove a Failure card, the next time you attend a quest, you MUST play a Failure card unless the Holy Grail is played on you.
 
+**Note: How to play this as an evil character?**
+
 
 ### Sir Bertilak, The Green Knight
 **Cards:** Regrowth, *Rot, Any Card*
