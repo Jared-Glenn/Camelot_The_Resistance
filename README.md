@@ -5,6 +5,8 @@ Camelot's rules are based on the rules for the social deduction game: "The Resis
 
 Roles are often more complex in this game, though, and we also introduce a scoring mechanic. In order to play, players will need to adapt to the new rules and reference them in the app throughout the course of play.
 
+This can be made more simple with the use of the Camelot App, available on Android.
+
 ## Round Overview
 
 Take each of the following steps, one at a time, during each round.
