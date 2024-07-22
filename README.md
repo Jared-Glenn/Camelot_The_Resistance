@@ -54,7 +54,7 @@ Arthur's Court is the "Good" side of the major conflict. All members of the Good
 
 **(Maybe a victory point for each quest won? Or more?)**
 
-Arthur's Court will have less information than the Minions of Mordred, but larger numbers. Members of the Court must attempt to discern each of the roles and determine who is on their side before three quests fail, or they are likely to lose the game.
+Arthur's Court will have less information than the Minions of Mordred, but will have more players on their side. Members of the Court must attempt to discern each of the roles and determine who is on their side before three quests fail, or they are likely to lose the game.
 
 
 #### Minions of Mordred (Evil)
