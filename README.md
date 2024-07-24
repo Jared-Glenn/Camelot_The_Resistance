@@ -190,7 +190,7 @@ Game will focus on Excalibur abilities. Arthur, Dagonet, Annowre, and Accolon, i
 Each of the major powers and reversal access are common here.
 
 ### Deadly Nemeses
-Pelinor and the Questing Beast are in this, as well as Tristan and Palmedes.
+Pelinor and the Questing Beast are in these games, as well as Tristan and Palmedes.
 
 ### Secret Knowledge
 Merlin, Gwenovere, Ector, Mordred, Morgana, and Percival are key players here.
