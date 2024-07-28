@@ -316,7 +316,7 @@ After the Holy Grail has been corrupted, you may play ANY card on quests.
 
 You know which people have the Merlin and Lady Morgana roles, but not who has each. If you don't see anyone (your secret information is empty), neither Merlin nor Lady Morgana are in the game.
 
-You may play Reversal cards while the Excalibur Search is at Camelot (unless the Holy Grail is played on you).
+You may play Reversal cards while the Excalibur Search is at Camelot (unless the Holy Grail is played on you - and then you must play a Success card).
 
 ### Queen Titania of the Seelie Fairies
 **Cards:** Regrowth, *Any Card*
