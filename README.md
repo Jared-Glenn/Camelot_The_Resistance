@@ -63,7 +63,7 @@ The Minions of Mordred make up the "Evil" side of the major conflict. All member
 Minions of Mordred are comparatively few in number, but do have a key advantage: they know who is on their side, and sometimes much more information. Mordred's followers will need to move secretly and manipulate Arthur's superior numbers if they hope to prevent three quests from succeeding, thus improving their scores.
 
 #### Neutral Players
-In each game, there is a chance of a Neutral player appearing. Each neutral player has differing goals, but what they all have in common is that they are not innately Good or Evil in the game, and in most cases do not gain or lose points depending on if a Quest succeeds or fails:
+In several game modes, there is a chance of a Neutral player appearing. Each neutral player has differing goals, but what they all have in common is that they are not innately Good or Evil in the game, and in most cases do not gain or lose points depending on if a Quest succeeds or fails:
 
 ##### Sir Kay
 Sir Kay is, in fact, not truly neutral, being assigned to one faction at the start of the game, but his player is not made aware of which faction that is. This player is only told one person who is his ally and must intuit that ally's motivations in order to help the correct side.
