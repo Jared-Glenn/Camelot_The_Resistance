@@ -293,7 +293,7 @@ You and Sir Tristan each know who the other is and also know one location that E
 
 **Assassination Target**
 
-You can see two pairs of players. One pair of players are on opposite sides (Good and Evil or Sir Pelinor and the Questing Beast), and the other pair are on the same side (Evil and Evil or Good and Good).
+You can see two pairs of players. One pair of players are on opposite sides (either Good and Evil or Sir Pelinor and the Questing Beast), and the other pair are on the same side (either Evil and Evil or Good and Good).
 
 ### Merlin
 **Cards:** Success, *Reversal*
