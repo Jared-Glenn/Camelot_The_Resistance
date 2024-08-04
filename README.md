@@ -414,7 +414,7 @@ After the Holy Grail has been corrupted, you may play ANY card on quests.
 
 Each time you are given the Scabbard, you may declare as Sir Maleagant to force the next quest to have one additional knight attend it. This ability cannot be used on the final quest. This ability cannot be used if you use the Leader role to take the Scabbard.
 
-You may only play Failure cards on quests.
+You may only play Failure cards on quests, even when the Holy Grail is played on you.
 
 ### Sir Mordred
 **Cards:** Success, Failure
