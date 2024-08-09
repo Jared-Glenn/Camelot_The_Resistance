@@ -135,7 +135,7 @@ At any point during the round, the player who holds the Scabbard may change the 
 ## Roles by Player Count
 Depending on the number of players, the pool of possible roles will change automatically. This is meant to ensure that both sides are balanced and that no roles are unfairly weak or strong. The pool of roles is adjusted automatically by the program. (Future features may include manual changes to available roles.)
 
-The guide below can help groups know which roles they need to be prepared for in any given game.
+The guide below can help groups know which roles may appear so they can prepare for their abilities in any given game.
 
 ### Five Players
 *Good:* Merlin, Sir Pervival, King Arthur, Sir Dagonet
