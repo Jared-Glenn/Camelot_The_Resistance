@@ -272,7 +272,7 @@ You may declare as a Knight of Camelot, Sir Galahad, or Sir Lancelot (your choic
 
 You know all members of the Fairy Court, both Good and Evil. However, your presence has caused the Grail to start closer to corruption.
 
-If there are no Fae players in the game (indicated by you not have any secret information), you may also play Reversal cards.
+If there are no Fae players in the game (indicated by you not having any secret information), you may also play Reversal cards.
 
 ### Queen Guinevere
 **Cards:** Success
