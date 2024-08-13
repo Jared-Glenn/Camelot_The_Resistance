@@ -123,7 +123,7 @@ So how to fix it?
 
 #### Excalibur
 
-Excalibur is a major source of power in the game and a source of conflict between good and evil. Excalibur can be in one of three locations: Camelot, The Lake, and The Stone. At the start of the game, place all three Excalibur Location cards in a stack with the starting location on top (as indicated by the Game Start file). Regardless of its starting or later locations, Excalibur may only be claimed in ONE of these locations, determined randomly before the game starts, and only by King Arthur (on the side of Good) or Sir Accolon (on the side of Evil).
+Excalibur is a major source of power in the game and a source of conflict between good and evil as they battle over it. Excalibur can be in one of three locations: Camelot, The Lake, and The Stone. At the start of the game, place all three Excalibur Location cards in a stack with the starting location on top (as indicated by the Game Start file). Regardless of its starting or later locations, Excalibur may only be claimed in ONE of these locations, determined randomly before the game starts, and only by King Arthur (on the side of Good) or Sir Accolon (on the side of Evil).
 
 Arthur and Accolon can appear independantly of each other, together, or not at all, but if they obtain Excalibur, their team will be at a significant advantage. Be certain to trust those you allow to obtain the sword.
 
