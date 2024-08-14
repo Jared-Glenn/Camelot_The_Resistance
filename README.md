@@ -498,7 +498,7 @@ You may play one Reversal card per game.
 ## Card Types
 
 #### Success
-A vote for a mission to succeed (its default state). This card essentially has no effect, since it will not change the outcome.
+Maintains the default state of the mission: Success. This card essentially has no effect, since it will not change the outcome.
 
 #### Failure
 Alters the result of a mission to failure. If the mission was already failing, this card has no effect.
