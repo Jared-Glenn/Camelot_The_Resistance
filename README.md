@@ -69,7 +69,7 @@ In several game modes, there is a chance of a Neutral player appearing. Each neu
 Sir Kay is, in fact, not truly neutral, being assigned to one faction at the start of the game, but his player is not made aware of which faction that is. This player is only told one person who is his ally and must intuit that ally's motivations in order to help the correct side.
 
 ##### Sir Pelinor and The Questing Beast
-This pair are truly neutral, in that they do not care if quests succeed or fail. They have no stakes in the battle between good and evil. They will always appear together in a game and their entire goal is to go on the final Quest and prevent the other from attending, as well.
+This pair are truly neutral, in that they do not care if quests succeed or fail. They have no stakes in the battle between good and evil, but are constantly playing their own game. They will always appear together in a game and their entire goal is to go on the final Quest and prevent the other from attending, as well.
 
 
 
