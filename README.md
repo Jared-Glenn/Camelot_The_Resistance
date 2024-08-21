@@ -58,7 +58,7 @@ Arthur's Court will have less information than the Minions of Mordred, but will 
 
 
 #### Minions of Mordred (Evil)
-The Minions of Mordred make up the "Evil" side of the major conflict. All members of the Evil faction earn 3 Victory Points if, at the end of the game, at least three quests have failed.
+The Minions of Mordred will be referred to as the Evil side throughout the game. All members of the Evil faction earn 3 Victory Points if, at the end of the game, at least three quests have failed.
 
 Minions of Mordred are comparatively few in number, but do have a key advantage: they know who is on their side, and sometimes much more information. Mordred's followers will need to move secretly and manipulate Arthur's superior numbers if they hope to prevent three quests from succeeding, thus improving their scores.
 
