@@ -50,7 +50,7 @@ Some characters have an innate advantage in this respect, with more opportunitie
 There are two main factions in the game: the Forces of Arthur (Good) and the Minions of Mordred (Evil). Only one faction can win the Quests portion of the game, which is the main conflict of the game and provides the most points.
 
 #### Arthur's Court (Good)
-Arthur's Court is the "Good" side of the major conflict. All members of the Good faction earn 3 Victory Points if, at the end of the game, at least three quests succeed.
+Arthur's Court will be referred to as the "Good" side of the game. All members of the Good faction earn 3 Victory Points if, at the end of the game, at least three quests succeed.
 
 **(Maybe a victory point for each quest won? Or more?)**
 
