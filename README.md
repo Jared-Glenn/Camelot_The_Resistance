@@ -246,7 +246,7 @@ You are able to play Cleanse cards (see Card Types below).
 ### Sir Dagonet
 **Cards:** Success
 
-You cannot speak, but can communicate through gibberish sounds and body language. No speaking actual words. \nYou know King Arthur.\nYou appear Evil to Merlin and to all Evil players. Only Sir Ector may know if Sir Dagonet is in this game.
+You cannot speak the actual words of a language you know, but can communicate through gibberish sounds and body language. Speaking actual words may result in a lower score. \nYou know King Arthur.\nYou appear Evil to Merlin and to all Evil players. Only Sir Ector may know if Sir Dagonet is in this game.
 
 ### Sir Ector
 **Cards:** Success
