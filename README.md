@@ -364,7 +364,7 @@ When you obtain the Scabbard, you may search the current location for Excalibur 
 ###### Expend Excalibur
 *Once per game. Must have found Excalibur.*
 
-When you attend a quest, once all of the quest cards are returned but before they are read, you may force the quest to fail even when it would otherwise succeed.
+At the end of a quest you attended, once all of the quest cards are returned but before they are read, you may force the quest to fail even when it would otherwise succeed.
 
 ### Sir Agravaine 
 **Cards:** Success, Failure
