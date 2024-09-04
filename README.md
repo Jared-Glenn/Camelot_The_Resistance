@@ -493,7 +493,7 @@ You are Neutral in this battle and have no allies in this game. You are Fae, how
 
 Your goal is to either prevent Sir Pelinor from attending the final quest or to trick Sir Pelinor into misusing his Battle the Beast ability. You must play at least one The Questing Beast Was Here card or lose significant Victory Points.
 
-You may play one Reversal card per game.
+You may play one Reversal card during the game.
         
         
         
