@@ -116,7 +116,8 @@ So how to fix it?
 * Give all roles a fae-related ability?
 * The problem is you're either good or evil. You know something or you don't. How to find a middle ground? How to create secondary objectives that don't ruin the main game?
 * Maybe a cross between the vote and the Holy Grail. Leader chooses people on Quest, then everyone votes who gets the Grail. Votes are done via the app, but are public knowledge. Voting history is maintained. (Also only easily done with an app.)
-
+* Maybe there's a vote both on AND off the quest?
+* Maybe when a quest goes wrong, a vote us held to disgrace someone or something like that. (Maybe an individual power?)
 
 
 
