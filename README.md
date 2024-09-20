@@ -46,7 +46,7 @@ Victory Points are a new mechanic in this game, which each player accumulates in
 
 Some characters have an innate advantage in this respect, with more opportunities to gain points. Of course they also have more opportunities to lose points, which is more of a disadvantage.
 
-## Note: Should they have an advantage? Maybe rework points?
+## Note: Should they have an advantage? Maybe rework points? What if they all have the same number of potential points, but for different things? Or we could do same points for same thing with different powers (Colt Express style).
 
 ### Factions
 There are two main factions in the game: the Forces of Arthur (Good) and the Minions of Mordred (Evil). Only one faction can win the Quests portion of the game, which is the main conflict of the game and provides the most points.
