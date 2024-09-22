@@ -388,6 +388,8 @@ After the quest cards have been collected for a quest, but before they are read,
 
 You know where Excalibur may be retrieved.
 
+## Odd thing. Might need to rethink this power.
+
 Your goal is to remove that specific location from the deck of Grail Locations without anyone noticing. If you are holding that location at the end of the game, you will gain significant Victory Points.
 
 ### Sir Colgrevance
