@@ -353,7 +353,7 @@ You gain the Exile power, but only after you vote against your own quest proposa
 ##### Exile
 *Once per game, while the Excalibur Search is in the Stone.*
 
-After a new leader is selected (but before the vote occurs), you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess via the app. The exiled player must leave the play area and access your character file. When the exile is over, you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.
+After a new leader is selected (but before the vote occurs), you may declare as a King of the Realm, King Uther, or King Vortigurn (your choice). If you do, you may select one player to be exiled from the game until the next quest is completed. That player is required to view your role information, and will see which role you possess via the app. The exiled player must leave the play area and access your character file. When the exile power is over, you must be the one to go retrieve that player, affording you a moment of privacy with that player, if you wish.
 
 
 ### Evil Roles
