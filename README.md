@@ -36,7 +36,7 @@ At the end of the game, the app can also handle the Assassination and Wild Hunt 
 
 You may restart the game by exiting the current game and clicking on the "New Game" button. Once you see the code for the new game, distribute it to each player. You may also choose to save a copy of the game's details and emailing them to yourself. High scores are saved for each character and preserved in a Hall of Fame for each character role, which can be accessed from the Main Menu. You can also record your own personal high score!
 
-(When completed, the app will be available here on Github and various app stores, as well.)
+(When completed, the app will be available here on Github, the Google Play store, and various other app stores.)
 
 ## Role Information
 At the start of the game, run the program by inputting the names of each player - the order does not matter - with a space between each name. If using the app, each player can input their own name when signing into the game. The game will randomly determine alignment, roles, and players to assign them to. Open the "Game" folder. Each player should privately open the file with his or her name on it and read it. It's best to encourage players to take a picture of the document with their phone so they can access that information later (if not using the app).
