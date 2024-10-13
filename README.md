@@ -541,3 +541,4 @@ Works the same as a Success card.
 * Perhaps combine the grail and the scabbard for simplicity. There's a lot of complexity that needs help.
 * Excalibur locations is also confusing. Maybe they could be castles or areas in trouble.
 * It's a lot of stuff to keep track of, too. Maybe Quests are just in certain locations?.So, if you go on the Quest you automatically search that location? The locations could be randomly assigned with cards or something and placed beside the board. Alternately, they could be dice so the same location can appear more than once. The locations could all be revealed at the start of the game or one at a time.
+* Doing both a vote and the Grail is a bit of overkill. Might need to just pick one?
