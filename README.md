@@ -35,7 +35,7 @@ Some abilities can be handled directly through this app, allowing a player to se
 
 At the end of the game, the app can also be used to handle the Assassination and Wild Hunt simultaneously (rather than one at a time). All players click the Wild Hunt button and may make their selections for who they believe to be fae. The Assassin will automatically be prompted to select a target, which will be removed from the game and award points accordingly. The assassin should still be allowed to talk to other players before making a decision, however. Once these selections are made, the app will determine final points for each player. Those totals are then passed into a ranking for the game, which is displayed for all players in a descending list.
 
-**Maybe Assassin gets a name and power?**
+**Maybe Assassin gets a name and power and it's just a standard role?**
 
 You may restart the game by exiting the current game and clicking on the "New Game" button, which will open a new instance of the game. Once you see the code for the new game, distribute it to each player. You may also choose to save a copy of the game's details and emailing them to yourself. High scores are saved for each character and preserved in a Hall of Fame for each character role, which can be accessed from the Main Menu. You can also record your own personal high score!
 
