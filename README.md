@@ -81,7 +81,7 @@ This pair are truly neutral (yet opposed to one another), in that they do not ca
 
 
 ### Origin
-There are two possible origins for all players: Mortal and Fae. Mortals are seekers of power and mystical knowledge, reaching beyond their given place. Fae, on the other hand, are the guardians of the mystical world beyond mortal ken, and they are charged with stealing away holy artifacts for nature while remaining secret. By the end of the game, either the Holy Grail will be corrupted or not. The Fae hope to corrupt and claim its holy power, while the mortals must either protect the Grail or capture the Fae. Specifics are listed below.
+There are two possible origins for all players: Mortal and Fae. Mortals represent seekers of power and mystical knowledge, reaching beyond their given place. Fae, on the other hand, are the guardians of the mystical world beyond mortal ken, and they are charged with stealing away holy artifacts for nature while remaining secret. By the end of the game, either the Holy Grail will be corrupted or not. The Fae hope to corrupt and claim its holy power, while the mortals must either protect the Grail or capture the Fae. Specifics are listed below.
 
 #### Children of Men (Mortal)
 Tenacious and clever, mortals nevertheless suffer from a general lack of natural greatness and magic and so must make use of relics they find, such as the Holy Grail. Mortals may be found both among the Good and Evil forces, yet they still must work together to determine where Fae have infiltrated their ranks. During the game, Mortals should be on the lookout for Regrowth (Success) and Rot (Failure) cards, which indicate the presence of Fae.
