@@ -5,7 +5,7 @@ Camelot's rules are based on all the rules for the social deduction game: "The R
 
 Roles are often more complex in this game, though, and we also introduce a scoring mechanic. In order to play, players will need to adapt to the new rules and reference them here or on the app throughout the course of play.
 
-This can be made more simple with the use of the Camelot App, available on Android, which can maintain roles for reference throughout the game.
+This can be made more simple with the use of the **Camelot App**, available on Android, which can maintain roles for reference throughout the game.
 
 ## Round Overview
 
