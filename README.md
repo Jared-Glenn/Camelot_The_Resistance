@@ -37,7 +37,7 @@ At the end of the game, the app can also be used to handle the Assassination and
 
 **Maybe Assassin gets a name and power and it's just a standard role?**
 
-You may restart the game by exiting the current game and clicking on the "New Game" button, which will open a new instance of the game. Once you see the code for the new game, distribute it to each player. You may also choose to save a copy of the game's details and emailing them to yourself. High scores are saved for each character and preserved in a Hall of Fame for each character role, which can be accessed from the Main Menu. You can also record your own personal high score!
+You may restart the game by exiting the current game and clicking on the "New Game" button, which will open a new instance of the game. Once you see the code for the new game, distribute it to each player. You may also choose to save a copy of the game's details and emailing them to yourself. High scores are saved for each character and preserved on a Leaderboard for each character role, which can be accessed from the Main Menu. You can also record your own personal high score!
 
 (When completed, the app will be available here on Github, the Google Play store, and various other app stores.)
 
