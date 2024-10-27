@@ -310,7 +310,7 @@ You can see two pairs of players. One pair of players are on opposite sides (eit
 
 **Assassination Target**
 
-You know which people have Evil roles, but not who has any specific role.
+You know which people have Evil roles, but not who has any specific role. Some roles may be able to influence your knowledge.
 
 You may play Reversal cards while the Excalibur Search is in the Lake (unless the Holy Grail is played on you).
 
