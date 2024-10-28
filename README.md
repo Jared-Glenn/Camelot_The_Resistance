@@ -48,8 +48,7 @@ At the start of the game, run the program by inputting the names of each player 
 Victory Points are a new mechanic for this game, which each player accumulates individually, rather than working entirely as a team. The app can help players manage these points throughout the game. This is a significant difference from similar games, such as Avalon. Players gain points from their role (character), their faction (Arthur/Good or Mordred/Evil), and their origin (Mortal or Fae). Players may also lose points if they fail to perform certain actions or another player takes certain actions (such as assassinating them). Manipulating other players into losing Victory Points while you gain as many as possible is a higher level strategy that comes with playing several games.
 
 Some characters have an innate advantage in this respect, with more opportunities to gain points. Of course they also have more opportunities to lose points, which is more of a disadvantage.
-
-## Note: Should they have an advantage? Maybe rework points? What if they all have the same number of potential points, but for different things? Or we could do same points for same thing with different powers (Colt Express style).
+**Note: Should they have an advantage? Maybe rework points? What if they all have the same number of potential points, but for different things? Or we could do same points for same thing with different powers (Colt Express style).**
 
 ### Factions
 There are two main factions in the game: the Forces of Arthur (Good) and the Minions of Mordred (Evil). Only one faction can win the Quests portion of the game, which is the main conflict of the game and provides the most points.
