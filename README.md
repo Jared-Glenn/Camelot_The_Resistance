@@ -124,7 +124,7 @@ So how to fix it?
 * Maybe a cross between the vote and the Holy Grail. Leader chooses people on Quest, then everyone votes who gets the Grail. Votes are done via the app, but are public knowledge. Voting history is maintained. (Also only easily done with an app.)
 * Maybe there's a vote both on AND off the quest?
 * Maybe when a quest goes wrong, a vote us held to disgrace someone or something like that. (Maybe an individual power?)
-
+* Is it even a good idea to have two groups of factions playing two different games? Maybe it just distracts from the important stuff.
 
 
 
