@@ -100,7 +100,7 @@ Relics are powerful items that the players sometimes have access to during the g
 #### The Holy Grail
 When a player is made the leader, they also gain access to the Holy Grail and can choose to assign the Grail to a single player when people are assigned to a Quest. Many roles have specific interactions with the Grail, but generally speaking it prevents the chosen player from using Failure cards (or Rot cards, in the case of the Fae).
 
-Beware when using it, however, because Queen Mab is unaffected by the Holy Grail and Sir Bertilak (normally on the side of Good) *must* play Rot while holding it.
+Beware when using it, however, because Queen Mab is unaffected by the Holy Grail and Sir Bertilak (normally on the side of Good) *must* play Rot while holding it, meaning that the Grail can have an effect opposite of the intended one.
 
 
 
