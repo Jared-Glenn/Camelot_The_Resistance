@@ -60,7 +60,7 @@ Arthur's Court will be referred to as the "Good" side or faction of the game. Al
 
 **(Maybe a victory point for each quest won? Or more? Might cause issues with neutral players.)**
 
-Arthur's Court will have less information than the Minions of Mordred, but will have more players on their side. Members of the Court must attempt to succeed at as many quests as possible in order to gain victory points.
+Arthur's Court (Good) will have less information than the Minions of Mordred (Evil), but will have more players on their side. Members of the Court must attempt to succeed at as many quests as possible in order to gain victory points.
 
 
 #### Minions of Mordred (Evil)
