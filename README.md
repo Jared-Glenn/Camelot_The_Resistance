@@ -137,7 +137,7 @@ Arthur and Accolon can appear independantly of each other, together, or not at a
 NOTE: Seems like getting Excalibur shouldn't be role dependant. Maybe anyone can get it.
 
 ##### The Scabbard
-The Scabbard is, in a way, part of the Excalibur relic, and starts in the players' control at the start of the game. At the start of the game, the Leader assigns the Scabbard to one player prior to assigning the first Quest. Each round thereafter, the Scabbard is passed by the person who holds it to any player (except themselves or the player who held it last).
+The Scabbard is, in a way, part of the Excalibur relic, and starts in the players' control at the start of the game. It never leaves player control. At the start of the game, the Leader assigns the Scabbard to one player prior to assigning the first Quest. Each round thereafter, the Scabbard is passed by the person who holds it to any player (except themselves or the player who held it last).
 
 At any point during the round, the player who holds the Scabbard may change the location of the Excalibur search.
 
