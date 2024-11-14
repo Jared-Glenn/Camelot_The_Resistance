@@ -11,7 +11,7 @@ This can be made more simple with the use of the **Camelot App**, available on A
 
 Take each of the following steps, one at a time, during each round.
 
-1) **Change the Leader:** The current Leader passes thr Leader Token to the next player on their right (or the player named in the Game Start file, if this is the first round).
+1) **Change to a New Leader:** The current Leader passes thr Leader Token to the next player on their right (or the player named in the Game Start file, if this is the first round).
 2) **Pass the Scabbard:** The Scabbard is passed to another player of the wielder's choice (or by the choice of the Leader, if this is the first round). It may not be passed to the Leader or to the previous player to hold it.
 3) **Quest Proposal:** The Leader proposes several possible players to go on the quest, up to the number written on the next quest on the board. Leaders can choose themselves for a quest.
 4) **Vote:** The group votes for or against the quest. The vote is a simple binary vote where the majority rules. Ties default to against. If it comes out against, repeat steps 1 and 3. (If this occurs three times in a row, the Evil players immediately gain 3 Victory Points.) **(Dev Note: If this doesn't end the game, there's no challenge getting to the fifth quest, which might be important for Pelinore and the Questing Beast. Seems like there should be a chance that it doesn't happen. Maybe more points per victory?)**
