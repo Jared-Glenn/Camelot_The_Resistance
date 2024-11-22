@@ -9,7 +9,7 @@ This can be made more simple with the use of the **Camelot App**, available on A
 
 ## Round Overview
 
-Take each of the following steps, one at a time, during each round.
+Take each of the following steps, one at a time in order each round.
 
 1) **Change to a New Leader:** The current Leader passes thr Leader Token to the next player on their right (or the player named in the Game Start file, if this is the first round).
 2) **Pass the Scabbard:** The Scabbard is passed to another player. Whoever has the Scabbard chooses another player to guve it to - during the first round the Leader passes off the Scabbard. It may not be passed to the Leader or to the previous player to hold it.
