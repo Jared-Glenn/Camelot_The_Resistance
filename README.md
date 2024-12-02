@@ -18,7 +18,7 @@ Take each of the following steps, one at a time in order each round.
 5) **Bestow the Grail:** The Leader selects one of players going on the quest to carry the Grail and the Grail is transfered to that player. The player is beholden to the Grail's powers for that Quest.
 5) *Alternate* **Vote for the Grail:** The players, instead, vote on a person on the quest to give the grail to.
 6) **The Quest:** Each of the chosen players provide their cards to the Leader and the cards are shuffled and then revealed so that players cannot see what each quest-goer voted.
-7) **Results:** The cards are revealed and the results of the quest are determined. All results are applied according to the cards.
+7) **Results:** The leader reveals the cards and the results of the quest are determined. All results are applied according to the cards.
 9) **Onwards:** Discuss the result of the quest and then start a new round from Step 1.
 
 ## Endgame Overview
